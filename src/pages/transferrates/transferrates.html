@@ -1,0 +1,208 @@
+<ion-header>    
+  <ion-navbar>
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+      </button>
+    <ion-title>transferrates</ion-title>
+      <div class="content clearfix">
+          <img alt="" src="http://sendmoneyafrica-auair.org/sites/all/themes/sms_plain/images/African-Union-footer-logo.png">
+      </div>
+  </ion-navbar>   
+</ion-header>
+
+
+    
+        
+            
+<ion-content padding class=" pane-sms-corridor-block">  
+                    <div class="">
+                    <div class="">
+                    <div class="">
+                    <div class="pane-content">
+                    
+                            <div id="corridor_search_refresh">
+                                <h2 class="pane-title">Find and Compare Prices</h2>
+                                <form 
+                                   class="sms-corridor-search-form" 
+                                   autocomplete="off" 
+                                   action="/"
+                                   method="post" 
+                                   id="sms-corridor-search-form" 
+                                   accept-charset="UTF-8"> 
+                                                                             
+                                        <ion-label>Transfer Money</ion-label>                                        
+                                        
+                                        <div id="edit-transfer" class="form-radios">
+                                        <div class="form-item form-type-radio form-item-transfer">
+                                            <ion-item style="background-color:5FBB43;">
+                                            <ion-label 
+                                               class="option" 
+                                               for="edit-transfer-from">from </ion-label>
+                                            <ion-radio 
+                                               type="radio" 
+                                               id="edit-transfer-from" 
+                                               name="transfer" 
+                                               value="from" 
+                                               checked="checked" 
+                                               class="form-radio" >                                 
+                                            </ion-radio>                                            
+                                            </ion-item>
+                                        </div>
+
+                                        <div class="form-item form-type-radio form-item-transfer">
+                                            <ion-item>
+                                            <ion-label 
+                                               class="option" 
+                                               for="edit-transfer-to">to </ion-label>
+                                            <ion-radio 
+                                               type="radio" 
+                                               id="edit-transfer-to" 
+                                               name="transfer" 
+                                               value="to" 
+                                               checked="checked" 
+                                               class="form-radio" >                                 
+                                            </ion-radio>   
+                                            </ion-item>
+                                        </div>
+                                        </div>
+                                        
+
+                                        <!--Sending Country-->
+                                        <div id="field_source_iso2-refresh">
+                                        <div class="form-item form-type-select form-item-field-source-iso2">
+                                            <ion-item>
+                                            <ion-label>Sending Country</ion-label>
+                                            <ion-select 
+                                               class="corridor_search_source form-select" 
+                                               id="edit-field-source-iso2" 
+                                               name="field_source_iso2" >                                                
+                                                <ion-option 
+                                                *ngFor="let dummy of dummyData"
+                                                okText="Okay" cancelText="Dismiss"
+                                                (ionSelect)="onSelect(dummy)"
+                                                >{{dummy.from}}
+                                                </ion-option>                                               
+                                            </ion-select>
+                                            </ion-item>
+                                        </div>
+                                        </div>    
+                                       
+                                       <!--Receiving Country-->
+                                        <div id="field_destination_iso2-refresh">
+                                        <div class="form-item form-type-select form-item-field-destination-iso2 form-disabled">
+                                            <ion-item>
+                                            <ion-label>Receiving Country</ion-label>
+                                            <ion-select 
+                                            class="corridor_search_destination form-select"                                             
+                                            id="edit-field-destination-iso2" 
+                                            name="field_destination_iso2" [innerHTML]="receivingoptions">
+                                                
+                                            
+                                               
+                                                
+                                            
+                                            </ion-select>
+                                            </ion-item>
+                                            </div>
+                                        </div>
+                                
+                                       
+                                       <div class="confirm-add-dialog">
+
+                                       </div>  
+                                                                             
+                                         <button ion-button small color="tertiary" round>
+                                             <ion-icon name="eye">  
+                                                 Show
+                                             </ion-icon> 
+                                         </button>                                     
+                                     
+                                     
+                                    
+                                    <ion-input type="hidden" name="form_build_id" value="form-oAYlHaTRJkHVm-gk8g6aKoUMvoYjXqPN3mctLIiPWHI" ></ion-input>
+                                   
+                                    
+                                    <ion-input type="hidden" name="form_id" value="sms_corridor_search_form" ></ion-input>
+                                     
+                                </form>
+                            </div>
+                  
+                    </div>
+                    </div> 
+                    </div>
+                    </div>
+                </ion-content>
+            
+        
+   
+
+        
+        <!--
+        <div class="inside">
+            <div class="panel-pane pane-sms-corridor-block" >
+
+            <h2 class="pane-title">Find and Compare Prices</h2>
+
+
+            <div class="pane-content">
+                <div id="corridor_search_refresh">
+                   <form class="sms-corridor-search-form" autocomplete="off" action="/" method="post" id="sms-corridor-search-form" accept-charset="UTF-8">
+                   <div>
+                   <div>
+                   Transfer money
+                   <div id="edit-transfer" class="form-radios">
+                   <div class="form-item form-type-radio form-item-transfer">
+                    <input type="radio" id="edit-transfer-from" name="transfer" value="from" checked="checked" class="form-radio" />  
+                    <label class="option" for="edit-transfer-from">from </label>
+                    </div>
+                    <div class="form-item form-type-radio form-item-transfer">
+                        <input type="radio" id="edit-transfer-to" name="transfer" value="to" class="form-radio" />  
+                        <label class="option" for="edit-transfer-to">to </label>
+
+                    </div>
+                    </div>
+                    </div>
+                    <div id="field_source_iso2-refresh">
+                    <div class="form-item form-type-select form-item-field-source-iso2">
+                    <select class="corridor_search_source form-select" id="edit-field-source-iso2" name="field_source_iso2">
+                    <option value="0">Select Sending Country</option>
+                    <option value="BE">Belgium</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                    <option value="GH">Ghana</option>
+                    <option value="IT">Italy</option>
+                    <option value="KE">Kenya</option>
+                    <option value="NL">Netherlands</option>
+                    <option value="SA">Saudi Arabia</option>
+                    <option value="SN">Senegal</option>
+                    <option value="ZA">South Africa</option>
+                    <option value="ES">Spain</option>
+                    <option value="TZ">Tanzania</option>
+                    <option value="AE">United Arab Emirates</option>
+                    <option value="GB">United Kingdom</option>
+                    <option value="US">United States</option>
+                    </select>
+                    </div>
+                    </div>
+                    <div id="field_destination_iso2-refresh">
+                    <div class="form-item form-type-select form-item-field-destination-iso2 form-disabled">
+                    <select class="corridor_search_destination form-select" disabled="disabled" id="edit-field-destination-iso2" name="field_destination_iso2"><option value="0">Select Receiving Country</option></select>
+                    </div>
+                    </div>
+                    <div class="confirm-add-dialog">
+                        
+                    </div>
+                    <input class="edit-corridor-search form-submit form-button-disabled" disabled="disabled" type="submit" id="edit-search" name="op" value="Show" />
+                    <input type="hidden" name="form_build_id" value="form-oAYlHaTRJkHVm-gk8g6aKoUMvoYjXqPN3mctLIiPWHI" />
+                    <input type="hidden" name="form_id" value="sms_corridor_search_form" />
+                    </div>
+                    </form>
+                    </div>  
+                    </div>
+
+
+            </div>
+        </div>
+        -->
+

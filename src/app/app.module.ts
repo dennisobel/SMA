@@ -5,6 +5,18 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { AboutsmaPage } from '../pages/aboutsma/aboutsma';
+import { CorridorsPage } from '../pages/corridors/corridors';
+import { HelpPage } from '../pages/help/help';
+import { MethodologyPage } from '../pages/methodology/methodology';
+import { RatesPage } from '../pages/rates/rates';
+import { SettingsPage } from '../pages/settings/settings';
+import { SharePage } from '../pages/share/share';
+import { TransferratesPage } from '../pages/transferrates/transferrates';
+import { ChooseamountPage } from "../pages/chooseamount/chooseamount"
+import { ChoosefirmPage } from "../pages/choosefirm/choosefirm"
+
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -13,7 +25,17 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+      AboutsmaPage,
+      CorridorsPage,
+      HelpPage,
+      MethodologyPage,
+      RatesPage,
+      SettingsPage,
+      SharePage,
+      TransferratesPage,
+      ChooseamountPage,
+      ChoosefirmPage
   ],
   imports: [
     BrowserModule,
@@ -23,7 +45,17 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+      AboutsmaPage,
+      CorridorsPage,
+      HelpPage,
+      MethodologyPage,
+      RatesPage,
+      SettingsPage,
+      SharePage,
+      TransferratesPage,
+      ChooseamountPage,
+      ChoosefirmPage
   ],
   providers: [
     StatusBar,

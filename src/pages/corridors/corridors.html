@@ -1,0 +1,282 @@
+
+<ion-header>
+
+  <ion-navbar>
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+      </button>
+    <ion-title>CORRIDORS</ion-title>
+      <div class="content clearfix">
+          <img alt="" src="http://sendmoneyafrica-auair.org/sites/all/themes/sms_plain/images/African-Union-footer-logo.png">
+      </div>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <div class="panel-panel grid-12">
+        <div class="inside">
+            <div class="" >
+            <div class="pane-content">
+               <!--
+                <div class="corridor-sort-by-countries">
+                    <span class="group-by-heading">Group by</span>
+                    <input type="radio" name="groupby" class="corridor-countries-group-by" value="sending" checked="checked"/> sending country		
+                    <input type="radio" name="groupby" class="corridor-countries-group-by" value="receiving" autocomplete="off" /> receiving country	
+                    <div class="ajax-progress ajax-progress-throbber">
+                    <div>&nbsp;</div>
+                    </div>
+                </div>
+                -->
+                <div >
+                    <ion-list text-center>
+                        <ion-card *ngFor="let detailsGroup of dummyData">
+                           <hr>
+                            <!--<span class="country-caption">{{detailsGroup.from}}</span>-->
+                            <h3>From: {{detailsGroup.from}}</h3>
+                            <button 
+                                    ion-item 
+                                    *ngFor="let toGroup of detailsGroup.to"
+                                    (click)="openRates(toGroup)">
+                                    <ion-avatar item-start>
+                                        <img src={{toGroup.flag}} alt="">
+                                    </ion-avatar>
+                                    <p color="secondary">To: {{toGroup.name}}</p>
+                            </button> 
+                            <hr>                           
+                        </ion-card>
+                    </ion-list>
+                    <!--
+                    <ion-card>
+                        <div class="corridor-original-countries">
+                            <ul>
+                                <span class="country-caption">Belgium</span>
+                                <li [navPush]="chooseamountPage">
+                                    <a href="/corridor/Belgium/Congo%20%28Kinshasa%29" (click)="onClickCorridor()">
+                                    <img class="countryicon countryicon-iconset-shiny countryicon-code-cd" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/cd.png" width="16" height="11" alt="CD" title="Congo, Dem. Rep." />
+                                    </a> 
+                                    <a href="/corridor/Belgium/Congo%20%28Kinshasa%29">Congo, Dem. Rep.</a>
+                                </li>
+                                <li>
+                                    <a href="/corridor/Belgium/Morocco">
+                                        <img class="countryicon countryicon-iconset-shiny countryicon-code-ma" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/ma.png" width="8" height="11" alt="MA" title="Morocco" />
+                                    </a> 
+                                    <a href="/corridor/Belgium/Morocco">Morocco</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </ion-card>
+                    <ion-card>
+                        <div class="corridor-original-countries">
+                            <ul>
+                                <span class="country-caption">Canada</span>
+                                <li>
+                                    <a href="/corridor/Canada/Ghana">
+                                        <img class="countryicon countryicon-iconset-shiny countryicon-code-gh" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/gh.png" width="16" height="11" alt="GH" title="Ghana" />
+                                    </a>
+                                    <a href="/corridor/Canada/Ghana">Ghana</a>
+                                </li>
+                                <li>
+                                    <a href="/corridor/Canada/Kenya">
+                                        <img class="countryicon countryicon-iconset-shiny countryicon-code-ke" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/ke.png" width="16" height="11" alt="KE" title="Kenya" />
+                                    </a> 
+                                    <a href="/corridor/Canada/Kenya">Kenya</a>
+                                </li>
+                                <li>
+                                    <a href="/corridor/Canada/Zimbabwe">
+                                        <img class="countryicon countryicon-iconset-shiny countryicon-code-zw" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/zw.png" width="16" height="11" alt="ZW" title="Zimbabwe" />
+                                    </a> 
+                                    <a href="/corridor/Canada/Zimbabwe">Zimbabwe</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </ion-card>
+                    
+                    <ion-card>
+                        <div class="corridor-original-countries">
+                            <ul>
+                                <span class="country-caption">France</span>
+                                <li>
+                                    <a href="/corridor/France/Algeria">
+                                        <img class="countryicon countryicon-iconset-shiny countryicon-code-dz" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/dz.png" width="16" height="11" alt="DZ" title="Algeria" />
+                                    </a> 
+                                    <a href="/corridor/France/Algeria">Algeria</a>
+                                </li>
+                                <li>
+                                    <a href="/corridor/France/Ivory%20Coast">
+                                        <img class="countryicon countryicon-iconset-shiny countryicon-code-ci" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/ci.png" width="16" height="11" alt="CI" title="Ivory Coast" />
+                                    </a> 
+                                    <a href="/corridor/France/Ivory%20Coast">Ivory Coast</a>
+                                </li>
+                                <li>
+                                    <a href="/corridor/France/Mali">
+                                        <img class="countryicon countryicon-iconset-shiny countryicon-code-ml" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/ml.png" width="16" height="11" alt="ML" title="Mali" />
+                                    </a> 
+                                    <a href="/corridor/France/Mali">Mali</a>
+                                </li>
+                                <li>
+                                    <a href="/corridor/France/Morocco">
+                                        <img class="countryicon countryicon-iconset-shiny countryicon-code-ma" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/ma.png" width="16" height="11" alt="MA" title="Morocco" />
+                                    </a> <a href="/corridor/France/Morocco">Morocco</a></li>
+                                <li>
+                                    <a href="/corridor/France/Senegal">
+                                        <img class="countryicon countryicon-iconset-shiny countryicon-code-sn" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/sn.png" width="16" height="11" alt="SN" title="Senegal" />
+                                    </a> 
+                                    <a href="/corridor/France/Senegal">Senegal</a>
+                                </li>
+                                <li>
+                                    <a href="/corridor/France/Tunisia">
+                                        <img class="countryicon countryicon-iconset-shiny countryicon-code-tn" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/tn.png" width="16" height="11" alt="TN" title="Tunisia" />
+                                    </a> 
+                                    <a href="/corridor/France/Tunisia">Tunisia</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </ion-card>
+                    <ion-card>
+                        <div class="corridor-original-countries">
+                            <ul>
+                                <span class="country-caption">Germany</span>
+                                <li><a href="/corridor/Germany/Ghana"><img class="countryicon countryicon-iconset-shiny countryicon-code-gh" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/gh.png" width="16" height="11" alt="GH" title="Ghana" /></a> <a href="/corridor/Germany/Ghana">Ghana</a></li>
+                                <li><a href="/corridor/Germany/Morocco"><img class="countryicon countryicon-iconset-shiny countryicon-code-ma" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/ma.png" width="16" height="11" alt="MA" title="Morocco" /></a> <a href="/corridor/Germany/Morocco">Morocco</a></li>
+                                <li><a href="/corridor/Germany/Nigeria"><img class="countryicon countryicon-iconset-shiny countryicon-code-ng" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/ng.png" width="16" height="11" alt="NG" title="Nigeria" /></a> <a href="/corridor/Germany/Nigeria">Nigeria</a></li>
+                            </ul>
+                        </div>
+                    </ion-card>
+                    <ion-card>
+                        <div class="corridor-original-countries">
+                            <ul>
+                                <span class="country-caption">Ghana</span>
+                                <li><a href="/corridor/Ghana/Nigeria"><img class="countryicon countryicon-iconset-shiny countryicon-code-ng" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/ng.png" width="16" height="11" alt="NG" title="Nigeria" /></a> <a href="/corridor/Ghana/Nigeria">Nigeria</a></li>
+                            </ul>
+                        </div>
+                    </ion-card>
+                    <ion-card>
+                        <div class="corridor-original-countries">
+                            <ul>
+                                <span class="country-caption">Italy</span>
+                                <li><a href="/corridor/Italy/Ethiopia"><img class="countryicon countryicon-iconset-shiny countryicon-code-et" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/et.png" width="16" height="11" alt="ET" title="Ethiopia" /></a> <a href="/corridor/Italy/Ethiopia">Ethiopia</a></li>
+                                <li><a href="/corridor/Italy/Morocco"><img class="countryicon countryicon-iconset-shiny countryicon-code-ma" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/ma.png" width="16" height="11" alt="MA" title="Morocco" /></a> <a href="/corridor/Italy/Morocco">Morocco</a></li>
+                                <li><a href="/corridor/Italy/Nigeria"><img class="countryicon countryicon-iconset-shiny countryicon-code-ng" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/ng.png" width="16" height="11" alt="NG" title="Nigeria" /></a> <a href="/corridor/Italy/Nigeria">Nigeria</a></li>
+                                <li><a href="/corridor/Italy/Senegal"><img class="countryicon countryicon-iconset-shiny countryicon-code-sn" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/sn.png" width="16" height="11" alt="SN" title="Senegal" /></a> <a href="/corridor/Italy/Senegal">Senegal</a></li>
+                            </ul>
+                        </div>
+                    </ion-card>
+                    <ion-card>
+
+                        <div class="corridor-original-countries">
+                            <ul>
+                                <span class="country-caption">Kenya</span>
+                                <li><a href="/corridor/Kenya/Rwanda"><img class="countryicon countryicon-iconset-shiny countryicon-code-rw" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/rw.png" width="16" height="11" alt="RW" title="Rwanda" /></a> <a href="/corridor/Kenya/Rwanda">Rwanda</a></li>
+                                <li><a href="/corridor/Kenya/Tanzania"><img class="countryicon countryicon-iconset-shiny countryicon-code-tz" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/tz.png" width="16" height="11" alt="TZ" title="Tanzania" /></a> <a href="/corridor/Kenya/Tanzania">Tanzania</a></li>
+                                <li><a href="/corridor/Kenya/Uganda"><img class="countryicon countryicon-iconset-shiny countryicon-code-ug" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/ug.png" width="16" height="11" alt="UG" title="Uganda" /></a> <a href="/corridor/Kenya/Uganda">Uganda</a></li>
+                            </ul>
+                        </div>
+                    </ion-card>
+                    <ion-card>
+                        <div class="corridor-original-countries">
+                            <ul>
+                                <span class="country-caption">Netherlands</span>
+                                <li><a href="/corridor/Netherlands/Ghana"><img class="countryicon countryicon-iconset-shiny countryicon-code-gh" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/gh.png" width="16" height="11" alt="GH" title="Ghana" /></a> <a href="/corridor/Netherlands/Ghana">Ghana</a></li>
+                                <li><a href="/corridor/Netherlands/Morocco"><img class="countryicon countryicon-iconset-shiny countryicon-code-ma" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/ma.png" width="16" height="11" alt="MA" title="Morocco" /></a> <a href="/corridor/Netherlands/Morocco">Morocco</a></li>
+                                <li><a href="/corridor/Netherlands/Nigeria"><img class="countryicon countryicon-iconset-shiny countryicon-code-ng" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/ng.png" width="16" height="11" alt="NG" title="Nigeria" /></a> <a href="/corridor/Netherlands/Nigeria">Nigeria</a></li>
+                            </ul>
+                        </div>
+                    </ion-card>
+                    <ion-card>
+                        <div class="corridor-original-countries">
+                            <ul>
+                                <span class="country-caption">Saudi Arabia</span>
+                                <li><a href="/corridor/Saudi%20Arabia/Egypt"><img class="countryicon countryicon-iconset-shiny countryicon-code-eg" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/eg.png" width="16" height="11" alt="EG" title="Egypt" /></a> <a href="/corridor/Saudi%20Arabia/Egypt">Egypt</a></li>
+                            </ul>
+                        </div>
+                    </ion-card>
+                    <ion-card>
+                        <div class="corridor-original-countries">
+                            <ul>
+                                <span class="country-caption">Senegal</span>
+                                <li><a href="/corridor/Senegal/Mali"><img class="countryicon countryicon-iconset-shiny countryicon-code-ml" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/ml.png" width="16" height="11" alt="ML" title="Mali" /></a> <a href="/corridor/Senegal/Mali">Mali</a></li>
+                            </ul>
+                        </div>
+                    </ion-card>
+                    <ion-card>
+                        <div class="corridor-original-countries">
+                            <ul>
+                                <span class="country-caption">South Africa</span>
+                                <li><a href="/corridor/South%20Africa/Angola"><img class="countryicon countryicon-iconset-shiny countryicon-code-ao" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/ao.png" width="16" height="11" alt="AO" title="Angola" /></a> <a href="/corridor/South%20Africa/Angola">Angola</a></li>
+                                <li><a href="/corridor/South%20Africa/Botswana"><img class="countryicon countryicon-iconset-shiny countryicon-code-bw" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/bw.png" width="16" height="11" alt="BW" title="Botswana" /></a> <a href="/corridor/South%20Africa/Botswana">Botswana</a></li>
+                                <li><a href="/corridor/South%20Africa/Lesotho"><img class="countryicon countryicon-iconset-shiny countryicon-code-ls" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/ls.png" width="16" height="11" alt="LS" title="Lesotho" /></a> <a href="/corridor/South%20Africa/Lesotho">Lesotho</a></li>
+                                <li><a href="/corridor/South%20Africa/Malawi"><img class="countryicon countryicon-iconset-shiny countryicon-code-mw" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/mw.png" width="16" height="11" alt="MW" title="Malawi" /></a> <a href="/corridor/South%20Africa/Malawi">Malawi</a></li>
+                                <li><a href="/corridor/South%20Africa/Mozambique"><img class="countryicon countryicon-iconset-shiny countryicon-code-mz" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/mz.png" width="16" height="11" alt="MZ" title="Mozambique" /></a> <a href="/corridor/South%20Africa/Mozambique">Mozambique</a></li>
+                                <li><a href="/corridor/South%20Africa/Swaziland"><img class="countryicon countryicon-iconset-shiny countryicon-code-sz" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/sz.png" width="16" height="11" alt="SZ" title="Swaziland" /></a> <a href="/corridor/South%20Africa/Swaziland">Swaziland</a></li>
+                                <li><a href="/corridor/South%20Africa/Zambia"><img class="countryicon countryicon-iconset-shiny countryicon-code-zm" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/zm.png" width="16" height="11" alt="ZM" title="Zambia" /></a> <a href="/corridor/South%20Africa/Zambia">Zambia</a></li>
+                                <li><a href="/corridor/South%20Africa/Zimbabwe"><img class="countryicon countryicon-iconset-shiny countryicon-code-zw" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/zw.png" width="16" height="11" alt="ZW" title="Zimbabwe" /></a> <a href="/corridor/South%20Africa/Zimbabwe">Zimbabwe</a></li>
+                            </ul>
+                        </div>
+                    </ion-card>
+                    <ion-card>
+                        <div class="corridor-original-countries">
+                            <ul>
+                                <span class="country-caption">Spain</span>
+                                <li><a href="/corridor/Spain/Morocco"><img class="countryicon countryicon-iconset-shiny countryicon-code-ma" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/ma.png" width="16" height="11" alt="MA" title="Morocco" /></a> <a href="/corridor/Spain/Morocco">Morocco</a></li>
+                            </ul>
+                        </div>
+                    </ion-card>
+                    <ion-card>
+                        <div class="corridor-original-countries">
+                            <ul>
+                                <span class="country-caption">Tanzania</span>
+                                <li><a href="/corridor/Tanzania/Kenya"><img class="countryicon countryicon-iconset-shiny countryicon-code-ke" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/ke.png" width="16" height="11" alt="KE" title="Kenya" /></a> <a href="/corridor/Tanzania/Kenya">Kenya</a></li>
+                                <li><a href="/corridor/Tanzania/Rwanda"><img class="countryicon countryicon-iconset-shiny countryicon-code-rw" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/rw.png" width="16" height="11" alt="RW" title="Rwanda" /></a> <a href="/corridor/Tanzania/Rwanda">Rwanda</a></li>
+                                <li><a href="/corridor/Tanzania/Uganda"><img class="countryicon countryicon-iconset-shiny countryicon-code-ug" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/ug.png" width="16" height="11" alt="UG" title="Uganda" /></a> <a href="/corridor/Tanzania/Uganda">Uganda</a></li>
+                            </ul>
+                        </div>
+                    </ion-card>
+                    <ion-card>
+                        <div class="corridor-original-countries">
+                            <ul>
+                                <span class="country-caption">United Arab Emirates</span>
+                                <li><a href="/corridor/United%20Arab%20Emirates/Egypt"><img class="countryicon countryicon-iconset-shiny countryicon-code-eg" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/eg.png" width="16" height="11" alt="EG" title="Egypt" /></a> <a href="/corridor/United%20Arab%20Emirates/Egypt">Egypt</a></li>
+                            </ul>
+                        </div>
+                    </ion-card>
+                    <ion-card>
+
+                        <div class="corridor-original-countries">
+                            <ul>
+                                <span class="country-caption">United Kingdom</span>
+                                <li><a href="/corridor/United%20Kingdom/Ghana"><img class="countryicon countryicon-iconset-shiny countryicon-code-gh" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/gh.png" width="16" height="11" alt="GH" title="Ghana" /></a> <a href="/corridor/United%20Kingdom/Ghana">Ghana</a></li>
+                                <li><a href="/corridor/United%20Kingdom/Kenya"><img class="countryicon countryicon-iconset-shiny countryicon-code-ke" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/ke.png" width="16" height="11" alt="KE" title="Kenya" /></a> <a href="/corridor/United%20Kingdom/Kenya">Kenya</a></li>
+                                <li><a href="/corridor/United%20Kingdom/Nigeria"><img class="countryicon countryicon-iconset-shiny countryicon-code-ng" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/ng.png" width="16" height="11" alt="NG" title="Nigeria" /></a> <a href="/corridor/United%20Kingdom/Nigeria">Nigeria</a></li>
+                                <li><a href="/corridor/United%20Kingdom/Sierra%20Leone"><img class="countryicon countryicon-iconset-shiny countryicon-code-sl" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/sl.png" width="16" height="11" alt="SL" title="Sierra Leone" /></a> <a href="/corridor/United%20Kingdom/Sierra%20Leone">Sierra Leone</a></li>
+                                <li><a href="/corridor/United%20Kingdom/Somalia"><img class="countryicon countryicon-iconset-shiny countryicon-code-so" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/so.png" width="16" height="11" alt="SO" title="Somalia" /></a> <a href="/corridor/United%20Kingdom/Somalia">Somalia</a></li>
+                                <li><a href="/corridor/United%20Kingdom/South%20Africa"><img class="countryicon countryicon-iconset-shiny countryicon-code-za" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/za.png" width="16" height="11" alt="ZA" title="South Africa" /></a> <a href="/corridor/United%20Kingdom/South%20Africa">South Africa</a></li>
+                                <li><a href="/corridor/United%20Kingdom/Tanzania"><img class="countryicon countryicon-iconset-shiny countryicon-code-tz" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/tz.png" width="16" height="11" alt="TZ" title="Tanzania" /></a> <a href="/corridor/United%20Kingdom/Tanzania">Tanzania</a></li>
+                                <li><a href="/corridor/United%20Kingdom/Uganda"><img class="countryicon countryicon-iconset-shiny countryicon-code-ug" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/ug.png" width="16" height="11" alt="UG" title="Uganda" /></a> <a href="/corridor/United%20Kingdom/Uganda">Uganda</a></li>
+                                <li><a href="/corridor/United%20Kingdom/Zimbabwe"><img class="countryicon countryicon-iconset-shiny countryicon-code-zw" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/zw.png" width="16" height="11" alt="ZW" title="Zimbabwe" /></a> <a href="/corridor/United%20Kingdom/Zimbabwe">Zimbabwe</a></li>
+                            </ul>
+                        </div>
+                    </ion-card>
+                    <ion-card>
+                        <div class="corridor-original-countries">
+                            <ul>
+                                <span class="country-caption">United States</span>
+                                <li><a href="/corridor/United%20States/Cape%20Verde"><img class="countryicon countryicon-iconset-shiny countryicon-code-cv" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/cv.png" width="16" height="11" alt="CV" title="Cape Verde" /></a> <a href="/corridor/United%20States/Cape%20Verde">Cape Verde</a></li>
+                                <li><a href="/corridor/United%20States/Ethiopia"><img class="countryicon countryicon-iconset-shiny countryicon-code-et" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/et.png" width="16" height="11" alt="ET" title="Ethiopia" /></a> <a href="/corridor/United%20States/Ethiopia">Ethiopia</a></li>
+                                <li><a href="/corridor/United%20States/Ghana"><img class="countryicon countryicon-iconset-shiny countryicon-code-gh" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/gh.png" width="16" height="11" alt="GH" title="Ghana" /></a> <a href="/corridor/United%20States/Ghana">Ghana</a></li>
+                                <li><a href="/corridor/United%20States/Kenya"><img class="countryicon countryicon-iconset-shiny countryicon-code-ke" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/ke.png" width="16" height="11" alt="KE" title="Kenya" /></a> <a href="/corridor/United%20States/Kenya">Kenya</a></li>
+                                <li><a href="/corridor/United%20States/Liberia"><img class="countryicon countryicon-iconset-shiny countryicon-code-lr" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/lr.png" width="16" height="11" alt="LR" title="Liberia" /></a> <a href="/corridor/United%20States/Liberia">Liberia</a></li>
+                                <li><a href="/corridor/United%20States/Nigeria"><img class="countryicon countryicon-iconset-shiny countryicon-code-ng" src="http://sendmoneyafrica-auair.org/sites/all/modules/contrib/countryicons/iconsets/shiny/ng.png" width="16" height="11" alt="NG" title="Nigeria" /></a> <a href="/corridor/United%20States/Nigeria">Nigeria</a></li>
+                            </ul>
+                        </div>
+                        
+                    </ion-card>
+                    -->
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+</ion-content>

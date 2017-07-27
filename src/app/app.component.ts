@@ -3,8 +3,13 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+
+import { AboutsmaPage } from '../pages/aboutsma/aboutsma';
+import { CorridorsPage } from '../pages/corridors/corridors';
+import { MethodologyPage } from '../pages/methodology/methodology';
+import { SettingsPage } from '../pages/settings/settings';
+import { SharePage } from '../pages/share/share';
+import { TransferratesPage } from '../pages/transferrates/transferrates';
 
 @Component({
   templateUrl: 'app.html'
@@ -12,7 +17,7 @@ import { ListPage } from '../pages/list/list';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+    rootPage: any = TransferratesPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -21,8 +26,14 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
+      
+      { title: 'Transfer Rates', component: TransferratesPage },        
+      { title: 'Corridors', component: CorridorsPage },        
+      { title: 'Methodology', component: MethodologyPage },
+      { title: 'About SMA', component: AboutsmaPage },
+      { title: 'Settings', component: SettingsPage },
+      { title: 'Share', component: SharePage },
+        
     ];
 
   }

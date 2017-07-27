@@ -1,0 +1,111 @@
+page-corridors {
+    .pane-sms-corridor-corridor-countries {
+        border: 1px solid #cccccc;
+        float: left;
+        width: 93%;
+        padding: 20px;
+        border-radius: 20px;
+        -moz-border-radius: 20px;
+        -webkit-border-radius: 20px;
+        margin-top: 20px;
+    }
+    
+    div {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        font: inherit;
+    }
+
+
+    #country-corridors-refresh {
+        float: left;
+    }
+    
+    #country-corridors-refresh li {
+        background: #ffffff;
+        border: 1px solid #dbdbdb;
+        padding: 5px;
+        margin: 5px 0;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+    }
+
+    
+    .corridor-original-countries {
+        position: relative;
+        float: left;
+        width: 230px;
+        height: 250px;
+        background: #f1f1f1;
+        padding: 20px 10px;
+        margin: 20px 10px 5px;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+    }
+    
+    .country-caption {
+        position: absolute;
+        top: -10px;
+        padding: 5px 15px;
+        background: #777777;
+        color: #ffffff;
+        font-weight: bold;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+    }
+    
+    a:link, a:visited, a {
+        color: #65aa3d;
+    }
+    a:link, a:visited {
+        color: #0062A0;
+    }
+    a:link, a:visited {
+        color: #0062A0;
+        text-decoration: underline;
+    }
+    a, p, ul, ol, li, img, span, strong, em {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        font: inherit;
+    }
+    
+    #country-corridors-refresh img {
+        vertical-align: middle;
+        margin: 0 5px 0 0;
+    }
+    
+    img {
+        vertical-align: bottom;
+        width: 10%;
+        float: left;
+    }
+
+    .pane-sms-corridor-corridor-countries li {
+        list-style: none;
+    }
+    
+    img.countryicon{
+        vertical-align:middle;margin:0 5px 0 0;
+    }
+
+    ol, ul {
+        list-style: none;
+    }
+
+
+
+
+     
+}
