@@ -1,39 +1,44 @@
 import { Component, OnInit } from '@angular/core';
-import dumbo from "../../data/dummydata"
+import dummy from "../../data/dummydata"
+import { ModalController } from "ionic-angular";
+import { HomePage } from "../home/home";
 
 @Component({
   selector: 'page-transferrates',
-  templateUrl: 'transferrates.html',
+  templateUrl: 'transferrates.html'
 })
 
 export class TransferratesPage implements OnInit{
 
 dummyData: any
 
-
-
 ngOnInit(){
-this.dummyData = dumbo
+this.dummyData = dummy
 }
     
 
 
-constructor() {}
-
-    onSelect(dummy){    
-        var receivingoptions = "";
+constructor(private modalCtrl: ModalController) {}
+     onSelect(dummy){    
+        var res;
         
+        for(var i=0; i<dummy.to.length; i++){        
 
-        for(var i=0; i<dummy.to.length; i++){
-            receivingoptions += "<ion-option>"+dummy.to[i].name+"</ion-option>"
-            console.log(dummy.to[i].name)
-            
-        }    
-        //alert(receivingoptions)
-        //document.getElementById("edit-field-destination-iso2").innerHTML = receivingoptions;    
-    }   
-    
-    
+        //console.log(dummy.to[i].name)
+
+        res = dummy.to[i].name
+
+        //console.log(res)        
+
+        }
+        
+        console.log(dummy)
+        
+        const modal = this.modalCtrl.create(HomePage, dummy)
+        modal.present()
+     }
+     
+     
 }
 
 

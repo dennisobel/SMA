@@ -9,23 +9,11 @@ import { ViewController, NavParams } from 'ionic-angular';
 export class RatesPage {
 
 //dummyData: any
-
-      name: string;
-    //amount: string;
-      //firm: string;
-//    product_availability: string;
-//    fee: string;
-//    ExchangeRateMargin: string;
-//    TotalCostPercent: string;
-//    TotalCostEur: string;
-//    AmountReceived: string; 
-      flag: string;
-    
-
+name: string;
+flag: string;
 
 constructor(private viewCtrl: ViewController, public navParams: NavParams) {
 }
-
 
 ionViewDidLoad() {
     this.name = this.navParams.get("name")

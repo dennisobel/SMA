@@ -79,7 +79,7 @@
                                                 <ion-option 
                                                 *ngFor="let dummy of dummyData"
                                                 okText="Okay" cancelText="Dismiss"
-                                                (ionSelect)="onSelect(dummy)"
+                                                (ionSelect)="onSelect(dummy)"                                                
                                                 >{{dummy.from}}
                                                 </ion-option>                                               
                                             </ion-select>
@@ -90,36 +90,27 @@
                                        <!--Receiving Country-->
                                         <div id="field_destination_iso2-refresh">
                                         <div class="form-item form-type-select form-item-field-destination-iso2 form-disabled">
-                                            <ion-item>
+                                            
+                                            
+                                            <!--<ion-item >
                                             <ion-label>Receiving Country</ion-label>
-                                            <ion-select 
+                                           
+                                            <!--<ion-select 
                                             class="corridor_search_destination form-select"                                             
-                                            id="edit-field-destination-iso2" 
-                                            name="field_destination_iso2" [innerHTML]="receivingoptions">
-                                                
+                                             
+                                            name="field_destination_iso2" id="destination">
                                             
-                                               
                                                 
-                                            
                                             </ion-select>
-                                            </ion-item>
-                                            </div>
+                                            
+                                            
+                                            </ion-item>-->
+                                            
+                                            
+                                            
                                         </div>
-                                
-                                       
-                                       <div class="confirm-add-dialog">
-
-                                       </div>  
-                                                                             
-                                         <button ion-button small color="tertiary" round>
-                                             <ion-icon name="eye">  
-                                                 Show
-                                             </ion-icon> 
-                                         </button>                                     
-                                     
-                                     
-                                    
-                                    <ion-input type="hidden" name="form_build_id" value="form-oAYlHaTRJkHVm-gk8g6aKoUMvoYjXqPN3mctLIiPWHI" ></ion-input>
+                                        </div>
+                                 <ion-input type="hidden" name="form_build_id" value="form-oAYlHaTRJkHVm-gk8g6aKoUMvoYjXqPN3mctLIiPWHI" ></ion-input>
                                    
                                     
                                     <ion-input type="hidden" name="form_id" value="sms_corridor_search_form" ></ion-input>

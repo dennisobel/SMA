@@ -8,7 +8,7 @@ import { AboutsmaPage } from '../pages/aboutsma/aboutsma';
 import { CorridorsPage } from '../pages/corridors/corridors';
 import { MethodologyPage } from '../pages/methodology/methodology';
 import { SettingsPage } from '../pages/settings/settings';
-import { SharePage } from '../pages/share/share';
+
 import { TransferratesPage } from '../pages/transferrates/transferrates';
 
 @Component({
@@ -31,8 +31,7 @@ export class MyApp {
       { title: 'Corridors', component: CorridorsPage },        
       { title: 'Methodology', component: MethodologyPage },
       { title: 'About SMA', component: AboutsmaPage },
-      { title: 'Settings', component: SettingsPage },
-      { title: 'Share', component: SharePage },
+      { title: 'Settings', component: SettingsPage }
         
     ];
 

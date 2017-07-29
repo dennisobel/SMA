@@ -4,7 +4,7 @@
       <button ion-button menuToggle>
           <ion-icon name="menu"></ion-icon>
       </button>
-    <ion-title>RATES</ion-title>
+      <ion-title>To: {{name}}</ion-title>
       <div class="content clearfix">
           <img alt="" src="http://sendmoneyafrica-auair.org/sites/all/themes/sms_plain/images/African-Union-footer-logo.png">
       </div>
@@ -13,21 +13,29 @@
 
 
 
-<ion-content padding text-center>
-    <ion-card padding class="no-scroll">
-        <ion-card-header>
-           <ion-item>
-               <p> {{name}}</p>
-               <ion-thumbnail>
-                   <img src={{flag}} alt="">
-               </ion-thumbnail>               
-           </ion-item>          
-        </ion-card-header>
-            
-        <ion-card-content>
-            
-        </ion-card-content>
-       
+<ion-content padding class="card-backgound-page" align="center">  
+    
+    <ion-card>
+        <img src={{flag}} alt={{name}}>
     </ion-card>
-    <button ion-button small outline color="secondary" (click)="onClose()">Close</button>
+    
+    
+    
+    <ion-fab left bottom>
+        <button ion-fab color="dark"><ion-icon name="md-menu"></ion-icon></button>
+        <ion-fab-list side="top">
+            <button ion-fab color="secondary" (click)="onClose()"><ion-icon name="md-close-circle"></ion-icon></button> 
+        </ion-fab-list>
+    </ion-fab>
+    <ion-fab right bottom>
+        <button ion-fab color="tertiary"><ion-icon name="md-share"></ion-icon></button>
+        <ion-fab-list side="top">
+            <button ion-fab color="light"><ion-icon name="logo-googleplus"></ion-icon></button>
+            <button ion-fab color="dark"><ion-icon name="logo-twitter"></ion-icon></button>
+        </ion-fab-list>
+        <ion-fab-list side="left">
+            <button ion-fab color="primary"><ion-icon name="logo-vimeo"></ion-icon></button>
+            <button ion-fab color="secondary"><ion-icon name="logo-facebook"></ion-icon></button>
+        </ion-fab-list>        
+    </ion-fab>
 </ion-content>
