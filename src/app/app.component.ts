@@ -2,13 +2,10 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
-
 import { AboutsmaPage } from '../pages/aboutsma/aboutsma';
 import { CorridorsPage } from '../pages/corridors/corridors';
 import { MethodologyPage } from '../pages/methodology/methodology';
 import { SettingsPage } from '../pages/settings/settings';
-
 import { TransferratesPage } from '../pages/transferrates/transferrates';
 
 @Component({

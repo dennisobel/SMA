@@ -15,8 +15,7 @@ import { SharePage } from '../pages/share/share';
 import { TransferratesPage } from '../pages/transferrates/transferrates';
 import { ChooseamountPage } from "../pages/chooseamount/chooseamount"
 import { ChoosefirmPage } from "../pages/choosefirm/choosefirm"
-
-
+import { TocountryPage } from "../pages/tocountry/tocountry"
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -35,7 +34,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
       SharePage,
       TransferratesPage,
       ChooseamountPage,
-      ChoosefirmPage
+      ChoosefirmPage,
+      TocountryPage
   ],
   imports: [
     BrowserModule,
@@ -55,7 +55,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
       SharePage,
       TransferratesPage,
       ChooseamountPage,
-      ChoosefirmPage
+      ChoosefirmPage,
+      TocountryPage
   ],
   providers: [
     StatusBar,

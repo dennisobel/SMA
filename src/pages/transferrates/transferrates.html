@@ -3,7 +3,7 @@
       <button ion-button menuToggle>
           <ion-icon name="menu"></ion-icon>
       </button>
-    <ion-title>transferrates</ion-title>
+    <ion-title>Transferrates</ion-title>
       <div class="content clearfix">
           <img alt="" src="http://sendmoneyafrica-auair.org/sites/all/themes/sms_plain/images/African-Union-footer-logo.png">
       </div>
@@ -14,28 +14,79 @@
     
         
             
-<ion-content padding class=" pane-sms-corridor-block">  
-                    <div class="">
-                    <div class="">
-                    <div class="">
+<ion-content padding  >  
+    <!-- class=" pane-sms-corridor-block" -->
+                    
                     <div class="pane-content">
                     
+                            
                             <div id="corridor_search_refresh">
-                                <h2 class="pane-title">Find and Compare Prices</h2>
+                                <h2 color="tertiary" >Find and Compare Rates...</h2>
+                                
+                                <!--Option B PAGE-->
+                                <!--<div *ngFor="let dummy of dummyData" >
+                                    <ion-card (click)="onClick(dummy)" ion-button>
+                                        <ion-list>
+                                            <ion-item>
+                                                <ion-avatar item-start>
+                                                    <img src={{dummy.flag}} >
+                                                </ion-avatar>
+                                                <p>{{dummy.from}}</p>
+                                            </ion-item>
+                                        </ion-list>                                   
+                                    </ion-card>
+                                </div>-->
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
                                 <form 
+                                   (submit) ="doSubmit($event)"
+                                    
                                    class="sms-corridor-search-form" 
-                                   autocomplete="off" 
-                                   action="/"
-                                   method="post" 
+                                   autocomplete="off"                                    
                                    id="sms-corridor-search-form" 
                                    accept-charset="UTF-8"> 
                                                                              
-                                        <ion-label>Transfer Money</ion-label>                                        
+                                    <ion-label color="tertiary">Transfer Money</ion-label>                                        
                                         
                                         <div id="edit-transfer" class="form-radios">
                                         <div class="form-item form-type-radio form-item-transfer">
-                                            <ion-item style="background-color:5FBB43;">
+                                            <!--<ion-item style="background-color:5FBB43;">-->
+                                            <ion-list radio-group >
+                                                <ion-row>
+                                                    <ion-col>
+                                                        <ion-item>
+                                                            <ion-label color="tertiary"
+                                                                       class="option" 
+                                                                       for="edit-transfer-from">From:</ion-label>
+                                                            <ion-radio id="edit-transfer-from" 
+                                                                       name="transfer" 
+                                                                       value="from" 
+                                                                       checked="checked" 
+                                                                       class="form-radio"></ion-radio>
+                                                        </ion-item>   
+                                                    </ion-col>
+                                                    <ion-col>
+                                                        <ion-item>
+                                                            <ion-label color="tertiary"
+                                                                       class="option" 
+                                                                       for="edit-transfer-to">To:</ion-label>
+                                                            <ion-radio id="edit-transfer-to" 
+                                                                       name="transfer" 
+                                                                       value="to" 
+                                                                       class="form-radio"></ion-radio>
+                                                        </ion-item>
+                                                    </ion-col>
+                                                </ion-row>
+                                            </ion-list>
+                                            <!--
                                             <ion-label 
+                                               color="tertiary"
                                                class="option" 
                                                for="edit-transfer-from">from </ion-label>
                                             <ion-radio 
@@ -45,13 +96,16 @@
                                                value="from" 
                                                checked="checked" 
                                                class="form-radio" >                                 
-                                            </ion-radio>                                            
+                                            </ion-radio>   
+                                            -->  
+                                            <!--                                       
                                             </ion-item>
                                         </div>
 
                                         <div class="form-item form-type-radio form-item-transfer">
                                             <ion-item>
                                             <ion-label 
+                                               color="tertiary"
                                                class="option" 
                                                for="edit-transfer-to">to </ion-label>
                                             <ion-radio 
@@ -59,19 +113,19 @@
                                                id="edit-transfer-to" 
                                                name="transfer" 
                                                value="to" 
-                                               checked="checked" 
                                                class="form-radio" >                                 
-                                            </ion-radio>   
-                                            </ion-item>
+                                            </ion-radio> -->  
+                                           <!-- </ion-item>-->
                                         </div>
                                         </div>
                                         
 
                                         <!--Sending Country-->
+                                        
                                         <div id="field_source_iso2-refresh">
                                         <div class="form-item form-type-select form-item-field-source-iso2">
                                             <ion-item>
-                                            <ion-label>Sending Country</ion-label>
+                                                <ion-label color="tertiary">Sending Country</ion-label>
                                             <ion-select 
                                                class="corridor_search_source form-select" 
                                                id="edit-field-source-iso2" 
@@ -88,27 +142,29 @@
                                         </div>    
                                        
                                        <!--Receiving Country-->
+                                       
                                         <div id="field_destination_iso2-refresh">
                                         <div class="form-item form-type-select form-item-field-destination-iso2 form-disabled">
+                                            <ion-item>
+                                                <ion-label color="tertiary">Receiving Country</ion-label>
+                                                <ion-select 
+                                                class="corridor_search_destination form-select"  
+                                                name="field_destination_iso2" id="destination"
+                                                [(ngModel)]="rs">
+                                                    <ion-option *ngFor="let r of rs[0]">{{r}}</ion-option>
+                                                </ion-select>
+                                            </ion-item>
                                             
-                                            
-                                            <!--<ion-item >
-                                            <ion-label>Receiving Country</ion-label>
-                                           
-                                            <!--<ion-select 
-                                            class="corridor_search_destination form-select"                                             
-                                             
-                                            name="field_destination_iso2" id="destination">
-                                            
-                                                
-                                            </ion-select>
-                                            
-                                            
-                                            </ion-item>-->
-                                            
-                                            
+                                         
                                             
                                         </div>
+                                        </div>
+                                        
+                                        <div>
+                                            <button ion-button color="tertiary" round outline>
+                                                <ion-icon name="eyes"></ion-icon>
+                                                Show
+                                            </button>
                                         </div>
                                  <ion-input type="hidden" name="form_build_id" value="form-oAYlHaTRJkHVm-gk8g6aKoUMvoYjXqPN3mctLIiPWHI" ></ion-input>
                                    
@@ -116,12 +172,11 @@
                                     <ion-input type="hidden" name="form_id" value="sms_corridor_search_form" ></ion-input>
                                      
                                 </form>
+                                
                             </div>
                   
                     </div>
-                    </div> 
-                    </div>
-                    </div>
+                    
                 </ion-content>
             
         
