@@ -5,55 +5,58 @@
           <ion-icon name="menu"></ion-icon>
       </button>
       <ion-title>To: {{name}}</ion-title>
-      <div class="content clearfix">
-          <img alt="" src="http://sendmoneyafrica-auair.org/sites/all/themes/sms_plain/images/African-Union-footer-logo.png">
-      </div>
   </ion-navbar>
 </ion-header>
 
 
 
-<ion-content padding class="card-backgound-page" align="center">  
+<ion-content padding class="card-backgound-page grid-basic-page" align="center">  
     
     <ion-card>
         <img src={{flag}} alt={{name}}>
+        <ion-card-content>
+            <ion-card-title >
+                <ion-row>
+                    <ion-col col-6 *ngFor="let amt of amount">
+                        <ion-buttons>
+                            <button ion-button outline block color="tertiary" (click)="onClick(amt)">
+                                <ion-icon name="card"></ion-icon>{{amt.amount}}
+                            </button>
+                        </ion-buttons>
+                    </ion-col>
+                </ion-row> 
+            </ion-card-title>
+        </ion-card-content>
     </ion-card>
     
     <ion-card>
-        <ion-list>
-            <ion-row>
-                <ion-col>
-                    <button>A</button>
-                </ion-col>
-                <ion-col>
-                    <button>B</button>
-                </ion-col>
-            </ion-row>
-            <ion-row>
-                <ion-card>
-                    CNTNT
-                </ion-card>
-            </ion-row>
-        </ion-list>
+        <ion-card *ngFor="let record of record" (click)="moreDetails(record)">        
+            <ion-card-content >
+                <ion-list  color="tertiary" block outline >
+                    <p>Firm: {{record.firm}}</p>                
+                </ion-list> 
+                <ion-list>
+                    <p>Amount Received: {{record.AmountReceived}}</p>
+                </ion-list>   
+            </ion-card-content>
+        </ion-card>
     </ion-card>
-    
-    
     
     <ion-fab left bottom>
         <button ion-fab color="dark"><ion-icon name="md-menu"></ion-icon></button>
         <ion-fab-list side="top">
-            <button ion-fab color="secondary" (click)="onClose()"><ion-icon name="md-close-circle"></ion-icon></button> 
+            <button ion-fab color="tertiary" (click)="onClose()"><ion-icon name="md-close-circle"></ion-icon></button> 
         </ion-fab-list>
     </ion-fab>
     <ion-fab right bottom>
         <button ion-fab color="tertiary"><ion-icon name="md-share"></ion-icon></button>
         <ion-fab-list side="top">
-            <button ion-fab color="light"><ion-icon name="logo-googleplus"></ion-icon></button>
-            <button ion-fab color="dark"><ion-icon name="logo-twitter"></ion-icon></button>
+            <button ion-fab color="tertiary"><ion-icon name="logo-googleplus"></ion-icon></button>
+            <button ion-fab color="tertiary"><ion-icon name="logo-twitter"></ion-icon></button>
         </ion-fab-list>
         <ion-fab-list side="left">
-            <button ion-fab color="primary"><ion-icon name="logo-vimeo"></ion-icon></button>
-            <button ion-fab color="secondary"><ion-icon name="logo-facebook"></ion-icon></button>
+            <button ion-fab color="tertiary"><ion-icon name="logo-vimeo"></ion-icon></button>
+            <button ion-fab color="tertiary"><ion-icon name="logo-facebook"></ion-icon></button>
         </ion-fab-list>        
     </ion-fab>
 </ion-content>

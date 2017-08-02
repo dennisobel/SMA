@@ -4,9 +4,7 @@
           <ion-icon name="menu"></ion-icon>
       </button>
     <ion-title>Transferrates</ion-title>
-      <div class="content clearfix">
-          <img alt="" src="http://sendmoneyafrica-auair.org/sites/all/themes/sms_plain/images/African-Union-footer-logo.png">
-      </div>
+      
   </ion-navbar>   
 </ion-header>
 
@@ -45,8 +43,6 @@
                                 
                                 
                                 <form 
-                                   (submit) ="doSubmit($event)"
-                                    
                                    class="sms-corridor-search-form" 
                                    autocomplete="off"                                    
                                    id="sms-corridor-search-form" 
@@ -149,9 +145,9 @@
                                                 <ion-label color="tertiary">Receiving Country</ion-label>
                                                 <ion-select 
                                                 class="corridor_search_destination form-select"  
-                                                name="field_destination_iso2" id="destination"
-                                                [(ngModel)]="rs">
-                                                    <ion-option *ngFor="let r of rs[0]">{{r}}</ion-option>
+                                                name="field_destination_iso2" id="destination"                                                            
+                                                >
+                                                    <ion-option *ngFor="let r of receiving[0]" (ionSelect)="onChoose(r)">{{r}}</ion-option>
                                                 </ion-select>
                                             </ion-item>
                                             
@@ -161,7 +157,7 @@
                                         </div>
                                         
                                         <div>
-                                            <button ion-button color="tertiary" round outline>
+                                            <button ion-button color="tertiary" block outline (click)="onClick(choice)">
                                                 <ion-icon name="eyes"></ion-icon>
                                                 Show
                                             </button>
@@ -176,6 +172,19 @@
                             </div>
                   
                     </div>
+    
+                    
+                    <ion-fab right bottom>
+                        <button ion-fab color="tertiary"><ion-icon name="md-share"></ion-icon></button>
+                        <ion-fab-list side="top">
+                            <button ion-fab color="tertiary"><ion-icon name="logo-googleplus"></ion-icon></button>
+                            <button ion-fab color="tertiary"><ion-icon name="logo-twitter"></ion-icon></button>
+                        </ion-fab-list>
+                        <ion-fab-list side="left">
+                            <button ion-fab color="tertiary"><ion-icon name="logo-vimeo"></ion-icon></button>
+                            <button ion-fab color="tertiary"><ion-icon name="logo-facebook"></ion-icon></button>
+                        </ion-fab-list>        
+                    </ion-fab>
                     
                 </ion-content>
             

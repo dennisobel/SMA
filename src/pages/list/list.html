@@ -1,23 +1,58 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>List</ion-title>
-  </ion-navbar>
+
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>STUFF</ion-title>
+    </ion-navbar>
 </ion-header>
 
-<ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-left></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-right>
-        {{item.note}}
-      </div>
-    </button>
-  </ion-list>
-  <div *ngIf="selectedItem" padding>
-    You navigated here from <b>{{selectedItem.title}}</b>
-  </div>
+<ion-content padding class="card-backgound-page grid-basic-page" align="center">  
+
+    <ion-card>
+        <ion-card-header>
+            {{firm}}
+        </ion-card-header>
+        
+        <ion-card-content>
+            <ion-card>
+                <p>Product Availability: {{product_availability}}</p>
+            </ion-card>
+            <ion-card>
+                <p>Fee: {{fee}}</p>
+            </ion-card>
+            <ion-card>
+                <p>Exchange Rate Margin: {{ExchangeRateMargin}}</p>
+            </ion-card>
+            <ion-card>
+                <p>Total Cost Percent (%): {{TotalCostPercent}}</p>
+            </ion-card>
+            <ion-card>
+                <p>Total Cost (Eur): {{TotalCostEur}}</p>
+            </ion-card>
+            <ion-card>
+                <p>Amount Received: {{AmountReceived}}</p>
+            </ion-card>
+        </ion-card-content>        
+    </ion-card>
+
+
+    <ion-fab left bottom>
+        <button ion-fab color="dark"><ion-icon name="md-menu"></ion-icon></button>
+        <ion-fab-list side="top">
+            <button ion-fab color="tertiary" (click)="onClose()"><ion-icon name="md-close-circle"></ion-icon></button> 
+        </ion-fab-list>
+    </ion-fab>
+    <ion-fab right bottom>
+        <button ion-fab color="tertiary"><ion-icon name="md-share"></ion-icon></button>
+        <ion-fab-list side="top">
+            <button ion-fab color="tertiary"><ion-icon name="logo-googleplus"></ion-icon></button>
+            <button ion-fab color="tertiary"><ion-icon name="logo-twitter"></ion-icon></button>
+        </ion-fab-list>
+        <ion-fab-list side="left">
+            <button ion-fab color="tertiary"><ion-icon name="logo-vimeo"></ion-icon></button>
+            <button ion-fab color="tertiary"><ion-icon name="logo-facebook"></ion-icon></button>
+        </ion-fab-list>        
+    </ion-fab>
 </ion-content>

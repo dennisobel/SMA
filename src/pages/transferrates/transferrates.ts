@@ -4,6 +4,8 @@ import { Component, OnInit } from '@angular/core';
 //import { AlertController, ModalController } from 'ionic-angular'
 //import { RatesPage } from "../rates/rates"
 //import { FormGroup, FormControl } from '@angular/forms'
+import { ModalController } from "ionic-angular";
+import { RatesPage } from "../rates/rates";
 
 import dummy from "../../data/dummydata"
 
@@ -17,26 +19,30 @@ import dummy from "../../data/dummydata"
 
 export class TransferratesPage implements OnInit{
 choice;
-choices;
+
 dummyData: any
-rs : any[] = [];
+receiving : any[] = [];
+choose: any[] = [];
     
 ngOnInit(){
     this.dummyData = dummy    
 }
 
-constructor(/*public alertCtrl: AlertController,public modalCtrl: ModalController*/){
+constructor(public modalCtrl: ModalController){
     /*this.choices = new FormGroup({
     "choice"    : new FormControl({value:"from", disabled: false})
     })*/
 }
     
-doSubmit(event){
-    console.log("submiting form ", this.choices.value);
-    event.preventDefault();
-}
+//doSubmit(event){
+//    console.log("submiting form ", this.choices.value);
+//    event.preventDefault();
+//}
+
+
 /*   
 onClick(dummy){
+alert()
     var res;
     var mod;
     let alert = this.alertCtrl.create()
@@ -69,7 +75,8 @@ onClick(dummy){
     }*/
     
 onSelect(dummy){
-    this.rs.pop()
+    //alert("You have selected")
+    this.receiving.pop()
     var res: any[] = [];
     var mod;
     
@@ -78,18 +85,32 @@ onSelect(dummy){
     for(var i = 0; i < dummy.to.length; i++){
         //res = dummy.to[i].name
         res.push(dummy.to[i].name)
-        mod = dummy.to[i]       
+        mod = dummy.to       
         //console.log(res)
     }
+    //console.log(res);
     
-    this.rs.push(res);
-    //this.rs.push(res)    
-    //console.log(this.rs)
-    console.log(this.rs[0]);
+    this.receiving.push(res)  
+    this.choose = mod
+    //console.log(this.receiving)
+    //console.log(this.choose)
+    
     
 }
     
-
+onChoose(r){ 
+    for(var i = 0; i < this.choose.length; i++){
+        if(this.choose[i].name == r){
+            this.choice = this.choose[i]
+            console.log(this.choice)
+        }
+    }
+}
+    
+onClick(choice){
+    const modal = this.modalCtrl.create(RatesPage, choice)
+    modal.present() 
+}
 }
 
      

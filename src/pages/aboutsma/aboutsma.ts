@@ -1,24 +1,21 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { CorridorsPage } from '../corridors/corridors'
+import { MethodologyPage } from '../methodology/methodology'
 
-/**
- * Generated class for the AboutsmaPage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
-@IonicPage()
 @Component({
   selector: 'page-aboutsma',
   templateUrl: 'aboutsma.html',
 })
-export class AboutsmaPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+export class AboutsmaPage {
+corridorsPage;
+methodologyPage;
+constructor(){
+      this.corridorsPage = CorridorsPage
+      this.methodologyPage = MethodologyPage
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AboutsmaPage');
-  }
-
+  } 
 }
