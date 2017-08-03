@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
 //import { FormGroup, FormControl } from '@angular/forms'
 import { ModalController } from "ionic-angular";
 import { RatesPage } from "../rates/rates";
+import { HelpPage } from "../help/help";
 
 import dummy from "../../data/dummydata"
 
@@ -110,6 +111,11 @@ onChoose(r){
 onClick(choice){
     const modal = this.modalCtrl.create(RatesPage, choice)
     modal.present() 
+}
+    
+onHelp(){
+    const modal = this.modalCtrl.create(HelpPage)
+    modal.present()
 }
 }
 
