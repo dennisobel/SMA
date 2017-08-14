@@ -1,45 +1,46 @@
 <ion-header>
-
     <ion-navbar>
         <button ion-button menuToggle>
             <ion-icon name="menu"></ion-icon>
         </button>
-        <ion-title>STUFF</ion-title>
+        <ion-title>{{firm}}</ion-title>
     </ion-navbar>
 </ion-header>
 
 <ion-content padding class="card-backgound-page grid-basic-page" align="center">  
-
-    <ion-card>
-        <ion-card-header>
-            {{firm}}
-        </ion-card-header>
-        
+    <ion-card no-padding>
         <ion-card-content>
-            <ion-card>
-                <p>Product Availability: {{product_availability}}</p>
-            </ion-card>
-            <ion-card>
-                <p>Fee: {{fee}}</p>
-            </ion-card>
-            <ion-card>
-                <p>Exchange Rate Margin: {{ExchangeRateMargin}}</p>
-            </ion-card>
-            <ion-card>
-                <p>Total Cost Percent (%): {{TotalCostPercent}}</p>
-            </ion-card>
-            <ion-card>
-                <p>Total Cost (Eur): {{TotalCostEur}}</p>
-            </ion-card>
-            <ion-card>
-                <p>Amount Received: {{AmountReceived}}</p>
-            </ion-card>
+           <ion-list>
+               <ion-item>
+                   <p><strong>Product Availability:</strong></p>
+                   <p>{{product_availability}}</p>
+               </ion-item>
+               <ion-item>
+                   <p><strong>Fee:</strong></p>
+                   <p>{{fee}}</p>
+               </ion-item>
+               <ion-item>
+                   <p><strong>Exchange Rate Margin:</strong></p>
+                   <p>{{ExchangeRateMargin}}</p>
+               </ion-item>
+               <ion-item>
+                   <p><strong>Total Cost Percent (%):</strong></p>
+                   <p>{{TotalCostPercent}}</p>
+               </ion-item>
+               <ion-item>
+                   <p><strong>Total Cost (Eur):</strong></p>
+                   <p>{{TotalCostEur}}</p>
+               </ion-item>
+               <ion-item>
+                   <p><strong>Amount Received:</strong></p>
+                   <p>{{AmountReceived}}</p>
+               </ion-item>
+           </ion-list>
         </ion-card-content>        
     </ion-card>
-
-
+    
     <ion-fab left bottom>
-        <button ion-fab color="dark" (click)="onClose()"><ion-icon name="close"></ion-icon></button>       
+        <button ion-fab color="dark" (click)="onClose()"><ion-icon name="arrow-back"></ion-icon></button>       
     </ion-fab>
     <ion-fab right bottom>
         <button ion-fab color="tertiary"><ion-icon name="md-share"></ion-icon></button>

@@ -4,23 +4,22 @@
       <button ion-button menuToggle>
           <ion-icon name="menu"></ion-icon>
       </button>
-      <ion-title>To: {{name}}</ion-title>
+      <ion-title>To: {{name}} From: {{originctry}}</ion-title>
   </ion-navbar>
 </ion-header>
 
 
 
 <ion-content padding class="card-backgound-page grid-basic-page" align="center">  
-    
     <ion-card>
-        <img src={{flag}} alt={{name}}>
+        <!--<img src={{flag}} alt={{name}}>-->
         <ion-card-content>
             <ion-card-title >
                 <ion-row>
                     <ion-col col-6 *ngFor="let amt of amount">
                         <ion-buttons>
                             <button ion-button outline block color="tertiary" (click)="onClick(amt)">
-                                <ion-icon name="card"></ion-icon>{{amt.amount}}
+                                <ion-icon name="logo-usd"></ion-icon>{{amt.amount}}
                             </button>
                         </ion-buttons>
                     </ion-col>
@@ -29,8 +28,9 @@
         </ion-card-content>
     </ion-card>
     
-    <ion-card>
-        <ion-card *ngFor="let record of record" (click)="moreDetails(record)">        
+    <ion-card *ngIf="amnt"> 
+        <p>{{amnt}}</p>
+        <ion-card *ngFor="let record of record" (click)="moreDetails(record)">    
             <ion-card-content >
                 <ion-list  color="tertiary" block outline >
                     <p>Firm: {{record.firm}}</p>                
@@ -43,7 +43,7 @@
     </ion-card>
     
     <ion-fab left bottom>
-        <button ion-fab color="dark" (click)="onClose()"><ion-icon name="close"></ion-icon></button>       
+        <button ion-fab color="dark" (click)="onClose()"><ion-icon name="arrow-back"></ion-icon></button>       
     </ion-fab>
     <ion-fab right bottom>
         <button ion-fab color="tertiary"><ion-icon name="md-share"></ion-icon></button>
