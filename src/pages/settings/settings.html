@@ -1,7 +1,6 @@
 <ion-header>
-
-  <ion-navbar>
-      <button ion-button menuToggle>
+    <ion-navbar  color="tertiary">
+        <button ion-button menuToggle  color="dark">
           <ion-icon name="menu"></ion-icon>
       </button>
     <ion-title>Settings</ion-title>
@@ -9,17 +8,71 @@
 </ion-header>
 <ion-content padding>
     <ion-card>
-        <ion-list>
-            <ion-item>
-                <ion-label>English/French</ion-label>                
-                    <ion-toggle color="tertiary" value="language" checked="true"></ion-toggle>                
-            </ion-item>
-            <ion-item>
-                <ion-label>Notify Off/On</ion-label>                
-                    <ion-toggle color="tertiary" value="notifications" checked="true"></ion-toggle>                
-            </ion-item>
-        </ion-list>
+      <ion-card-header>
+        Language
+      </ion-card-header>
+      <ion-list radio-group >
+          <ion-row>
+              <ion-col>
+                  <ion-item>
+                      <ion-label color="tertiary"
+                                 class="option" 
+                                 for="edit-transfer-from">English:</ion-label>
+                      <ion-radio id="edit-transfer-from" 
+                                 name="transfer" 
+                                 value="english" 
+                                 checked 
+                                 class="form-radio"></ion-radio>
+                  </ion-item>   
+              </ion-col>
+              <ion-col>
+                  <ion-item>
+                      <ion-label color="tertiary"
+                                 class="option" 
+                                 for="edit-transfer-to">French:</ion-label>
+                      <ion-radio id="edit-transfer-to" 
+                                 name="transfer" 
+                                 value="french" 
+                                 class="form-radio"></ion-radio>
+                  </ion-item>
+              </ion-col>
+          </ion-row>
+      </ion-list>   
     </ion-card>
+    
+    <ion-card>
+      <ion-card-header>
+        Notification
+      </ion-card-header>
+      <ion-list radio-group >
+          <ion-row>
+              <ion-col>
+                  <ion-item>
+                      <ion-label color="tertiary"
+                                 class="option" 
+                                 for="edit-transfer-from">On:</ion-label>
+                      <ion-radio id="edit-transfer-from" 
+                                 name="transfer" 
+                                 value="on" 
+                                 checked
+                                 class="form-radio"></ion-radio>
+                  </ion-item>   
+              </ion-col>
+              <ion-col>
+                  <ion-item>
+                      <ion-label color="tertiary"
+                                 class="option" 
+                                 for="edit-transfer-to">Off:</ion-label>
+                      <ion-radio id="edit-transfer-to" 
+                                 name="transfer" 
+                                 value="off" 
+                                 class="form-radio"></ion-radio>
+                  </ion-item>
+              </ion-col>
+          </ion-row>
+      </ion-list>   
+    </ion-card>
+    
     <ion-fab right bottom>
         <button ion-fab color="tertiary"><ion-icon name="md-share"></ion-icon></button>
         <ion-fab-list side="top">
