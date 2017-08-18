@@ -1,0 +1,55 @@
+<ion-header>    
+    <ion-navbar  color="tertiary">
+      <button ion-button  color="dark" outline clear (click)="onBack()">
+          <ion-icon name="arrow-back"></ion-icon>
+      </button>
+    <ion-title>{{page}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding [ngSwitch]="page">
+  
+    <div *ngSwitchCase="'methodology'" >
+      <page-methodology></page-methodology>
+    </div>  
+  
+
+    <div *ngSwitchCase="'corridors'">
+      <page-corridors></page-corridors>
+    </div>  
+
+
+    <div *ngSwitchCase="'about'">
+      <page-aboutsma></page-aboutsma>
+    </div>  
+  
+  
+  <ion-fab right bottom>
+      <button ion-fab color="tertiary"><ion-icon name="md-share"></ion-icon></button>
+      <ion-fab-list side="top">
+          <button ion-fab color="tertiary"><ion-icon name="logo-googleplus"></ion-icon></button>
+          <button ion-fab color="tertiary"><ion-icon name="logo-twitter"></ion-icon></button>
+      </ion-fab-list>
+      <ion-fab-list side="left">
+          <button ion-fab color="tertiary"><ion-icon name="logo-vimeo"></ion-icon></button>
+          <button ion-fab color="tertiary"><ion-icon name="logo-facebook"></ion-icon></button>
+      </ion-fab-list>        
+  </ion-fab>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-segment color="tertiary" [(ngModel)]="page" *ngIf="page">
+      <ion-segment-button value="methodology">
+        Methodology
+      </ion-segment-button>
+      <ion-segment-button value="corridors">
+        Corridors
+      </ion-segment-button>
+      <ion-segment-button value="about">
+        About Us
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-footer>
+

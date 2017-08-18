@@ -1,5 +1,8 @@
 <ion-header>
     <ion-navbar  color="tertiary">
+      <button ion-button  color="dark" outline clear (click)="onClose()">
+          <ion-icon name="arrow-back"></ion-icon>
+      </button>
         <ion-title>{{firm}}</ion-title>
     </ion-navbar>
 </ion-header>
@@ -36,9 +39,6 @@
         </ion-card-content>        
     </ion-card>
     
-    <ion-fab left bottom>
-        <button ion-fab color="dark" (click)="onClose()"><ion-icon name="arrow-back"></ion-icon></button>       
-    </ion-fab>
     <ion-fab right bottom>
         <button ion-fab color="tertiary"><ion-icon name="md-share"></ion-icon></button>
         <ion-fab-list side="top">

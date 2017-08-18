@@ -6,13 +6,14 @@ import { AboutsmaPage } from "../aboutsma/aboutsma";
 import { TransferratesPage } from "../transferrates/transferrates";
 
 @Component({
-  selector: 'page-methodology',
-  templateUrl: 'methodology.html',
+  selector: 'page-mecorab',
+  templateUrl: 'mecorab.html',
 })
-export class MethodologyPage implements OnInit{
+export class MecorabPage implements OnInit{
     corridorsPage;
     aboutPage;
-    root: any;
+    page: string = "methodology"
+    //root: any;
 
   constructor(public navCtrl: NavController) {
       this.corridorsPage = CorridorsPage;
