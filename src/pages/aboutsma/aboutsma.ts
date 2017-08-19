@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { CorridorsPage } from '../corridors/corridors'
 import { MethodologyPage } from '../methodology/methodology'
 
+import { NavController } from "ionic-angular";
+import { TransferratesPage } from '../transferrates/transferrates'
+
 @Component({
   selector: 'page-aboutsma',
   templateUrl: 'aboutsma.html',
@@ -10,12 +13,18 @@ import { MethodologyPage } from '../methodology/methodology'
 export class AboutsmaPage {
 corridorsPage;
 methodologyPage;
-constructor(){
+aboutsmaPage;
+constructor(public navCtrl:NavController){
       this.corridorsPage = CorridorsPage
       this.methodologyPage = MethodologyPage
+      
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AboutsmaPage');
   } 
+
+    onBack(){
+    this.navCtrl.setRoot(TransferratesPage)
+  }
 }

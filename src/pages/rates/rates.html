@@ -3,13 +3,21 @@
       <button ion-button  color="dark" outline clear (click)="onClose()">
           <ion-icon name="arrow-back"></ion-icon>
       </button>
-      <ion-title>To: {{name}}</ion-title>
+      <ion-title>Result</ion-title>
   </ion-navbar>
+  <ion-toolbar>
+    <ion-title>
+       <ion-label style="font-size: 1.1rem" color="ternary">From: {{originctry}} To: {{name}}</ion-label>
+    </ion-title>
+  </ion-toolbar>
 </ion-header>
 
-<ion-content padding class="card-backgound-page grid-basic-page" align="center">  
+<ion-content padding class="card-backgound-page grid-basic-page" align="center"> 
+
+    <!--
     <ion-card>
-        <!--<img src={{flag}} alt={{name}}>-->
+        <!--<img src={{flag}} alt={{name}}>
+
         <ion-card-content>
             <ion-card-title >
                 <ion-row>
@@ -24,19 +32,33 @@
             </ion-card-title>
         </ion-card-content>
     </ion-card>
+    -->
+
+    <ion-toolbar >
+        <ion-segment color="tertiary" >
+            <ion-segment-button 
+             (click)="onClick(amt)"
+            *ngFor="let amt of amount"
+            value="140">
+                <ion-icon></ion-icon>${{amt.amount}}
+            </ion-segment-button>
+        </ion-segment>
+    </ion-toolbar>
+
+    <ion-toolbar >
+   
+    </ion-toolbar>
     
         
-    <ion-list color="tertiary" block outline *ngIf="amnt">
-      <ion-list-header>
-        <p>${{amnt}}</p>
-     </ion-list-header>
-    
-        <button ion-item *ngFor="let record of record" (click)="moreDetails(record)">
-            <p>{{record.firm}}</p>            
+    <ion-list  color="tertiary" block outline *ngIf="amnt" class="app-font-25">
+        <ion-badge color="tertiary">${{amnt}}</ion-badge>
+     
+        <button ion-item *ngFor="let record of record" (click)="moreDetails(record)">    
+            <p color="tertiary" style="font-size: 1.2rem">{{record.firm}}</p>  
             <ion-row>
-                <ion-col col-6><p>{{record.ExchangeRateMargin}}</p></ion-col>
-                <ion-col col-6><p>{{record.AmountReceived}}</p></ion-col>                
-            </ion-row>
+                <ion-col col-5><ion-badge outline color="tertiary" style="font-size: 1rem">Rate:{{record.ExchangeRateMargin}}</ion-badge></ion-col>
+                <ion-col col-7><ion-badge fill color="tertiary" style="font-size: 1rem">Received:{{record.AmountReceived}}</ion-badge></ion-col>
+            </ion-row>            
         </button>
     </ion-list>
 

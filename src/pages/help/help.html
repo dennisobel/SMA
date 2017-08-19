@@ -1,39 +1,43 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="tertiary">
+        <button ion-button  color="dark" outline clear (click)="onBack()">
+          <ion-icon name="arrow-back"></ion-icon>
+      </button>
     <ion-title>Help</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-    <ion-card>
-        <ion-card>
-            <ion-card-header>
-                Terminologies:
-            </ion-card-header>
-            <ion-card-content>
+<ion-content padding class="masters">
+    <div>
+    <ion-toolbar>
+    <ion-segment color="tertiary">
+      <ion-segment-button value="Methodology" [navPush]="methodologyPage">
+        Methodology
+      </ion-segment-button>
+      <ion-segment-button value="AboutSMA" [navPush]="aboutsmaPage">
+        About Us
+      </ion-segment-button>
+      <ion-segment-button value="AboutSMA" [navPush]="settingsPage">
+        Settings
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+    </div>
 
-            </ion-card-content>
-        </ion-card>
-        <ion-card>
-            <ion-card-header>
-                F.A.Qs
-            </ion-card-header>
-            <ion-card-content>
+    <div>
+    <ion-toolbar>
+    <ion-segment color="tertiary">
+      <ion-segment-button value="terminologies" >
+        Terminologies
+      </ion-segment-button>
+      <ion-segment-button value="faqs" >
+        F.A.Qs
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+    </div>
 
-            </ion-card-content>
-        </ion-card>
-        <ion-card>        
-            <ion-card-content>
-                <ion-buttons>
-                    <button ion-button color="tertiary" outline block [navPush]="methodology">METHODOLOGY</button>
-                    <button ion-button color="tertiary" outline block [navPush]="settings">SETTINGS</button>
-                </ion-buttons>
-            </ion-card-content>
-        </ion-card>
-    </ion-card>  
-    <ion-fab left bottom>
-        <button ion-fab color="dark" (click)="onClose()"><ion-icon name="arrow-back"></ion-icon></button>       
-    </ion-fab>
+
     <ion-fab right bottom>
         <button ion-fab color="tertiary"><ion-icon name="md-share"></ion-icon></button>
         <ion-fab-list side="top">

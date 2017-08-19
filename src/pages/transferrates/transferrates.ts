@@ -1,10 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-//import { PopoverController, NavParams } from 'ionic-angular';
-//import { TocountryPage } from "../tocountry/tocountry"
-//import { AlertController, ModalController } from 'ionic-angular'
-//import { RatesPage } from "../rates/rates"
-//import { FormGroup, FormControl } from '@angular/forms'
-import { ModalController } from "ionic-angular";
+import { ModalController, ToastController } from "ionic-angular";
 import { RatesPage } from "../rates/rates";
 import { HelpPage } from "../help/help";
 
@@ -29,17 +24,10 @@ ngOnInit(){
     this.dummyData = dummy    
 }
 
-constructor(public modalCtrl: ModalController){
-    /*this.choices = new FormGroup({
-    "choice"    : new FormControl({value:"from", disabled: false})
-    })*/
+constructor(public modalCtrl: ModalController, public toastCtrl:ToastController){
+
 }
     
-//doSubmit(event){
-//    console.log("submiting form ", this.choices.value);
-//    event.preventDefault();
-//}
-
 
 /*   
 onClick(dummy){
@@ -76,12 +64,12 @@ alert()
     }*/
     
 onSelect(dummy){
-    //alert("You have selected")
+    
     this.receiving.pop()
     var res: any[] = [];
     var mod;
     
-    //let alert = this.alertCtrl.create()
+    
     
     for(var i = 0; i < dummy.to.length; i++){
         //res = dummy.to[i].name
@@ -109,8 +97,23 @@ onChoose(r){
 }
     
 onClick(choice){
-    const modal = this.modalCtrl.create(RatesPage, choice)
-    modal.present() 
+    console.log(choice)
+if(choice == undefined){
+        const toast = this.toastCtrl.create({
+            message: "Please Check Your From and To Selection!",
+            duration:3000,
+            position: "bottom"
+        });
+
+        toast.onDidDismiss(()=>{
+            console.log("Toast Dismissed")    
+        })
+    
+        toast.present();
+    }else{
+        const modal = this.modalCtrl.create(RatesPage, choice)
+        modal.present()    
+    }
 }
     
 onHelp(){

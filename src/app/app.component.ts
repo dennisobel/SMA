@@ -9,6 +9,7 @@ import { MethodologyPage } from '../pages/methodology/methodology';
 import { SettingsPage } from '../pages/settings/settings';
 import { TransferratesPage } from '../pages/transferrates/transferrates';
 import { MecorabPage } from '../pages/mecorab/mecorab';
+import { HelpPage } from '../pages/help/help';
 
 
 @Component({
@@ -32,15 +33,14 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Methodology', component: MecorabPage },   
-      { title: 'Transfer Rates', component: TransferratesPage },        
-            /*
+      
+      { title: 'Settings', component: SettingsPage },
+      { title: 'Help', component: HelpPage },
+      { title: 'Transfer Rates', component: TransferratesPage },     
       { title: 'Methodology', component: MethodologyPage },      
       { title: 'Corridors', component: CorridorsPage },        
       { title: 'About SMA', component: AboutsmaPage },
-      */
-      { title: 'Settings', component: SettingsPage }
-        
+      
     ];
 
   }

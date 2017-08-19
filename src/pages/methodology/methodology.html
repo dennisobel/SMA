@@ -1,10 +1,26 @@
+<ion-header>    
+    <ion-navbar  color="tertiary" hideBackButton="true">
+      <button ion-button  color="dark" outline clear (click)="onBack()">
+          <ion-icon name="arrow-back"></ion-icon>
+      </button>
+    <ion-title>Methodology</ion-title>
+  </ion-navbar>
+</ion-header>
 
-    <div class="region-inner region-branding-inner">
-        <div class="branding-data clearfix">
-            <div class="logo-img">
-                <a href="/" id="sms_logo_anchor" title="SEND MONEY AFRICA"><img src="http://sendmoneyafrica-auair.org/sites/default/files/styles/logo/public/send-money-africa-logo-f_0.gif?itok=1nUr7Rnb" alt="SEND MONEY AFRICA" title="SEND MONEY AFRICA" /></a>          </div>
-        </div>
+<ion-content padding>
+    <div>
+    <ion-toolbar>
+    <ion-segment color="tertiary">
+      <ion-segment-button value="Corridors" [navPush]="corridorsPage">
+        Corridors
+      </ion-segment-button>
+      <ion-segment-button value="AboutSMA" [navPush]="aboutPage">
+        About Us
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
     </div>
+
     <div class="pane-content">
         <ion-card>
             <ion-card-content>
@@ -39,7 +55,17 @@
             </ion-card-content>
         </ion-card>  
     </div>  
+    
+    <ion-fab right bottom>
+        <button ion-fab color="tertiary"><ion-icon name="md-share"></ion-icon></button>
+        <ion-fab-list side="top">
+            <button ion-fab color="tertiary"><ion-icon name="logo-googleplus"></ion-icon></button>
+            <button ion-fab color="tertiary"><ion-icon name="logo-twitter"></ion-icon></button>
+        </ion-fab-list>
+        <ion-fab-list side="left">
+            <button ion-fab color="tertiary"><ion-icon name="logo-vimeo"></ion-icon></button>
+            <button ion-fab color="tertiary"><ion-icon name="logo-facebook"></ion-icon></button>
+        </ion-fab-list>        
+    </ion-fab>
 
-
-
-
+</ion-content>

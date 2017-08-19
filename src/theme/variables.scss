@@ -39,9 +39,16 @@ $colors: (
   danger:     #f53d3d,
   light:      #f4f4f4,
   dark:       #222,
-  tertiary:   #5FBB43,
-  base:       #0b5345
+  tertiary:   #1FAB89,
+  base:       #FAFAFA
 );
+
+$alert-input-placeholder-color: tertiary;
+
+$alert-md-background-color:dark;
+$alert-md-button-background-color:light;
+$alert-md-button-background-color-activated:base;
+
 
 
 // App iOS Variables

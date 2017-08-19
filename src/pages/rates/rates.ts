@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ViewController, NavParams, ModalController } from 'ionic-angular';
 import { ListPage } from "../list/list"
+import { CorridorsPage } from "../corridors/corridors"
 import dummy from "../../data/dummydata";
 
 @Component({
@@ -14,10 +15,14 @@ record: any[]=[]
 dummyData: any
 amnt:any;
 from:any[]=[];
+to:any[]=[];
 originctry:any;    
 name: string;
 flag: string;
 amount: any[]=[]
+
+//modify later
+toggle:string 
 
 constructor(private modalCtrl: ModalController, public navParams: NavParams, private viewCtrl: ViewController) {
 }
@@ -26,21 +31,20 @@ ionViewDidLoad() {
     this.name = this.navParams.get("name")
     this.flag = this.navParams.get("flag")    
     this.amount = this.navParams.get("amount")
+    this.toggle = this.amount[0].amount
+    console.log(this.toggle)
     
     this.dummyData = dummy
-    for(var i = 0; i < this.dummyData.length; i++){
-        this.from = this.dummyData[i].from
-        console.log(this.from)
-        
-        
-        
-        for(var j = 0; j < this.from.length; j++){
-            this.originctry = this.from[j]
-            //console.log(this.originctry)
+    for(var i = 0; i < this.dummyData.length; i++){      
+        this.from = this.dummyData[i].to;        
+        for(var j = 0; j < this.from.length; j++){     
+          if(this.from[j].name == this.name){
+            //console.log("match")
+            this.originctry = this.dummyData[i].from
+          }
+          //this.to.push(this.from[j].name) 
         }
-        
     }
-    
 }
 
 onClick(amt){    

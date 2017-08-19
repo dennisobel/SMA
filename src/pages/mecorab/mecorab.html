@@ -8,18 +8,31 @@
 </ion-header>
 
 <ion-content padding [ngSwitch]="page">
+  <ion-toolbar>
+    <ion-segment color="tertiary" [(ngModel)]="page" *ngIf="page">
+      <ion-segment-button value="Methodology">
+        Methodology
+      </ion-segment-button>
+      <ion-segment-button value="Corridors">
+        Corridors
+      </ion-segment-button>
+      <ion-segment-button value="AboutSMA">
+        About Us
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
   
-    <div *ngSwitchCase="'methodology'" >
+    <div *ngSwitchCase="'Methodology'" >
       <page-methodology></page-methodology>
     </div>  
   
 
-    <div *ngSwitchCase="'corridors'">
+    <div *ngSwitchCase="'Corridors'">
       <page-corridors></page-corridors>
     </div>  
 
 
-    <div *ngSwitchCase="'about'">
+    <div *ngSwitchCase="'AboutSMA'">
       <page-aboutsma></page-aboutsma>
     </div>  
   
@@ -38,18 +51,6 @@
 </ion-content>
 
 <ion-footer>
-  <ion-toolbar>
-    <ion-segment color="tertiary" [(ngModel)]="page" *ngIf="page">
-      <ion-segment-button value="methodology">
-        Methodology
-      </ion-segment-button>
-      <ion-segment-button value="corridors">
-        Corridors
-      </ion-segment-button>
-      <ion-segment-button value="about">
-        About Us
-      </ion-segment-button>
-    </ion-segment>
-  </ion-toolbar>
+
 </ion-footer>
 

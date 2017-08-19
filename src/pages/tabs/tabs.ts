@@ -15,6 +15,12 @@ export class TabsPage {
   aboutSmaRoot = AboutsmaPage
   methodologyRoot = MethodologyPage
 
-  constructor(public navCtrl: NavController) {}
+  constructor(public navCtrl: NavController) {
+
+  }
+
+  ionViewDidEnter(){
+  	this.navCtrl.setRoot(TransferratesPage)
+  }
 
 }

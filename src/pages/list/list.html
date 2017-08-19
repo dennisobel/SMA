@@ -3,41 +3,92 @@
       <button ion-button  color="dark" outline clear (click)="onClose()">
           <ion-icon name="arrow-back"></ion-icon>
       </button>
-        <ion-title>{{firm}}</ion-title>
+        <ion-title>Details</ion-title>
     </ion-navbar>
+    <ion-toolbar>
+    <ion-title>
+     <ion-badge outline color="tertiary" style="font-size: 1rem">${{amt}}</ion-badge>
+     <ion-label style="font-size: 1.1rem">Firm:{{firm}}</ion-label>
+     <!--
+      <ion-row>
+        <ion-col col-7>
+          <p style="font-size: 1.1rem">Firm:{{firm}}</p>
+        </ion-col>
+        <ion-col  col-1>
+          
+        </ion-col>
+        <ion-col  col-4>
+          <ion-badge outline color="tertiary" style="font-size: 1rem">${{amt}}</ion-badge>
+        </ion-col>
+      </ion-row>
+      -->
+    </ion-title>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content padding class="card-backgound-page grid-basic-page" align="center">  
-    <ion-card no-padding>
-        <ion-card-content>
-           <ion-list>
-               <ion-item>
-                   <p><strong>Product Availability:</strong></p>
-                   <p>{{product_availability}}</p>
-               </ion-item>
-               <ion-item>
-                   <p><strong>Fee:</strong></p>
-                   <p>{{fee}}</p>
-               </ion-item>
-               <ion-item>
-                   <p><strong>Exchange Rate Margin:</strong></p>
-                   <p>{{ExchangeRateMargin}}</p>
-               </ion-item>
-               <ion-item>
-                   <p><strong>Total Cost Percent (%):</strong></p>
-                   <p>{{TotalCostPercent}}</p>
-               </ion-item>
-               <ion-item>
-                   <p><strong>Total Cost (Eur):</strong></p>
-                   <p>{{TotalCostEur}}</p>
-               </ion-item>
-               <ion-item>
-                   <p><strong>Amount Received:</strong></p>
-                   <p>{{AmountReceived}}</p>
-               </ion-item>
-           </ion-list>
-        </ion-card-content>        
-    </ion-card>
+     <ion-list>
+         <ion-item>
+          <ion-row>
+            <ion-col col-6>
+              <p  style="font-size : 1.1rem"><strong>Product Availability:</strong></p>
+            </ion-col>
+            <ion-col col-6>
+              <p style="font-size : 1.1rem">{{product_availability}}</p>
+            </ion-col>
+          </ion-row>
+         </ion-item>
+         <ion-item>
+            <ion-row>
+            <ion-col col-6>
+              <p style="font-size : 1.1rem"><strong>Fee:</strong></p>
+            </ion-col>
+            <ion-col col-6>
+              <p style="font-size : 1.1rem">{{fee}}</p>
+            </ion-col>
+          </ion-row>
+         </ion-item>
+         <ion-item>
+            <ion-row>
+            <ion-col col-6>
+             <p><strong style="font-size : 1.1rem">Exchange Rate Margin:</strong></p> 
+            </ion-col>
+            <ion-col col-6>
+              <p style="font-size : 1.1rem">{{ExchangeRateMargin}}</p>
+            </ion-col>
+          </ion-row>
+         </ion-item>
+         <ion-item>
+            <ion-row>
+            <ion-col col-6>
+              <p style="font-size : 1.1rem"><strong>Total Cost Percent (%):</strong></p>
+            </ion-col>
+            <ion-col col-6>
+              <p style="font-size : 1.1rem">{{TotalCostPercent}}</p>
+            </ion-col>
+          </ion-row>
+         </ion-item>
+         <ion-item>
+            <ion-row>
+            <ion-col col-6>
+              <p style="font-size : 1.1rem"><strong>Total Cost (Eur):</strong></p>
+            </ion-col>
+            <ion-col col-6>
+              <p style="font-size : 1.1rem">{{TotalCostEur}}</p>
+            </ion-col>
+          </ion-row>
+         </ion-item>
+         <ion-item>
+          <ion-row>
+            <ion-col col-6>
+              <p style="font-size : 1.1rem"><strong>Amount Received:</strong></p>
+            </ion-col>
+            <ion-col col-6>
+              <p style="font-size : 1.1rem">{{AmountReceived}}</p>
+            </ion-col>
+          </ion-row>
+         </ion-item>
+     </ion-list>      
     
     <ion-fab right bottom>
         <button ion-fab color="tertiary"><ion-icon name="md-share"></ion-icon></button>

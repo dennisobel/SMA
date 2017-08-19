@@ -12,7 +12,7 @@ import { TransferratesPage } from "../transferrates/transferrates";
 export class MecorabPage implements OnInit{
     corridorsPage;
     aboutPage;
-    page: string = "methodology"
+    page: string = "Methodology"
     //root: any;
 
   constructor(public navCtrl: NavController) {

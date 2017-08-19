@@ -12,6 +12,7 @@ export default[
                 amount:
                 [
                     {
+                        
                         amount: "140",
                         record:[
                             {
@@ -316,7 +317,7 @@ export default[
         flag:"https://upload.wikimedia.org/wikipedia/en/thumb/c/cf/Flag_of_Canada.svg/1280px-Flag_of_Canada.svg.png",
         to:[
             {
-                id:"1",
+              
                 name:"Ghana",
                 flag:"https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Ghana.svg/255px-Flag_of_Ghana.svg.png",  
                 

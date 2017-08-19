@@ -1,3 +1,24 @@
+<ion-header>
+<ion-navbar  color="tertiary" hideBackButton="true">
+      <button ion-button  color="dark" outline clear (click)="onBack()">
+          <ion-icon name="arrow-back"></ion-icon>
+      </button>
+    <ion-title style="font-size:1.3rem" >Corridors</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <div>
+    <ion-toolbar>
+    <ion-segment color="tertiary" style="font-size:1.2rem">
+      <ion-segment-button value="Methodology" [navPush]="methodologyPage">
+        Methodology
+      </ion-segment-button>
+      <ion-segment-button value="AboutSMA" [navPush]="aboutPage">
+        About Us
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+    </div>
     <div class="panel-panel grid-12">
         <div class="inside">
             <div class="" >
@@ -5,8 +26,8 @@
                 <div >
                     <ion-list text-center>
                         <ion-card *ngFor="let detailsGroup of dummyData">
-                           <hr>                            
-                            <h3>From: {{detailsGroup.from}}</h3>
+                                                      
+                            <ion-label style="font-size:1.2rem" color="tertiary">From: {{detailsGroup.from}}</ion-label>
                             <button 
                                     ion-item 
                                     *ngFor="let toGroup of detailsGroup.to"
@@ -14,14 +35,28 @@
                                     <ion-avatar item-start>
                                         <img src={{toGroup.flag}} alt="">
                                     </ion-avatar>
-                                    <p color="secondary">To: {{toGroup.name}}</p>
+                                    <p style="font-size:1.2rem" color="secondary">To: {{toGroup.name}}</p>
                             </button> 
-                            <hr>                           
+                                                      
                         </ion-card>
                     </ion-list>
             </div>
             </div>
         </div>
-    </div>    
     </div>
+    
+    </div>
+    
+    <ion-fab right bottom>
+        <button ion-fab color="tertiary"><ion-icon name="md-share"></ion-icon></button>
+        <ion-fab-list side="top">
+            <button ion-fab color="tertiary"><ion-icon name="logo-googleplus"></ion-icon></button>
+            <button ion-fab color="tertiary"><ion-icon name="logo-twitter"></ion-icon></button>
+        </ion-fab-list>
+        <ion-fab-list side="left">
+            <button ion-fab color="tertiary"><ion-icon name="logo-vimeo"></ion-icon></button>
+            <button ion-fab color="tertiary"><ion-icon name="logo-facebook"></ion-icon></button>
+        </ion-fab-list>        
+    </ion-fab>
+</ion-content>
 
