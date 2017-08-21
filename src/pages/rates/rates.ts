@@ -1,3 +1,4 @@
+
 import { Component } from '@angular/core';
 import { ViewController, NavParams, ModalController } from 'ionic-angular';
 import { ListPage } from "../list/list"
@@ -20,31 +21,46 @@ originctry:any;
 name: string;
 flag: string;
 amount: any[]=[]
+curr:any
 
 //modify later
-toggle:string 
+toggle:any 
 
 constructor(private modalCtrl: ModalController, public navParams: NavParams, private viewCtrl: ViewController) {
-}
+    /*
+    this.amount = this.navParams.get("amount")
+    this.toggle = this.amount[0].amount    
+    console.log(this.toggle)
+    */
+    }
 
 ionViewDidLoad() {
     this.name = this.navParams.get("name")
+    this.curr = this.navParams.get("currency")
     this.flag = this.navParams.get("flag")    
     this.amount = this.navParams.get("amount")
-    this.toggle = this.amount[0].amount
-    console.log(this.toggle)
+    this.toggle = this.amount[0].amount 
+    console.log(this.curr)
     
     this.dummyData = dummy
     for(var i = 0; i < this.dummyData.length; i++){      
-        this.from = this.dummyData[i].to;        
+        this.from = this.dummyData[i].to;     
+
         for(var j = 0; j < this.from.length; j++){     
           if(this.from[j].name == this.name){
             //console.log("match")
             this.originctry = this.dummyData[i].from
+            
+            
           }
-          //this.to.push(this.from[j].name) 
+          
         }
     }
+
+
+
+    //this.switch.push(this.amount[j].amount)
+    //console.log(this.amount[j].amount)
 }
 
 onClick(amt){    

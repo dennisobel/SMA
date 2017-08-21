@@ -2,13 +2,13 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { TabsPage } from '../pages/tabs/tabs';
+//import { TabsPage } from '../pages/tabs/tabs';
 import { AboutsmaPage } from '../pages/aboutsma/aboutsma';
 import { CorridorsPage } from '../pages/corridors/corridors';
 import { MethodologyPage } from '../pages/methodology/methodology';
 import { SettingsPage } from '../pages/settings/settings';
 import { TransferratesPage } from '../pages/transferrates/transferrates';
-import { MecorabPage } from '../pages/mecorab/mecorab';
+//import { MecorabPage } from '../pages/mecorab/mecorab';
 import { HelpPage } from '../pages/help/help';
 
 

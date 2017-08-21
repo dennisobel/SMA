@@ -9,7 +9,7 @@
 <ion-content padding>
     <div>
     <ion-toolbar>
-    <ion-segment color="tertiary" style="font-size:1.2rem">
+    <ion-segment color="tertiary" style="font-size:1.3rem">
       <ion-segment-button value="Methodology" [navPush]="methodologyPage">
         Methodology
       </ion-segment-button>
@@ -27,7 +27,7 @@
                     <ion-list text-center>
                         <ion-card *ngFor="let detailsGroup of dummyData">
                                                       
-                            <ion-label style="font-size:1.2rem" color="tertiary">From: {{detailsGroup.from}}</ion-label>
+                            <ion-label style="font-size:1.3rem" color="tertiary">From: {{detailsGroup.from}}</ion-label>
                             <button 
                                     ion-item 
                                     *ngFor="let toGroup of detailsGroup.to"
@@ -35,7 +35,7 @@
                                     <ion-avatar item-start>
                                         <img src={{toGroup.flag}} alt="">
                                     </ion-avatar>
-                                    <p style="font-size:1.2rem" color="secondary">To: {{toGroup.name}}</p>
+                                    <p style="font-size:1.3rem" color="secondary">To: {{toGroup.name}}</p>
                             </button> 
                                                       
                         </ion-card>

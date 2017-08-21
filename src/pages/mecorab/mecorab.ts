@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from "ionic-angular";
-import { TabsPage } from "../tabs/tabs";
+//import { TabsPage } from "../tabs/tabs";
 import { CorridorsPage } from "../corridors/corridors";
 import { AboutsmaPage } from "../aboutsma/aboutsma";
 import { TransferratesPage } from "../transferrates/transferrates";

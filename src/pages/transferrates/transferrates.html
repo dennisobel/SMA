@@ -23,10 +23,11 @@
                    accept-charset="UTF-8"> 
 
                     <ion-label color="tertiary">Transfer Money</ion-label>                                        
-
+                        
                         <div id="edit-transfer" class="form-radios">
                         <div class="form-item form-type-radio form-item-transfer">
                             <!--<ion-item style="background-color:5FBB43;">-->
+                            
                             <ion-list radio-group >
                                 <ion-row>
                                     <ion-col>
@@ -56,21 +57,24 @@
                             </ion-list>                                            
                         </div>
                         </div>
+                        
                     
                         <!--Sending Country-->
 
                         <div id="field_source_iso2-refresh">
                         <div class="form-item form-type-select form-item-field-source-iso2">
                             <ion-item>
-                                <ion-label color="tertiary">Sending Country</ion-label>
+                                <ion-label style="font-size: 1.4rem" color="tertiary">Sending Country</ion-label>
                             <ion-select 
                                class="corridor_search_source form-select" 
                                id="edit-field-source-iso2" 
-                               name="field_source_iso2" >                                                
+                               name="field_source_iso2"
+                               style="font-size: 1.4rem" 
+                               color="tertiary" >                                                
                                 <ion-option 
                                 *ngFor="let dummy of dummyData"
                                 okText="Okay" cancelText="Dismiss"
-                                (ionSelect)="onSelect(dummy)"                                                
+                                (ionSelect)="onSelect(dummy)"                                                                             
                                 >{{dummy.from}}
                                 </ion-option>                                               
                             </ion-select>
@@ -83,10 +87,12 @@
                         <div id="field_destination_iso2-refresh">
                         <div class="form-item form-type-select form-item-field-destination-iso2 form-disabled">
                             <ion-item>
-                                <ion-label color="tertiary">Receiving Country</ion-label>
+                                <ion-label style="font-size: 1.4rem" color="tertiary">Receiving Country</ion-label>
                                 <ion-select 
                                 class="corridor_search_destination form-select"  
-                                name="field_destination_iso2" id="destination"                                                            
+                                name="field_destination_iso2" id="destination"  
+                                style="font-size: 1.4rem" 
+                                color="tertiary"                                                           
                                 >
                                     <ion-option *ngFor="let r of receiving[0]" (ionSelect)="onChoose(r)" [value]="r">{{r}}</ion-option>
                                 </ion-select>
