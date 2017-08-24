@@ -33,7 +33,10 @@
                                     *ngFor="let toGroup of detailsGroup.to"
                                     (click)="openRates(toGroup)">
                                     <ion-avatar item-start>
+                                        <img src="{{toGroup.flag}}">
+                                        <!--
                                         <img src={{toGroup.flag}} alt="">
+                                        -->
                                     </ion-avatar>
                                     <p style="font-size:1.3rem" color="secondary">To: {{toGroup.name}}</p>
                             </button> 

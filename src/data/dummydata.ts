@@ -1,15 +1,15 @@
 export default[
     {
         //id:"1",
-        from:"Belgium",
+        from:"BELGIUM",
         currency:"Euro",
-        flag:"https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/2000px-Flag_of_Belgium.svg.png",
+        flag:"../../../assets/flags-big/be.png",
         to:[
             {
                 //id:"1",
                 name:"Congo",  
                 currency:"CDF",
-                flag:"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Flag_of_the_Democratic_Republic_of_the_Congo.svg/227px-Flag_of_the_Democratic_Republic_of_the_Congo.svg.png",  
+                flag:"../../../assets/flags-big/cd.png",  
                 
                 amount:
                 [
@@ -214,7 +214,7 @@ export default[
                 //id:"2",
                 name:"Morocco",
                 currency:"MAD",
-                flag:"http://moroccanriders.e-monsite.com/medias/files/11658431.jpg",       
+                flag:"../../../assets/flags-big/ma.png",       
                 
                 amount:[
                     {
@@ -316,13 +316,13 @@ export default[
     {
         //id:"2",
         from:"Canada",
-        flag:"https://upload.wikimedia.org/wikipedia/en/thumb/c/cf/Flag_of_Canada.svg/1280px-Flag_of_Canada.svg.png",
+        flag:"../../../assets/flags-big/ca.png",
         currency:"CAN$",
         to:[
             {
               
                 name:"Ghana",
-                flag:"https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Ghana.svg/255px-Flag_of_Ghana.svg.png",  
+                flag:"../../../assets/flags-big/gh.png",  
                 currency:"GHS",
                 amount:
                     [
@@ -522,7 +522,7 @@ export default[
                 //id:"2",
                 name:"Kenya",
                 currency:"KES",
-                flag:"https://upload.wikimedia.org/wikipedia/commons/3/3d/Kenya_flag_300.png",
+                flag:"../../../assets/flags-big/ke.png",
                 
                 amount:[
                     {
@@ -622,14 +622,14 @@ export default[
     {
 //id:"1",
         from:"France",
-        flag:"https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/1280px-Flag_of_France.svg.png",
+        flag:"../../../assets/flags-big/fr.png",
         currency:"Euro",
         to:[
             {
         //id:"1",
                 name:"Algeria",
                 
-                flag:"https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Flag_of_Algeria.svg/2000px-Flag_of_Algeria.svg.png", 
+                flag:"../../../assets/flags-big/dz.png", 
                 currency:"DZD",
                 amount:[
                     {
@@ -829,7 +829,7 @@ export default[
         //id:"2",
                 name:"Ivory Coast",
                 
-                flag:"https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_C%C3%B4te_d%27Ivoire.svg/1200px-Flag_of_C%C3%B4te_d%27Ivoire.svg.png",  
+                flag:"../../../assets/flags-big/ci.png",  
                 currency:"XOF",
                 amount:[
                     {
