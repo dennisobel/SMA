@@ -526,7 +526,7 @@ export default[
                 
                 amount:[
                     {
-                        amount:140,
+                        amount:"140",
                         record:[
                             {
                             //id: "1",

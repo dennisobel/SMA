@@ -23,8 +23,13 @@ flag: string;
 amount: any[]=[]
 curr:any
 
+
 //modify later
-toggle:any 
+toggle:any = "one"
+amtone:any
+amttwo:any
+recordone:any
+recordtwo:any
 
 constructor(private modalCtrl: ModalController, public navParams: NavParams, private viewCtrl: ViewController) {
     /*
@@ -38,8 +43,8 @@ ionViewDidLoad() {
     this.name = this.navParams.get("name")
     this.curr = this.navParams.get("currency")
     this.flag = this.navParams.get("flag")    
-    this.amount = this.navParams.get("amount")
-    this.toggle = this.amount[0].amount 
+    this.amount = this.navParams.get("amount")    
+    //this.toggle = this.amount[0].amount 
     console.log(this.curr)
     
     this.dummyData = dummy
@@ -56,12 +61,18 @@ ionViewDidLoad() {
           
         }
     }
+    this.amtone = this.amount[0].amount
+    console.log(this.amtone)
+    this.amttwo = this.amount[1].amount
+    console.log(this.amttwo)
+    this.recordone=this.amount[0].record
+    console.log(this.recordone)
+    this.recordtwo=this.amount[1].record
+    console.log(this.recordtwo)
 
-
-
-    //this.switch.push(this.amount[j].amount)
-    //console.log(this.amount[j].amount)
+    
 }
+/*
 
 onClick(amt){    
     this.record = amt.record
@@ -69,6 +80,7 @@ onClick(amt){
     this.amnt = amt.amount
     console.log(this.amnt)
 }
+*/
     
 onClose(remove = false){
     this.viewCtrl.dismiss(remove)
