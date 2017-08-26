@@ -24,7 +24,9 @@ ngOnInit(){
     this.dummyData = dummy    
 }
 
-constructor(public modalCtrl: ModalController, public toastCtrl:ToastController){
+constructor(
+    public modalCtrl: ModalController, 
+    public toastCtrl:ToastController){
 
 }
     
@@ -120,6 +122,7 @@ onHelp(){
     const modal = this.modalCtrl.create(HelpPage)
     modal.present()
 }
+
 }
 
      

@@ -1,21 +1,21 @@
-<ion-header>    
+<ion-header #head>    
     <ion-navbar  color="tertiary" hideBackButton="true">
       <button ion-button  color="dark" outline clear (click)="onBack()">
           <ion-icon name="arrow-back"></ion-icon>
       </button>
-    <ion-title>Methodology</ion-title>
+    <ion-title>{{"METHODOLOGY"|translate}}</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding hide-header [header]="head">
     <div>
     <ion-toolbar>
     <ion-segment color="tertiary">
       <ion-segment-button value="Corridors" [navPush]="corridorsPage">
-        Corridors
+        {{"CORRIDORS"|translate}}
       </ion-segment-button>
       <ion-segment-button value="AboutSMA" [navPush]="aboutPage">
-        About Us
+        {{"ABOUTUS"|translate}}
       </ion-segment-button>
     </ion-segment>
   </ion-toolbar>
@@ -24,33 +24,39 @@
     <div class="pane-content">
         <ion-card>
             <ion-card-content>
-                <p>In any market, transparency and dissemination of information is important, because it enables individuals to make informed decisions about which services to use, and it also helps to make the market as a whole more efficient. In the remittances market, in particular, the total cost might not always be clear to customers as there are a number of variables that go into it: the transaction fee, the exchange rate applied and the margin eventually charged, and the speed of the service, among others.
+                <p>
+                {{"METHP1"|translate}}
                 </p>
-                <p>In principle, all these elements must be captured in the information to the consumer; in practice, this is not always the case. Therefore, combining all these elements to calculate which service is cheapest in a comparable way is difficult for most remittance consumers. In addition, it is difficult to measure improvements in remittance markets, as there is little data on cost and efficiency. For this reason, the AU-African Institute for Remittances has released this website, which reports comparable remittance price data and service terms. Data were collected monthly from July 2011 to June 2013 and then quarterly.&nbsp;
+                <p>
+                {{"METHP2"|translate}}&nbsp;
                 </p>
-                <p>The database covers 54 "<a href="http://sendmoneyafrica.worldbank.org/country-corridors" target="_blank">country corridors</a>", from 16 major remittance sending countries worldwide to 28 African receiving countries. In most cases, data was captured from the main sending location/area for the corridor in question to the capital city or most populous city in the receiving market.
+                <p>
+                {{"METHP3"|translate}}
                 </p>
-                <p><strong>Data Collection</strong></p>
-                <p>Data was collected by posing as customers and contacting individual firms within each corridor. Researchers collected data within each corridor on the same day, in order to control for fluctuations in exchange rates and other changes in fee structures. It should be noted that data in this database is intended to serve as a snapshot of a moment in time, and that pricing may vary over time. In subsequent updates of this site, prices shown in previous collections will be displayed.
+                <p><strong>{{"DATACOL"|translate}}</strong></p>
+                <p>
+                {{"METHP4"|translate}}
                 </p>
-                <p>Additional details on the methodology used for collecting data are as follows:</p>
+                <p>{{"METHP5"|translate}}:</p>
                 
                 
-                <ul type="disc"><li class="MsoNormal"><strong>Firms Data</strong> was collected for 8-10 major service providers in each corridor, including both the primary Money Transfer Operator (MTO) and Banks active in the market. In some markets very few banks or MTOs operate. In these cases, the sample may include more MTOs than banks, or vice versa. In corridors where there were fewer market participants, efforts were made to survey as many providers as possible. Companies surveyed within each segment were selected to cover the maximum remittance market share possible.</li>
-                    <li class="MsoNormal"><strong>Amounts:</strong> Two amounts were surveyed per corridor: the local currency equivalent of $200, and the local currency equivalent of $500.</li>
-                    <li class="MsoNormal"><strong>Transfer fee:</strong> This is the most visible cost component, and can differ significantly among market players. This fee usually represents the charge the sender pays at the initiation point, and usually varies with the amount sent, within set bands. In some cases, there may be fees and taxes charged at the destination that have not been detected in this database.</li>
-                    <li class="MsoNormal"><strong>Exchange Rate Fee:</strong> An important portion of the remittance cost is the exchange rate spread, which is not quoted in the transfer fee. Even though remittances can be paid in US dollars in some countries, the majority of remittance transactions are paid in local currencies, and, thus, an exchange operation is required. Where remittances are paid in US dollars or the exchange rate applied by the service provider was not provided, this information is not available. In these cases, the actual total costs might be higher than indicated in the tables.</li>
-                    <li class="MsoNormal"><strong>Amount received: </strong>This is the amount of money that should be disbursed to the receiver, based on the information disclosed to the sender. This amount is displayed in the currency of the receiving country when the exchange rate applied to the transaction is provided; otherwise, the amount received is indicated in the sending country currency. The amount may also be displayed in USD or Euro when the exchange rate for the receiving currency was not disclosed, but the exchange rate from sending country currency into USD or Euro was provided instead. The amount received is calculated as the difference between the amount sent and the total cost.</li>
-                    <li class="MsoNormal"><strong>Product: </strong>The database covers different forms of transactions. For each firm the type of product(s) offered is noted within the following categories: bank account, cash, card (credit, debit, prepaid) service, prepaid card service, mobile service, and on-line service.</li>
-                    <li class="MsoNormal"><strong>Sending Location:</strong> The sending location is the physical (for example a firm branch) or virtual (for example on-line service) location where the transaction can be initiated and performed. For the purpose of the survey, sending locations are gathered within the following categories: Automated Teller Machine (ATM), branch, call center, and on-line service. Some products may be available at more than one of these locations.</li>
-                    <li class="MsoNormal"><strong>Speed of transfer:</strong> The speed of transfer is the time needed for the remittance to be available for the receiver. The transfer speed is noted for each product. The speed of transfer has been standardized in six broad categories: less than one hour, same-day, next day, 2 days, 3 to 5 days, and 6 days or more.</li>
-                    <li class="MsoNormal"><strong>Network coverage:</strong> This additional variable complements the overall picture for price and convenience of the service offered by each firm. The following categories are used to describe firm coverage: nationwide, urban only, rural only, main city, major cities.</li>
+                <ul type="disc">
+                    <li class="MsoNormal">{{"METHL1"|translate}}</li>
+                    <li class="MsoNormal">{{"METHL2"|translate}}</li>
+                    <li class="MsoNormal">{{"METHL3"|translate}}</li>
+                    <li class="MsoNormal">{{"METHL4"|translate}}</li>
+                    <li class="MsoNormal">{{"METHL5"|translate}}</li>
+                    <li class="MsoNormal">{{"METHL6"|translate}}</li>
+                    <li class="MsoNormal">{{"METHL7"|translate}}</li>
+                    <li class="MsoNormal">{{"METHL8"|translate}}</li>
+                    <li class="MsoNormal">{{"METHL9"|translate}}</li>
                 </ul>
                 <p>&nbsp;</p>
                 
-                <p><strong>&nbsp;Disclaimer</strong></p>
+                <p><strong>&nbsp;{{"DISCLAIMER"|translate}}</strong></p>
                 
-                <p>The pricing data provided in this database are intended to serve as a snapshot of the cost of remittances on specific dates and time. Actual costs may vary. The AU-African Institute for Remittances provides no warranty, expressed or implied, as to the accuracy or completeness of the data furnished. The data and information provided herein should not be used as a substitute for actual pricing information that consumers should obtain directly from service providers.
+                <p>
+                {{"METHP6"|translate}}
                 </p>
             </ion-card-content>
         </ion-card>  

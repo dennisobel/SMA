@@ -1,7 +1,7 @@
 export default[
     {
         //id:"1",
-        from:"BELGIUM",
+        from:"Belgium",
         currency:"Euro",
         flag:"../../../assets/flags-big/be.png",
         to:[

@@ -1,18 +1,18 @@
-<ion-header>    
+<ion-header #head>    
 <ion-navbar  color="tertiary" >
       <button ion-button menuToggle color="dark">
           <ion-icon name="menu"></ion-icon>
       </button>
-      <ion-title>Transferrates</ion-title>
+      <ion-title>{{ 'TRANSFERRATES'|translate }}</ion-title>
   </ion-navbar>   
 </ion-header>
             
-<ion-content padding >
+<ion-content padding hide-header [header]="head">
     <div class="pane-content">
             <div id="corridor_search_refresh">
 
   <ion-toolbar>
-     <ion-label align="center" color="tertiary" style="font-size:1.4rem" >Find and Compare Rates...</ion-label>
+     <ion-label align="center" color="tertiary" style="font-size:1.4rem" >{{ 'FINDANDCOMPARERATES'|translate }}...</ion-label>
   </ion-toolbar>
 
                 
@@ -22,11 +22,11 @@
                    id="sms-corridor-search-form" 
                    accept-charset="UTF-8"> 
 
-                    <ion-label color="tertiary">Transfer Money</ion-label>                                        
-                        
+                    <ion-label color="tertiary">{{ 'TRANSFERMONEY'|translate }}</ion-label>                                        
+                        <!--
                         <div id="edit-transfer" class="form-radios">
                         <div class="form-item form-type-radio form-item-transfer">
-                            <!--<ion-item style="background-color:5FBB43;">-->
+                            
                             
                             <ion-list radio-group >
                                 <ion-row>
@@ -57,14 +57,14 @@
                             </ion-list>                                            
                         </div>
                         </div>
-                        
+                        -->    
                     
                         <!--Sending Country-->
 
                         <div id="field_source_iso2-refresh">
                         <div class="form-item form-type-select form-item-field-source-iso2">
                             <ion-item>
-                                <ion-label style="font-size: 1.4rem" color="tertiary">Sending Country</ion-label>
+                                <ion-label style="font-size: 1.4rem" color="tertiary">{{ 'SENDINGCOUNTRY'|translate }}</ion-label>
                             <ion-select 
                                class="corridor_search_source form-select" 
                                id="edit-field-source-iso2" 
@@ -87,7 +87,7 @@
                         <div id="field_destination_iso2-refresh">
                         <div class="form-item form-type-select form-item-field-destination-iso2 form-disabled">
                             <ion-item>
-                                <ion-label style="font-size: 1.4rem" color="tertiary">Receiving Country</ion-label>
+                                <ion-label style="font-size: 1.4rem" color="tertiary">{{ 'RECEIVINGCOUNTRY'|translate }}</ion-label>
                                 <ion-select 
                                 class="corridor_search_destination form-select"  
                                 name="field_destination_iso2" id="destination"  
@@ -103,7 +103,7 @@
                         <div>
                             <button ion-button color="tertiary" block outline (click)="onClick(choice)" id="btn">
                                 <ion-icon name="eyes"></ion-icon>
-                                Show
+                                {{ 'SHOW'|translate }}
                             </button>
                         </div>
                 </form>

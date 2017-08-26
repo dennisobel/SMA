@@ -1,21 +1,21 @@
-<ion-header>
+<ion-header #head>
 <ion-navbar  color="tertiary" hideBackButton="true">
       <button ion-button  color="dark" outline clear (click)="onBack()">
           <ion-icon name="arrow-back"></ion-icon>
       </button>
-      <ion-title>About SMA</ion-title>               
+      <ion-title>{{"ABOUTUS"|translate}} SMA</ion-title>               
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding hide-header [header]="head">
     <div>
     <ion-toolbar>
     <ion-segment color="tertiary" >
       <ion-segment-button value="Methodology" [navPush]="methodologyPage">
-        Methodology
+        {{"METHODOLOGY"|translate}}
       </ion-segment-button>
       <ion-segment-button value="Corridors" [navPush]="corridorsPage">
-        Corridors
+        {{"CORRIDORS"|translate}}
       </ion-segment-button>
     </ion-segment>
   </ion-toolbar>
@@ -23,43 +23,54 @@
 
     <ion-card>
         <ion-card-content>
-            <p>The <a href="http://go.worldbank.org/V6Y4QOL7A0">World Bank estimates</a> that about 120 million people in Africa receive money from about 30 million relatives and friends who left their home country, for a total of USD 60 billion. However, when it comes to choosing which operator to use to send money home to Africa, too often migrants do not have the necessary data to make an informed choice.
+            <p>
+            {{"ABTP1"|translate}}
             </p>
-            <p><em>Send Money Africa</em> provides data on the cost of sending relatively small amounts of money from selected countries worldwide to a number of African countries, as well as within the African continent. The objective of the database is to increase transparency in the market and provide migrants with complete and reliable information on all the components of the transaction. <em>Send Money Africa</em> allows the users to compare the costs applied by several providers to send money from 16 major sending countries to 28 African receiving countries, for a total of 54 "<a href="/country-corridors">country corridors</a>".
+            <p>
+            {{"ABTP2"|translate}}
             </p>
-            <p>In many cases, the cost of these transactions is expensive, especially when compared to the often low income of migrant workers and of their families at home, and also relative to the amount sent. For this reason any reduction in the cost of the transfer would result in more money remaining in the pockets of the migrants and their families. Indeed, if the cost of sending money could be reduced by 5 percentage points relative to the value sent, remittance recipients in developing countries would receive over $16 billion dollars more each year than they do now. This added income could then provide recipients with more opportunities for consumption, savings, and investment in local economies.
+            <p>
+            {{"ABTP3"|translate}}
             </p>
-            <p><em>Send Money Africa</em> contains useful information on the method that can be used to send the money, the actual amount of money received in local currency by families and friends in the home country, the time needed for the money sent to be available to the receiver, the place where the money can be collected, the exchange rate applied to the transaction, and more. Indeed, this information will help consumers to compare services, fees, and speed of the remittance service and choose the provider which match their needs.
+            <p>
+            {{"ABTP4"|translate}}
             </p>
-            <p>At the same time, <em>Send Money Africa</em> intends to stimulate competition among the service providers and ultimately induce a reduction of the costs. As a result, remittance senders and recipients will benefit transparent, efficient, less costly remittance services.
+            <p>
+            {{"ABTP5"|translate}}
             </p>
-            <h2><strong>Sponsor</strong></h2>
-            <p><em>Send Money Africa</em> is part of the <a title="AIR Brochure" href="https://sendmoneyafrica.worldbank.org/sites/default/files/air_brochure_2014.pdf" target="_blank">African Institute for Remittances (AIR) Project</a>.
+            <h2><strong>{{"SPONSOR"|translate}}</strong></h2>
+            <p>
+            {{"OBJECTIVES"|translate}}
             </p>
+            <!--
             <p>The AIR Project is funded by the European Commission and implemented by the World Bank in collaboration with the African Union Commission and its member states.
             </p>
-            <p>The objectives of the AIR Project are:</p>
+            -->
+            
             
             <ul>
-                <li>Facilitate the process leading to the creation of the Institute; and</li>
-                <li>Develop the capacity of the Member States of the African Union, remittance senders and recipients, and other stakeholders to implement concrete strategies and operational instruments to use remittances as development tools for poverty reduction.</li>
+                <li>{{"L1"|translate}}</li>
+                <li>{{"L2"|translate}}</li>
             </ul>
             
-            <p>For more information, <a title="AIR Brochure" href="https://sendmoneyafrica.worldbank.org/sites/default/files/air_brochure_2014.pdf" target="_blank">download the AIR Project brochure</a> (1.4MB, PDF).
+            <p>
+            {{"MOREINFO1"|translate}}
             </p>
-            <h2><strong>Team Members</strong></h2>
-            <p> The <em>Send Money Africa</em> team is:</p>
+            
+            <a href="https://sendmoneyafrica.worldbank.org/sites/default/files/air_brochure_2014.pdf"><p>{{"MOREINFO2"|translate}}</p></a>
+
+            <p>{{"ABTP6"|translate}}</p>
             
             <table style="width: 100%;">
                 <tbody>
                     <tr>
                         <td width="50%">
-                            <strong>Amadou Cisse</strong>, Executive Director AIR</td>
+                            <strong>Amadou Cisse</strong>, {{"MEMBER1"|translate}}</td>
                         <td width="50%"> </td>
                     </tr>
                     <tr>
                         <td>
-                            <strong>Hailu Kinfe</strong>, Consultant Remittances AIR</td>
+                            <strong>Hailu Kinfe</strong>, {{"MEMBER2"|translate}}</td>
                 </tr>
                 </tbody>
             </table>  

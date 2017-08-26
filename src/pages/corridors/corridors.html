@@ -1,20 +1,20 @@
-<ion-header>
+<ion-header #head>
 <ion-navbar  color="tertiary" hideBackButton="true">
       <button ion-button  color="dark" outline clear (click)="onBack()">
           <ion-icon name="arrow-back"></ion-icon>
       </button>
-    <ion-title style="font-size:1.3rem" >Corridors</ion-title>
+    <ion-title style="font-size:1.3rem" >{{ 'CORRIDORS'|translate }}</ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content padding>
+<ion-content padding hide-header [header]="head">
     <div>
     <ion-toolbar>
     <ion-segment color="tertiary" style="font-size:1.3rem">
       <ion-segment-button value="Methodology" [navPush]="methodologyPage">
-        Methodology
+        {{ 'METHODOLOGY'|translate }}
       </ion-segment-button>
       <ion-segment-button value="AboutSMA" [navPush]="aboutPage">
-        About Us
+        {{ 'ABOUTUS'|translate }}
       </ion-segment-button>
     </ion-segment>
   </ion-toolbar>
@@ -27,7 +27,7 @@
                     <ion-list text-center>
                         <ion-card *ngFor="let detailsGroup of dummyData">
                                                       
-                            <ion-label style="font-size:1.3rem" color="tertiary">From: {{detailsGroup.from}}</ion-label>
+                            <ion-label style="font-size:1.3rem" color="tertiary">{{ 'FROM'|translate }}: {{detailsGroup.from}}</ion-label>
                             <button 
                                     ion-item 
                                     *ngFor="let toGroup of detailsGroup.to"
@@ -38,7 +38,7 @@
                                         <img src={{toGroup.flag}} alt="">
                                         -->
                                     </ion-avatar>
-                                    <p style="font-size:1.3rem" color="secondary">To: {{toGroup.name}}</p>
+                                    <p style="font-size:1.3rem" color="secondary">{{ 'TO'|translate }}: {{toGroup.name}}</p>
                             </button> 
                                                       
                         </ion-card>

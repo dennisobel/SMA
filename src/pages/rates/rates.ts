@@ -2,7 +2,7 @@
 import { Component } from '@angular/core';
 import { ViewController, NavParams, ModalController } from 'ionic-angular';
 import { ListPage } from "../list/list"
-import { CorridorsPage } from "../corridors/corridors"
+//import { CorridorsPage } from "../corridors/corridors"
 import dummy from "../../data/dummydata";
 
 @Component({
