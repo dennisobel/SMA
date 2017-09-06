@@ -1,3 +1,4 @@
+import { SocialSharing } from "@ionic-native/social-sharing"
 import { Component } from '@angular/core';
 import { NavController, NavParams, ViewController } from 'ionic-angular';
 import { SettingsPage } from "../settings/settings"
@@ -14,7 +15,11 @@ aboutsmaPage;
 settingsPage
 methodologyPage;    
 
-constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController){
+constructor(
+	public navCtrl: NavController, 
+	public navParams: NavParams, 
+	public viewCtrl: ViewController,
+	public socialSharing:SocialSharing){
     this.aboutsmaPage = AboutsmaPage
     this.settingsPage = SettingsPage
     this.methodologyPage = MethodologyPage
@@ -22,6 +27,10 @@ constructor(public navCtrl: NavController, public navParams: NavParams, public v
     
   onBack(){
     this.navCtrl.setRoot(TransferratesPage)
+  }
+
+  regularShare(){
+    this.socialSharing.share("Share page");
   }
 
 }

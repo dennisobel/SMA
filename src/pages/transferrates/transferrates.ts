@@ -1,12 +1,10 @@
+import { SocialSharing } from "@ionic-native/social-sharing"
 import { Component, OnInit } from '@angular/core';
 import { ModalController, ToastController } from "ionic-angular";
 import { RatesPage } from "../rates/rates";
 import { HelpPage } from "../help/help";
 
 import dummy from "../../data/dummydata"
-
-
-
 
 @Component({
     selector: 'page-transferrates',
@@ -26,7 +24,8 @@ ngOnInit(){
 
 constructor(
     public modalCtrl: ModalController, 
-    public toastCtrl:ToastController){
+    public toastCtrl:ToastController,
+    public socialSharing:SocialSharing){
 
 }
     
@@ -121,6 +120,10 @@ if(choice == undefined){
 onHelp(){
     const modal = this.modalCtrl.create(HelpPage)
     modal.present()
+}
+
+regularShare(){
+    this.socialSharing.share("Share app")
 }
 
 }

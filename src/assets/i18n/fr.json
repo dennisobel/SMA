@@ -31,6 +31,11 @@
   "XRM":"Marge Du Taux De Change",
   "TOTALCOST":"Coût total",
   "AMT":"Montant reçu",
+  "TRANSFERSPD":"Vitesse de transfert",
+  "NETWORKCOV":"Couverture du réseau",
+  "TRANSFERSPDDEF":"Moins d'une heure.",
+  "NETWORKCOVDEF":"à l'échelle nationale",
+  "BRANCH":"la section",
 
   "ABTP1":"La Banque mondiale estime qu'environ 120 millions de personnes en Afrique reçoivent de l'argent d'environ 30 millions de parents et d'amis qui ont quitté leur pays d'origine, pour un total de USD 60 milliards. Cependant, quand il s'agit de choisir l'opérateur à utiliser pour envoyer de l'argent à la maison en Afrique, trop souvent les migrants n'ont pas les données nécessaires pour faire un choix éclairé.",
   "ABTP2":"Envoyer de l'argent L'Afrique fournit des données sur le coût de l'envoi de quantités relativement faibles d'argent de certains pays dans le monde entier à un certain nombre de pays africains, ainsi que dans le continent africain. L'objectif de la base de données est d'accroître la transparence du marché et de fournir aux migrants des informations complètes et fiables sur tous les éléments de la transaction. Send Money Africa permet aux utilisateurs de comparer les coûts appliqués par plusieurs fournisseurs pour envoyer de l'argent de 16 pays d'envoi majeurs à 28 pays d'accueil africains, pour un total de 54 corridors de pays.",

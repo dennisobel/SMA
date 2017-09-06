@@ -30,7 +30,7 @@ scrollContent;
   		this.renderer.setElementStyle(this.scrollContent, "margin-top","0px")
   	}else{
   		this.renderer.setElementStyle(this.header, "top","0px")
-  		this.renderer.setElementStyle(this.scrollContent, "margin-top","56px")
+  		this.renderer.setElementStyle(this.scrollContent, "margin-top","70px")
   	}
   }
 

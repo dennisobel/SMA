@@ -22,42 +22,7 @@
                    id="sms-corridor-search-form" 
                    accept-charset="UTF-8"> 
 
-                    <ion-label color="tertiary">{{ 'TRANSFERMONEY'|translate }}</ion-label>                                        
-                        <!--
-                        <div id="edit-transfer" class="form-radios">
-                        <div class="form-item form-type-radio form-item-transfer">
-                            
-                            
-                            <ion-list radio-group >
-                                <ion-row>
-                                    <ion-col>
-                                        <ion-item>
-                                            <ion-label color="tertiary"
-                                                       class="option" 
-                                                       for="edit-transfer-from">From:</ion-label>
-                                            <ion-radio id="edit-transfer-from" 
-                                                       name="transfer" 
-                                                       value="from" 
-                                                       checked 
-                                                       class="form-radio"></ion-radio>
-                                        </ion-item>   
-                                    </ion-col>
-                                    <ion-col>
-                                        <ion-item>
-                                            <ion-label color="tertiary"
-                                                       class="option" 
-                                                       for="edit-transfer-to">To:</ion-label>
-                                            <ion-radio id="edit-transfer-to" 
-                                                       name="transfer" 
-                                                       value="to" 
-                                                       class="form-radio"></ion-radio>
-                                        </ion-item>
-                                    </ion-col>
-                                </ion-row>
-                            </ion-list>                                            
-                        </div>
-                        </div>
-                        -->    
+                    <ion-label color="tertiary">{{ 'TRANSFERMONEY'|translate }}</ion-label>    
                     
                         <!--Sending Country-->
 
@@ -111,7 +76,8 @@
     </div>
 
     <ion-fab right bottom>
-        <button ion-fab color="tertiary"><ion-icon name="md-share"></ion-icon></button>
+        <button ion-fab color="tertiary" (click)="regularShare()"><ion-icon name="md-share"></ion-icon></button>
+        <!--
         <ion-fab-list side="top">
 
             <button
@@ -126,7 +92,8 @@
             
             <button 
             ion-fab color="tertiary"><ion-icon name="logo-facebook"></ion-icon></button>
-        </ion-fab-list>        
+        </ion-fab-list>   
+        -->     
     </ion-fab>
 </ion-content>
            

@@ -3,13 +3,11 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-//import { TabsPage } from '../pages/tabs/tabs';
 import { AboutsmaPage } from '../pages/aboutsma/aboutsma';
 import { CorridorsPage } from '../pages/corridors/corridors';
 import { MethodologyPage } from '../pages/methodology/methodology';
 import { SettingsPage } from '../pages/settings/settings';
 import { TransferratesPage } from '../pages/transferrates/transferrates';
-//import { MecorabPage } from '../pages/mecorab/mecorab';
 import { HelpPage } from '../pages/help/help';
 
 
@@ -37,15 +35,13 @@ export class MyApp {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
-    this.pages = [
-      
+    this.pages = [      
       { title: 'Settings', component: SettingsPage },
-      { title: 'Help', component: HelpPage },
-      { title: 'Transfer Rates', component: TransferratesPage },     
-      { title: 'Methodology', component: MethodologyPage },      
-      { title: 'Corridors', component: CorridorsPage },        
-      { title: 'About SMA', component: AboutsmaPage },
-      
+      { title: 'Transfer Rates', component: TransferratesPage }, 
+      { title: 'Corridors', component: CorridorsPage },     
+      { title: 'Methodology', component: MethodologyPage },                 
+      { title: 'About SMA', component: AboutsmaPage },      
+      { title: 'Help', component: HelpPage }
     ];
 
   }

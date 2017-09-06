@@ -1,4 +1,4 @@
-
+import { SocialSharing } from '@ionic-native/social-sharing';
 import { Component } from '@angular/core';
 import { ViewController, NavParams, ModalController } from 'ionic-angular';
 import { ListPage } from "../list/list"
@@ -31,7 +31,11 @@ amttwo:any
 recordone:any
 recordtwo:any
 
-constructor(private modalCtrl: ModalController, public navParams: NavParams, private viewCtrl: ViewController) {
+constructor(
+    private modalCtrl: ModalController, 
+    public navParams: NavParams, 
+    private viewCtrl: ViewController,
+    public socialSharing: SocialSharing) {
     /*
     this.amount = this.navParams.get("amount")
     this.toggle = this.amount[0].amount    
@@ -91,5 +95,7 @@ moreDetails(record){
     modal.present()
 }
 
-
+regularShare(){
+  this.socialSharing.share("Share page");
+}
 }

@@ -1,3 +1,4 @@
+import { SocialSharing } from '@ionic-native/social-sharing';
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
@@ -13,7 +14,8 @@ export class SettingsPage {
   constructor(
     public navCtrl: NavController, 
     public navParams: NavParams, 
-    public translateService: TranslateService) {
+    public translateService: TranslateService,
+    public socialSharing:SocialSharing){
   }
 
   ionViewDidLoad() {
@@ -46,6 +48,10 @@ export class SettingsPage {
   onFrench(){
     this.translateService.use('fr');
     console.log(this.translateService.use('fr'))
+  }
+
+  regularShare(){
+    this.socialSharing.share("Share page");
   }
 
 

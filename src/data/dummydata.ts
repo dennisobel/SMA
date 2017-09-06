@@ -25,7 +25,12 @@ export default[
                                 ExchangeRateMargin:"0.71%",
                                 TotalCostPercent:"3.93%",
                                 TotalCostEur:"5.50",
-                                AmountReceived:"193.53"
+                                AmountReceived:"193.53",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
                             },
                             {
                                 //id: "2",
@@ -35,7 +40,12 @@ export default[
                                 ExchangeRateMargin:"0.70%",
                                 TotalCostPercent:"4.27%",
                                 TotalCostEur:"5.98",
-                                AmountReceived:"192.81" 
+                                AmountReceived:"192.81",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
                             },
                             {
                                 //id: "3",
@@ -45,7 +55,12 @@ export default[
                                 ExchangeRateMargin:"3.59%",
                                 TotalCostPercent:"5.74%",
                                 TotalCostEur:"8.04",
-                                AmountReceived:"195.56" 
+                                AmountReceived:"195.56",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide" 
                             },
                             {
                                 //id: "4",
@@ -55,7 +70,12 @@ export default[
                                 ExchangeRateMargin:"1.67%",
                                 TotalCostPercent:"5.95%",
                                 TotalCostEur:"8.33",
-                                AmountReceived:"191.30"
+                                AmountReceived:"191.30",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
                             },
                             {
                                 //id: "5",
@@ -65,7 +85,12 @@ export default[
                                 ExchangeRateMargin:"3.59%",
                                 TotalCostPercent:"7.09%",
                                 TotalCostEur:"9.93",
-                                AmountReceived:"192.75"
+                                AmountReceived:"192.75",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
                             },
                             {
                                 //id: "6",
@@ -75,7 +100,12 @@ export default[
                                 ExchangeRateMargin:"3.06%",
                                 TotalCostPercent:"7.99%",
                                 TotalCostEur:"11.19",
-                                AmountReceived:"189.84"
+                                AmountReceived:"189.84",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
                             },
                             {
                                 //id: "7",
@@ -85,7 +115,12 @@ export default[
                                 ExchangeRateMargin:"3.06%",
                                 TotalCostPercent:"8.71%",
                                 TotalCostEur:"12.19",
-                                AmountReceived:"188.37"
+                                AmountReceived:"188.37",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
                             },
                             {
                                 //id: "8",
@@ -95,7 +130,12 @@ export default[
                                 ExchangeRateMargin:"3.84%",
                                 TotalCostPercent:"8.76%",
                                 TotalCostEur:"12.26",
-                                AmountReceived:"189.76"
+                                AmountReceived:"189.76",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
                             },
                             {
                                 //id: "9",
@@ -105,8 +145,29 @@ export default[
                                 ExchangeRateMargin:"3.89%",
                                 TotalCostPercent:"8.82%",
                                 TotalCostEur:"12.35",
-                                AmountReceived:"189.76"
-                            }
+                                AmountReceived:"189.76",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
+                            },
+                            {
+                                //id: "10",
+                                firm: "One Com",
+                                product_availability:"branch",
+                                fee:"6.90",
+                                ExchangeRateMargin:"3.89%",
+                                TotalCostPercent:"8.82%",
+                                TotalCostEur:"10.35",
+                                AmountReceived:"180.00",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
+                            },
+
                         ]
                     },
                     {
@@ -120,7 +181,12 @@ export default[
                                 ExchangeRateMargin:"0.71%",
                                 TotalCostPercent:"2.02%",
                                 TotalCostEur:"6.97",
-                                AmountReceived:"493.43"
+                                AmountReceived:"493.43",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
                             },
                             {
                                 //id: "2",
@@ -130,7 +196,12 @@ export default[
                                 ExchangeRateMargin:"0.70%",
                                 TotalCostPercent:"3.02%",
                                 TotalCostEur:"10.42",
-                                AmountReceived:"488.32"
+                                AmountReceived:"488.32",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
                             },
                             {
                                 //id: "3",
@@ -140,7 +211,12 @@ export default[
                                 ExchangeRateMargin:"3.59%",
                                 TotalCostPercent:"4.46%",
                                 TotalCostEur:"15.39",
-                                AmountReceived:"495.50"
+                                AmountReceived:"495.50",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
                             },
                             {
                                 //id: "4",
@@ -150,7 +226,12 @@ export default[
                                 ExchangeRateMargin:"3.59%",
                                 TotalCostPercent:"5.01%",
                                 TotalCostEur:"17.28",
-                                AmountReceived:"492.64"
+                                AmountReceived:"492.64",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
                             },
                             {
                                 //id: "5",
@@ -160,7 +241,12 @@ export default[
                                 ExchangeRateMargin:"1.67%",
                                 TotalCostPercent:"5.43%",
                                 TotalCostEur:"18.73",
-                                AmountReceived:"480.86"
+                                AmountReceived:"480.86",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
                             },
                             {
                                 //id: "6",
@@ -170,7 +256,12 @@ export default[
                                 ExchangeRateMargin:"3.06%",
                                 TotalCostPercent:"6.54%",
                                 TotalCostEur:"22.56",
-                                AmountReceived:"482.08"
+                                AmountReceived:"482.08",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
                             },
                             {
                                 //id: "7",
@@ -180,7 +271,12 @@ export default[
                                 ExchangeRateMargin:"3.84%",
                                 TotalCostPercent:"7.02%",
                                 TotalCostEur:"24.22",
-                                AmountReceived:"483.45"
+                                AmountReceived:"483.45",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
                             },
                             {
                                 //id: "8",
@@ -190,7 +286,12 @@ export default[
                                 ExchangeRateMargin:"3.06%",
                                 TotalCostPercent:"7.38%",
                                 TotalCostEur:"25.46",
-                                AmountReceived:"477.74"
+                                AmountReceived:"477.74",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
                             },
                             {
                                 //id: "9",
@@ -200,7 +301,27 @@ export default[
                                 ExchangeRateMargin:"3.89%",
                                 TotalCostPercent:"8.21%",
                                 TotalCostEur:"28.32",
-                                AmountReceived:"477.57"
+                                AmountReceived:"477.57",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
+                            },
+                            {
+                                //id: "10",
+                                firm: "One Com",
+                                product_availability:"branch",
+                                fee:"6.90",
+                                ExchangeRateMargin:"3.89%",
+                                TotalCostPercent:"8.82%",
+                                TotalCostEur:"10.35",
+                                AmountReceived:"180.00",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
                             }   
                         ]
                     }
@@ -228,7 +349,12 @@ export default[
                             ExchangeRateMargin:"-0.75%",
                             TotalCostPercent:"2.82%",
                             TotalCostEur:"3.95",
-                            AmountReceived:"1435.59"
+                            AmountReceived:"1435.59",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
                             },
                             {
                             //id:"2",
@@ -238,7 +364,12 @@ export default[
                             ExchangeRateMargin:"1.08%",
                             TotalCostPercent:"3.23%",
                             TotalCostEur:"4.52",
-                            AmountReceived:"1430.28"
+                            AmountReceived:"1430.28",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
                             },
                             {
                             //id: "3",
@@ -248,7 +379,12 @@ export default[
                             ExchangeRateMargin:"1.65%",
                             TotalCostPercent:"3.80%",
                             TotalCostEur:"5.32",
-                            AmountReceived:"1422.06"
+                            AmountReceived:"1422.06",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
                             },
                             {
                             //id: "4",
@@ -258,8 +394,103 @@ export default[
                             ExchangeRateMargin:"0.52%",
                             TotalCostPercent:"4.02%",
                             TotalCostEur:"5.63",
-                            AmountReceived:"1418.55"
-                            }
+                            AmountReceived:"1418.55",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
+                            },
+                            {
+                                //id: "5",
+                                firm: "WorldRemit",
+                                product_availability:"online",
+                                fee:"12.99",
+                                ExchangeRateMargin:"1.67%",
+                                TotalCostPercent:"5.43%",
+                                TotalCostEur:"18.73",
+                                AmountReceived:"480.86",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
+                            },
+                            {
+                                //id: "6",
+                                firm: "La Poste via Western Union",
+                                product_availability:"branch",
+                                fee:"12.00",
+                                ExchangeRateMargin:"3.06%",
+                                TotalCostPercent:"6.54%",
+                                TotalCostEur:"22.56",
+                                AmountReceived:"482.08",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
+                            },
+                            {
+                                //id: "7",
+                                firm: "MoneyGram",
+                                product_availability:"branch",
+                                fee:"11.00",
+                                ExchangeRateMargin:"3.84%",
+                                TotalCostPercent:"7.02%",
+                                TotalCostEur:"24.22",
+                                AmountReceived:"483.45",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
+                            },
+                            {
+                                //id: "8",
+                                firm: "Western Union",
+                                product_availability:"branch",
+                                fee:"14.90",
+                                ExchangeRateMargin:"3.06%",
+                                TotalCostPercent:"7.38%",
+                                TotalCostEur:"25.46",
+                                AmountReceived:"477.74",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
+                            },
+                            {
+                                //id: "9",
+                                firm: "Western Union",
+                                product_availability:"online",
+                                fee:"14.90",
+                                ExchangeRateMargin:"3.89%",
+                                TotalCostPercent:"8.21%",
+                                TotalCostEur:"28.32",
+                                AmountReceived:"477.57",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
+                            },
+                            {
+                                //id: "10",
+                                firm: "One Com",
+                                product_availability:"branch",
+                                fee:"6.90",
+                                ExchangeRateMargin:"3.89%",
+                                TotalCostPercent:"8.82%",
+                                TotalCostEur:"10.35",
+                                AmountReceived:"180.00",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
+                            } 
                         ]
                     }, 
                     {
@@ -273,7 +504,12 @@ export default[
                             ExchangeRateMargin:"-0.75%",
                             TotalCostPercent:"1.56%",
                             TotalCostEur:"5.38",
-                            AmountReceived:"3583.67"
+                            AmountReceived:"3583.67",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
                             },
                             {
                             //id: "2",
@@ -283,7 +519,12 @@ export default[
                             ExchangeRateMargin:"0.52%",
                             TotalCostPercent:"1.94%",
                             TotalCostEur:"6.69",
-                            AmountReceived:"3571.05"
+                            AmountReceived:"3571.05",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
                             },
                             {
                             //id: "3",
@@ -293,7 +534,12 @@ export default[
                             ExchangeRateMargin:"1.08%",
                             TotalCostPercent:"1.95%",
                             TotalCostEur:"6.73",
-                            AmountReceived:"3570.48"
+                            AmountReceived:"3570.48",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
                             },
                             {
                             //id: "4",
@@ -303,7 +549,102 @@ export default[
                             ExchangeRateMargin:"1.65%",
                             TotalCostPercent:"2.52%",
                             TotalCostEur:"8.69",
-                            AmountReceived:"3549.96"
+                            AmountReceived:"3549.96",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
+                            },
+                            {
+                                //id: "5",
+                                firm: "WorldRemit",
+                                product_availability:"online",
+                                fee:"12.99",
+                                ExchangeRateMargin:"1.67%",
+                                TotalCostPercent:"5.43%",
+                                TotalCostEur:"18.73",
+                                AmountReceived:"480.86",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
+                            },
+                            {
+                                //id: "6",
+                                firm: "La Poste via Western Union",
+                                product_availability:"branch",
+                                fee:"12.00",
+                                ExchangeRateMargin:"3.06%",
+                                TotalCostPercent:"6.54%",
+                                TotalCostEur:"22.56",
+                                AmountReceived:"482.08",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
+                            },
+                            {
+                                //id: "7",
+                                firm: "MoneyGram",
+                                product_availability:"branch",
+                                fee:"11.00",
+                                ExchangeRateMargin:"3.84%",
+                                TotalCostPercent:"7.02%",
+                                TotalCostEur:"24.22",
+                                AmountReceived:"483.45",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
+                            },
+                            {
+                                //id: "8",
+                                firm: "Western Union",
+                                product_availability:"branch",
+                                fee:"14.90",
+                                ExchangeRateMargin:"3.06%",
+                                TotalCostPercent:"7.38%",
+                                TotalCostEur:"25.46",
+                                AmountReceived:"477.74",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
+                            },
+                            {
+                                //id: "9",
+                                firm: "Western Union",
+                                product_availability:"online",
+                                fee:"14.90",
+                                ExchangeRateMargin:"3.89%",
+                                TotalCostPercent:"8.21%",
+                                TotalCostEur:"28.32",
+                                AmountReceived:"477.57",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
+                            },
+                            {
+                                //id: "10",
+                                firm: "One Com",
+                                product_availability:"branch",
+                                fee:"6.90",
+                                ExchangeRateMargin:"3.89%",
+                                TotalCostPercent:"8.82%",
+                                TotalCostEur:"10.35",
+                                AmountReceived:"180.00",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
                             } 
                         ]
                     }
@@ -337,7 +678,12 @@ export default[
                                 ExchangeRateMargin:"0.71%",
                                 TotalCostPercent:"3.93%",
                                 TotalCostEur:"5.50",
-                                AmountReceived:"193.53"
+                                AmountReceived:"193.53",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
                                 },
                                 {
                                 //id: "2",
@@ -347,7 +693,12 @@ export default[
                                 ExchangeRateMargin:"0.70%",
                                 TotalCostPercent:"4.27%",
                                 TotalCostEur:"5.98",
-                                AmountReceived:"192.81" 
+                                AmountReceived:"192.81",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide" 
                                 },
                                 {
                                 //id: "3",
@@ -357,7 +708,12 @@ export default[
                                 ExchangeRateMargin:"3.59%",
                                 TotalCostPercent:"5.74%",
                                 TotalCostEur:"8.04",
-                                AmountReceived:"195.56" 
+                                AmountReceived:"195.56",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide" 
                                 },
                                 {
                                 //id: "4",
@@ -367,7 +723,12 @@ export default[
                                 ExchangeRateMargin:"1.67%",
                                 TotalCostPercent:"5.95%",
                                 TotalCostEur:"8.33",
-                                AmountReceived:"191.30"
+                                AmountReceived:"191.30",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
                                 },
                                 {
                                 //id: "5",
@@ -377,7 +738,12 @@ export default[
                                 ExchangeRateMargin:"3.59%",
                                 TotalCostPercent:"7.09%",
                                 TotalCostEur:"9.93",
-                                AmountReceived:"192.75"
+                                AmountReceived:"192.75",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
                                 },
                                 {
                                 //id: "6",
@@ -387,7 +753,12 @@ export default[
                                 ExchangeRateMargin:"3.06%",
                                 TotalCostPercent:"7.99%",
                                 TotalCostEur:"11.19",
-                                AmountReceived:"189.84"
+                                AmountReceived:"189.84",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
                                 },
                                 {
                                 //id: "7",
@@ -397,7 +768,12 @@ export default[
                                 ExchangeRateMargin:"3.06%",
                                 TotalCostPercent:"8.71%",
                                 TotalCostEur:"12.19",
-                                AmountReceived:"188.37"
+                                AmountReceived:"188.37",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
                                 },
                                 {
                                 //id: "8",
@@ -407,7 +783,12 @@ export default[
                                 ExchangeRateMargin:"3.84%",
                                 TotalCostPercent:"8.76%",
                                 TotalCostEur:"12.26",
-                                AmountReceived:"189.76"
+                                AmountReceived:"189.76",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
                                 },
                                 {
                                 //id: "9",
@@ -417,8 +798,28 @@ export default[
                                 ExchangeRateMargin:"3.89%",
                                 TotalCostPercent:"8.82%",
                                 TotalCostEur:"12.35",
-                                AmountReceived:"189.76"
-                                }
+                                AmountReceived:"189.76",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
+                                },                                
+                                {
+                                    //id: "10",
+                                    firm: "One Com",
+                                    product_availability:"branch",
+                                    fee:"6.90",
+                                    ExchangeRateMargin:"3.89%",
+                                    TotalCostPercent:"8.82%",
+                                    TotalCostEur:"10.35",
+                                    AmountReceived:"180.00",
+                                    productavicn:"../../../assets/icon/bank_account_1.png",
+                                    transferspeed:"../../../assets/icon/less_hour_1.png",
+                                    networkcov:"../../../assets/icon/nationwide_1.png",
+                                    transferspeeddef:"Less than one hour",
+                                    networkcovdef:"Nationwide"
+                                } 
                             ]
                         },
                         {
@@ -432,7 +833,12 @@ export default[
                                 ExchangeRateMargin:"0.71%",
                                 TotalCostPercent:"2.02%",
                                 TotalCostEur:"6.97",
-                                AmountReceived:"493.43"
+                                AmountReceived:"493.43",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
                                 },
                                 {
                                 //id: "2",
@@ -442,7 +848,12 @@ export default[
                                 ExchangeRateMargin:"0.70%",
                                 TotalCostPercent:"3.02%",
                                 TotalCostEur:"10.42",
-                                AmountReceived:"488.32"
+                                AmountReceived:"488.32",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
                                 },
                                 {
                                 //id: "3",
@@ -452,7 +863,12 @@ export default[
                                 ExchangeRateMargin:"3.59%",
                                 TotalCostPercent:"4.46%",
                                 TotalCostEur:"15.39",
-                                AmountReceived:"495.50"
+                                AmountReceived:"495.50",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
                                 },
                                 {
                                 //id: "4",
@@ -462,7 +878,12 @@ export default[
                                 ExchangeRateMargin:"3.59%",
                                 TotalCostPercent:"5.01%",
                                 TotalCostEur:"17.28",
-                                AmountReceived:"492.64"
+                                AmountReceived:"492.64",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
                                 },
                                 {
                                 //id: "5",
@@ -472,7 +893,12 @@ export default[
                                 ExchangeRateMargin:"1.67%",
                                 TotalCostPercent:"5.43%",
                                 TotalCostEur:"18.73",
-                                AmountReceived:"480.86"
+                                AmountReceived:"480.86",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
                                 },
                                 {
                                 //id: "6",
@@ -482,7 +908,12 @@ export default[
                                 ExchangeRateMargin:"3.06%",
                                 TotalCostPercent:"6.54%",
                                 TotalCostEur:"22.56",
-                                AmountReceived:"482.08"
+                                AmountReceived:"482.08",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
                                 },
                                 {
                                 //id: "7",
@@ -492,7 +923,12 @@ export default[
                                 ExchangeRateMargin:"3.84%",
                                 TotalCostPercent:"7.02%",
                                 TotalCostEur:"24.22",
-                                AmountReceived:"483.45"
+                                AmountReceived:"483.45",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
                                 },
                                 {
                                 //id: "8",
@@ -502,7 +938,12 @@ export default[
                                 ExchangeRateMargin:"3.06%",
                                 TotalCostPercent:"7.38%",
                                 TotalCostEur:"25.46",
-                                AmountReceived:"477.74"
+                                AmountReceived:"477.74",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
                                 },
                                 {
                                 //id: "9",
@@ -512,8 +953,28 @@ export default[
                                 ExchangeRateMargin:"3.89%",
                                 TotalCostPercent:"8.21%",
                                 TotalCostEur:"28.32",
-                                AmountReceived:"477.57"
-                                }	
+                                AmountReceived:"477.57",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
+                                },
+                                {
+                                    //id: "10",
+                                    firm: "One Com",
+                                    product_availability:"branch",
+                                    fee:"6.90",
+                                    ExchangeRateMargin:"3.89%",
+                                    TotalCostPercent:"8.82%",
+                                    TotalCostEur:"10.35",
+                                    AmountReceived:"180.00",
+                                    productavicn:"../../../assets/icon/bank_account_1.png",
+                                    transferspeed:"../../../assets/icon/less_hour_1.png",
+                                    networkcov:"../../../assets/icon/nationwide_1.png",
+                                    transferspeeddef:"Less than one hour",
+                                    networkcovdef:"Nationwide"
+                                } 	
                             ]
                         }
                     ]    
@@ -536,7 +997,12 @@ export default[
                             ExchangeRateMargin:"-0.75%",
                             TotalCostPercent:"2.82%",
                             TotalCostEur:"3.95",
-                            AmountReceived:"1435.59"
+                            AmountReceived:"1435.59",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
                             },
                             {
                             //id:"2",
@@ -546,7 +1012,12 @@ export default[
                             ExchangeRateMargin:"1.08%",
                             TotalCostPercent:"3.23%",
                             TotalCostEur:"4.52",
-                            AmountReceived:"1430.28"
+                            AmountReceived:"1430.28",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
                             },
                             {
                             //id: "3",
@@ -556,7 +1027,12 @@ export default[
                             ExchangeRateMargin:"1.65%",
                             TotalCostPercent:"3.80%",
                             TotalCostEur:"5.32",
-                            AmountReceived:"1422.06"
+                            AmountReceived:"1422.06",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
                             },
                             {
                             //id: "4",
@@ -566,8 +1042,103 @@ export default[
                             ExchangeRateMargin:"0.52%",
                             TotalCostPercent:"4.02%",
                             TotalCostEur:"5.63",
-                            AmountReceived:"1418.55"
-                            }
+                            AmountReceived:"1418.55",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
+                            },
+                            {
+                                //id: "5",
+                                firm: "WorldRemit",
+                                product_availability:"online",
+                                fee:"12.99",
+                                ExchangeRateMargin:"1.67%",
+                                TotalCostPercent:"5.43%",
+                                TotalCostEur:"18.73",
+                                AmountReceived:"480.86",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
+                                },
+                                {
+                                //id: "6",
+                                firm: "La Poste via Western Union",
+                                product_availability:"branch",
+                                fee:"12.00",
+                                ExchangeRateMargin:"3.06%",
+                                TotalCostPercent:"6.54%",
+                                TotalCostEur:"22.56",
+                                AmountReceived:"482.08",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
+                                },
+                                {
+                                //id: "7",
+                                firm: "MoneyGram",
+                                product_availability:"branch",
+                                fee:"11.00",
+                                ExchangeRateMargin:"3.84%",
+                                TotalCostPercent:"7.02%",
+                                TotalCostEur:"24.22",
+                                AmountReceived:"483.45",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
+                                },
+                                {
+                                //id: "8",
+                                firm: "Western Union",
+                                product_availability:"branch",
+                                fee:"14.90",
+                                ExchangeRateMargin:"3.06%",
+                                TotalCostPercent:"7.38%",
+                                TotalCostEur:"25.46",
+                                AmountReceived:"477.74",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
+                                },
+                                {
+                                //id: "9",
+                                firm: "Western Union",
+                                product_availability:"online",
+                                fee:"14.90",
+                                ExchangeRateMargin:"3.89%",
+                                TotalCostPercent:"8.21%",
+                                TotalCostEur:"28.32",
+                                AmountReceived:"477.57",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
+                                },
+                                {
+                                    //id: "10",
+                                    firm: "One Com",
+                                    product_availability:"branch",
+                                    fee:"6.90",
+                                    ExchangeRateMargin:"3.89%",
+                                    TotalCostPercent:"8.82%",
+                                    TotalCostEur:"10.35",
+                                    AmountReceived:"180.00",
+                                    productavicn:"../../../assets/icon/bank_account_1.png",
+                                    transferspeed:"../../../assets/icon/less_hour_1.png",
+                                    networkcov:"../../../assets/icon/nationwide_1.png",
+                                    transferspeeddef:"Less than one hour",
+                                    networkcovdef:"Nationwide"
+                                }
                         ]
                     },
                     {
@@ -581,7 +1152,12 @@ export default[
                             ExchangeRateMargin:"-0.75%",
                             TotalCostPercent:"1.56%",
                             TotalCostEur:"5.38",
-                            AmountReceived:"3583.67"
+                            AmountReceived:"3583.67",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
                             },
                             {
                             //id: "2",
@@ -591,7 +1167,12 @@ export default[
                             ExchangeRateMargin:"0.52%",
                             TotalCostPercent:"1.94%",
                             TotalCostEur:"6.69",
-                            AmountReceived:"3571.05"
+                            AmountReceived:"3571.05",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
                             },
                             {
                             //id: "3",
@@ -601,7 +1182,12 @@ export default[
                             ExchangeRateMargin:"1.08%",
                             TotalCostPercent:"1.95%",
                             TotalCostEur:"6.73",
-                            AmountReceived:"3570.48"
+                            AmountReceived:"3570.48",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
                             },
                             {
                             //id: "4",
@@ -611,8 +1197,103 @@ export default[
                             ExchangeRateMargin:"1.65%",
                             TotalCostPercent:"2.52%",
                             TotalCostEur:"8.69",
-                            AmountReceived:"3549.96"
-                            } 
+                            AmountReceived:"3549.96",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
+                            },
+                            {
+                                //id: "5",
+                                firm: "WorldRemit",
+                                product_availability:"online",
+                                fee:"12.99",
+                                ExchangeRateMargin:"1.67%",
+                                TotalCostPercent:"5.43%",
+                                TotalCostEur:"18.73",
+                                AmountReceived:"480.86",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
+                                },
+                                {
+                                //id: "6",
+                                firm: "La Poste via Western Union",
+                                product_availability:"branch",
+                                fee:"12.00",
+                                ExchangeRateMargin:"3.06%",
+                                TotalCostPercent:"6.54%",
+                                TotalCostEur:"22.56",
+                                AmountReceived:"482.08",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
+                                },
+                                {
+                                //id: "7",
+                                firm: "MoneyGram",
+                                product_availability:"branch",
+                                fee:"11.00",
+                                ExchangeRateMargin:"3.84%",
+                                TotalCostPercent:"7.02%",
+                                TotalCostEur:"24.22",
+                                AmountReceived:"483.45",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
+                                },
+                                {
+                                //id: "8",
+                                firm: "Western Union",
+                                product_availability:"branch",
+                                fee:"14.90",
+                                ExchangeRateMargin:"3.06%",
+                                TotalCostPercent:"7.38%",
+                                TotalCostEur:"25.46",
+                                AmountReceived:"477.74",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
+                                },
+                                {
+                                //id: "9",
+                                firm: "Western Union",
+                                product_availability:"online",
+                                fee:"14.90",
+                                ExchangeRateMargin:"3.89%",
+                                TotalCostPercent:"8.21%",
+                                TotalCostEur:"28.32",
+                                AmountReceived:"477.57",
+                                productavicn:"../../../assets/icon/bank_account_1.png",
+                                transferspeed:"../../../assets/icon/less_hour_1.png",
+                                networkcov:"../../../assets/icon/nationwide_1.png",
+                                transferspeeddef:"Less than one hour",
+                                networkcovdef:"Nationwide"
+                                },
+                                {
+                                    //id: "10",
+                                    firm: "One Com",
+                                    product_availability:"branch",
+                                    fee:"6.90",
+                                    ExchangeRateMargin:"3.89%",
+                                    TotalCostPercent:"8.82%",
+                                    TotalCostEur:"10.35",
+                                    AmountReceived:"180.00",
+                                    productavicn:"../../../assets/icon/bank_account_1.png",
+                                    transferspeed:"../../../assets/icon/less_hour_1.png",
+                                    networkcov:"../../../assets/icon/nationwide_1.png",
+                                    transferspeeddef:"Less than one hour",
+                                    networkcovdef:"Nationwide"
+                                } 
                         ]
                     }
                 ]
@@ -643,7 +1324,12 @@ export default[
                             ExchangeRateMargin:"0.71%",
                             TotalCostPercent:"3.93%",
                             TotalCostEur:"5.50",
-                            AmountReceived:"193.53"
+                            AmountReceived:"193.53",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
                             },
                             {
                             //id: "2",
@@ -653,7 +1339,12 @@ export default[
                             ExchangeRateMargin:"0.70%",
                             TotalCostPercent:"4.27%",
                             TotalCostEur:"5.98",
-                            AmountReceived:"192.81" 
+                            AmountReceived:"192.81",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
                             },
                             {
                             //id: "3",
@@ -663,7 +1354,12 @@ export default[
                             ExchangeRateMargin:"3.59%",
                             TotalCostPercent:"5.74%",
                             TotalCostEur:"8.04",
-                            AmountReceived:"195.56" 
+                            AmountReceived:"195.56",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"                        
                             },
                             {
                             //id: "4",
@@ -673,7 +1369,12 @@ export default[
                             ExchangeRateMargin:"1.67%",
                             TotalCostPercent:"5.95%",
                             TotalCostEur:"8.33",
-                            AmountReceived:"191.30"
+                            AmountReceived:"191.30",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
                             },
                             {
                             //id: "5",
@@ -683,7 +1384,12 @@ export default[
                             ExchangeRateMargin:"3.59%",
                             TotalCostPercent:"7.09%",
                             TotalCostEur:"9.93",
-                            AmountReceived:"192.75"
+                            AmountReceived:"192.75",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
                             },
                             {
                             //id: "6",
@@ -693,7 +1399,12 @@ export default[
                             ExchangeRateMargin:"3.06%",
                             TotalCostPercent:"7.99%",
                             TotalCostEur:"11.19",
-                            AmountReceived:"189.84"
+                            AmountReceived:"189.84",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
                             },
                             {
                             //id: "7",
@@ -703,7 +1414,12 @@ export default[
                             ExchangeRateMargin:"3.06%",
                             TotalCostPercent:"8.71%",
                             TotalCostEur:"12.19",
-                            AmountReceived:"188.37"
+                            AmountReceived:"188.37",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
                             },
                             {
                             //id: "8",
@@ -713,7 +1429,12 @@ export default[
                             ExchangeRateMargin:"3.84%",
                             TotalCostPercent:"8.76%",
                             TotalCostEur:"12.26",
-                            AmountReceived:"189.76"
+                            AmountReceived:"189.76",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
                             },
                             {
                             //id: "9",
@@ -723,8 +1444,28 @@ export default[
                             ExchangeRateMargin:"3.89%",
                             TotalCostPercent:"8.82%",
                             TotalCostEur:"12.35",
-                            AmountReceived:"189.76"
-                            }
+                            AmountReceived:"189.76",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
+                            },
+                            {
+                                    //id: "10",
+                                    firm: "One Com",
+                                    product_availability:"branch",
+                                    fee:"6.90",
+                                    ExchangeRateMargin:"3.89%",
+                                    TotalCostPercent:"8.82%",
+                                    TotalCostEur:"10.35",
+                                    AmountReceived:"180.00",
+                                    productavicn:"../../../assets/icon/bank_account_1.png",
+                                    transferspeed:"../../../assets/icon/less_hour_1.png",
+                                    networkcov:"../../../assets/icon/nationwide_1.png",
+                                    transferspeeddef:"Less than one hour",
+                                    networkcovdef:"Nationwide"
+                                } 
                         ]
                     },
                     {
@@ -738,7 +1479,12 @@ export default[
                             ExchangeRateMargin:"0.71%",
                             TotalCostPercent:"2.02%",
                             TotalCostEur:"6.97",
-                            AmountReceived:"493.43"
+                            AmountReceived:"493.43",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
                             },
                             {
                             //id: "2",
@@ -748,7 +1494,12 @@ export default[
                             ExchangeRateMargin:"0.70%",
                             TotalCostPercent:"3.02%",
                             TotalCostEur:"10.42",
-                            AmountReceived:"488.32"
+                            AmountReceived:"488.32",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
                             },
                             {
                             //id: "3",
@@ -758,7 +1509,12 @@ export default[
                             ExchangeRateMargin:"3.59%",
                             TotalCostPercent:"4.46%",
                             TotalCostEur:"15.39",
-                            AmountReceived:"495.50"
+                            AmountReceived:"495.50",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
                             },
                             {
                             //id: "4",
@@ -768,7 +1524,12 @@ export default[
                             ExchangeRateMargin:"3.59%",
                             TotalCostPercent:"5.01%",
                             TotalCostEur:"17.28",
-                            AmountReceived:"492.64"
+                            AmountReceived:"492.64",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
                             },
                             {
                             //id: "5",
@@ -778,7 +1539,10 @@ export default[
                             ExchangeRateMargin:"1.67%",
                             TotalCostPercent:"5.43%",
                             TotalCostEur:"18.73",
-                            AmountReceived:"480.86"
+                            AmountReceived:"480.86",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
                             },
                             {
                             //id: "6",
@@ -788,7 +1552,12 @@ export default[
                             ExchangeRateMargin:"3.06%",
                             TotalCostPercent:"6.54%",
                             TotalCostEur:"22.56",
-                            AmountReceived:"482.08"
+                            AmountReceived:"482.08",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
                             },
                             {
                             //id: "7",
@@ -798,7 +1567,12 @@ export default[
                             ExchangeRateMargin:"3.84%",
                             TotalCostPercent:"7.02%",
                             TotalCostEur:"24.22",
-                            AmountReceived:"483.45"
+                            AmountReceived:"483.45",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
                             },
                             {
                             //id: "8",
@@ -808,7 +1582,12 @@ export default[
                             ExchangeRateMargin:"3.06%",
                             TotalCostPercent:"7.38%",
                             TotalCostEur:"25.46",
-                            AmountReceived:"477.74"
+                            AmountReceived:"477.74",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
                             },
                             {
                             //id: "9",
@@ -818,8 +1597,28 @@ export default[
                             ExchangeRateMargin:"3.89%",
                             TotalCostPercent:"8.21%",
                             TotalCostEur:"28.32",
-                            AmountReceived:"477.57"
-                            }	
+                            AmountReceived:"477.57",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
+                            },
+                            {
+                                    //id: "10",
+                                    firm: "One Com",
+                                    product_availability:"branch",
+                                    fee:"6.90",
+                                    ExchangeRateMargin:"3.89%",
+                                    TotalCostPercent:"8.82%",
+                                    TotalCostEur:"10.35",
+                                    AmountReceived:"180.00",
+                                    productavicn:"../../../assets/icon/bank_account_1.png",
+                                    transferspeed:"../../../assets/icon/less_hour_1.png",
+                                    networkcov:"../../../assets/icon/nationwide_1.png",
+                                    transferspeeddef:"Less than one hour",
+                                    networkcovdef:"Nationwide"
+                            } 	
                         ]
                     }
                 ]
@@ -843,7 +1642,12 @@ export default[
                             ExchangeRateMargin:"-0.75%",
                             TotalCostPercent:"2.82%",
                             TotalCostEur:"3.95",
-                            AmountReceived:"1435.59"
+                            AmountReceived:"1435.59",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
                             },
                             {
                             //id:"2",
@@ -853,7 +1657,12 @@ export default[
                             ExchangeRateMargin:"1.08%",
                             TotalCostPercent:"3.23%",
                             TotalCostEur:"4.52",
-                            AmountReceived:"1430.28"
+                            AmountReceived:"1430.28",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
                             },
                             {
                             //id: "3",
@@ -863,7 +1672,12 @@ export default[
                             ExchangeRateMargin:"1.65%",
                             TotalCostPercent:"3.80%",
                             TotalCostEur:"5.32",
-                            AmountReceived:"1422.06"
+                            AmountReceived:"1422.06",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
                             },
                             {
                             //id: "4",
@@ -873,8 +1687,101 @@ export default[
                             ExchangeRateMargin:"0.52%",
                             TotalCostPercent:"4.02%",
                             TotalCostEur:"5.63",
-                            AmountReceived:"1418.55"
-                            }
+                            AmountReceived:"1418.55",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
+                            },
+                            {
+                            //id: "5",
+                            firm: "WorldRemit",
+                            product_availability:"online",
+                            fee:"12.99",
+                            ExchangeRateMargin:"1.67%",
+                            TotalCostPercent:"5.43%",
+                            TotalCostEur:"18.73",
+                            AmountReceived:"480.86",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
+                            },
+                            {
+                            //id: "6",
+                            firm: "La Poste via Western Union",
+                            product_availability:"branch",
+                            fee:"12.00",
+                            ExchangeRateMargin:"3.06%",
+                            TotalCostPercent:"6.54%",
+                            TotalCostEur:"22.56",
+                            AmountReceived:"482.08",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
+                            },
+                            {
+                            //id: "7",
+                            firm: "MoneyGram",
+                            product_availability:"branch",
+                            fee:"11.00",
+                            ExchangeRateMargin:"3.84%",
+                            TotalCostPercent:"7.02%",
+                            TotalCostEur:"24.22",
+                            AmountReceived:"483.45",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
+                            },
+                            {
+                            //id: "8",
+                            firm: "Western Union",
+                            product_availability:"branch",
+                            fee:"14.90",
+                            ExchangeRateMargin:"3.06%",
+                            TotalCostPercent:"7.38%",
+                            TotalCostEur:"25.46",
+                            AmountReceived:"477.74",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
+                            },
+                            {
+                            //id: "9",
+                            firm: "Western Union",
+                            product_availability:"online",
+                            fee:"14.90",
+                            ExchangeRateMargin:"3.89%",
+                            TotalCostPercent:"8.21%",
+                            TotalCostEur:"28.32",
+                            AmountReceived:"477.57",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
+                            },
+                            {
+                                    //id: "10",
+                                    firm: "One Com",
+                                    product_availability:"branch",
+                                    fee:"6.90",
+                                    ExchangeRateMargin:"3.89%",
+                                    TotalCostPercent:"8.82%",
+                                    TotalCostEur:"10.35",
+                                    AmountReceived:"180.00",
+                                    productavicn:"../../../assets/icon/bank_account_1.png",
+                                    transferspeed:"../../../assets/icon/less_hour_1.png",
+                                    networkcov:"../../../assets/icon/nationwide_1.png",
+                                    transferspeeddef:"Less than one hour",
+                                    networkcovdef:"Nationwide"
+                            } 
                         ]
                     },
                     {
@@ -888,7 +1795,12 @@ export default[
                             ExchangeRateMargin:"-0.75%",
                             TotalCostPercent:"1.56%",
                             TotalCostEur:"5.38",
-                            AmountReceived:"3583.67"
+                            AmountReceived:"3583.67",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
                             },
                             {
                             //id: "2",
@@ -898,7 +1810,12 @@ export default[
                             ExchangeRateMargin:"0.52%",
                             TotalCostPercent:"1.94%",
                             TotalCostEur:"6.69",
-                            AmountReceived:"3571.05"
+                            AmountReceived:"3571.05",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
                             },
                             {
                             //id: "3",
@@ -908,7 +1825,12 @@ export default[
                             ExchangeRateMargin:"1.08%",
                             TotalCostPercent:"1.95%",
                             TotalCostEur:"6.73",
-                            AmountReceived:"3570.48"
+                            AmountReceived:"3570.48",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
                             },
                             {
                             //id: "4",
@@ -918,8 +1840,101 @@ export default[
                             ExchangeRateMargin:"1.65%",
                             TotalCostPercent:"2.52%",
                             TotalCostEur:"8.69",
-                            AmountReceived:"3549.96"
-                            } 
+                            AmountReceived:"3549.96",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
+                            },
+                            {
+                            //id: "5",
+                            firm: "WorldRemit",
+                            product_availability:"online",
+                            fee:"12.99",
+                            ExchangeRateMargin:"1.67%",
+                            TotalCostPercent:"5.43%",
+                            TotalCostEur:"18.73",
+                            AmountReceived:"480.86",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
+                            },
+                            {
+                            //id: "6",
+                            firm: "La Poste via Western Union",
+                            product_availability:"branch",
+                            fee:"12.00",
+                            ExchangeRateMargin:"3.06%",
+                            TotalCostPercent:"6.54%",
+                            TotalCostEur:"22.56",
+                            AmountReceived:"482.08",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
+                            },
+                            {
+                            //id: "7",
+                            firm: "MoneyGram",
+                            product_availability:"branch",
+                            fee:"11.00",
+                            ExchangeRateMargin:"3.84%",
+                            TotalCostPercent:"7.02%",
+                            TotalCostEur:"24.22",
+                            AmountReceived:"483.45",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
+                            },
+                            {
+                            //id: "8",
+                            firm: "Western Union",
+                            product_availability:"branch",
+                            fee:"14.90",
+                            ExchangeRateMargin:"3.06%",
+                            TotalCostPercent:"7.38%",
+                            TotalCostEur:"25.46",
+                            AmountReceived:"477.74",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
+                            },
+                            {
+                            //id: "9",
+                            firm: "Western Union",
+                            product_availability:"online",
+                            fee:"14.90",
+                            ExchangeRateMargin:"3.89%",
+                            TotalCostPercent:"8.21%",
+                            TotalCostEur:"28.32",
+                            AmountReceived:"477.57",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
+                            },
+                            {
+                            //id: "10",
+                            firm: "One Com",
+                            product_availability:"branch",
+                            fee:"6.90",
+                            ExchangeRateMargin:"3.89%",
+                            TotalCostPercent:"8.82%",
+                            TotalCostEur:"10.35",
+                            AmountReceived:"180.00",
+                            productavicn:"../../../assets/icon/bank_account_1.png",
+                            transferspeed:"../../../assets/icon/less_hour_1.png",
+                            networkcov:"../../../assets/icon/nationwide_1.png",
+                            transferspeeddef:"Less than one hour",
+                            networkcovdef:"Nationwide"
+                            }  
                         ]
                     }
                 ]              

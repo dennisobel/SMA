@@ -9,72 +9,69 @@
     <ion-title>
      <ion-badge outline color="tertiary" style="font-size: 1.3rem">${{amt}}</ion-badge>
      <ion-label style="font-size: 1.3rem">{{"FIRM"|translate}}:{{firm}}</ion-label>
-     <!--
-      <ion-row>
-        <ion-col col-7>
-          <p style="font-size: 1.1rem">Firm:{{firm}}</p>
-        </ion-col>
-        <ion-col  col-1>
-          
-        </ion-col>
-        <ion-col  col-4>
-          <ion-badge outline color="tertiary" style="font-size: 1rem">${{amt}}</ion-badge>
-        </ion-col>
-      </ion-row>
-      -->
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding class="card-backgound-page grid-basic-page" align="center">  
-     <ion-list>
-         <ion-item>
-          <ion-row>
-            <ion-col col-6>
-              <p  style="font-size : 1.3rem"><strong>{{"PRODUCTAV"|translate}}:</strong></p>
-            </ion-col>
-            <ion-col col-6>
-              <p style="font-size : 1.3rem" align="right">{{product_availability}}</p>
-            </ion-col>
-          </ion-row>
-         </ion-item>
+     <ion-list>         
          <ion-item>
             <ion-row>
-            <ion-col col-6>
+            <ion-col col-8>
               <p style="font-size : 1.3rem"><strong>{{"FEE"|translate}}:</strong></p>
             </ion-col>
-            <ion-col col-6>
-              <p style="font-size : 1.3rem" align="right">{{fee}}</p>
+
+            <ion-col col-1>
+              <button ion-button small outline color="tertiary" id="fee" (click)="onHelp($event)"><ion-icon name="help"></ion-icon></button>
+            </ion-col>
+
+            <ion-col col-3>
+              <p style="font-size : 1.3rem" align="right">${{fee}}</p>
             </ion-col>
           </ion-row>
          </ion-item>
          <ion-item>
             <ion-row>
-            <ion-col col-6>
+            <ion-col col-8>
              <p><strong style="font-size : 1.3rem">{{"XRM"|translate}}:</strong></p> 
             </ion-col>
-            <ion-col col-6>
+
+            <ion-col col-1>
+              <button ion-button small outline color="tertiary" id="xrt" (click)="onHelp($event)"><ion-icon name="help"></ion-icon></button>
+            </ion-col>
+
+            <ion-col col-3>
               <p style="font-size : 1.3rem" align="right">{{ExchangeRateMargin}}</p>
             </ion-col>
           </ion-row>
          </ion-item>
          <ion-item>
             <ion-row>
-            <ion-col col-6>
+            <ion-col col-8>
               <p style="font-size : 1.3rem"><strong>{{"TOTALCOST"|translate}} (%):</strong></p>
             </ion-col>
-            <ion-col col-6>
+
+            <ion-col col-1>
+              <button ion-button small outline color="tertiary" id="tcp" (click)="onHelp($event)"><ion-icon name="help"></ion-icon></button>
+            </ion-col>
+
+            <ion-col col-3>
               <p style="font-size : 1.3rem" align="right">{{TotalCostPercent}}</p>
             </ion-col>
           </ion-row>
          </ion-item>
          <ion-item>
             <ion-row>
-            <ion-col col-6>
+            <ion-col col-8>
               <p style="font-size : 1.3rem"><strong>{{"TOTALCOST"|translate}} (Eur):</strong></p>
             </ion-col>
-            <ion-col col-6>
-              <p style="font-size : 1.3rem" align="right">{{TotalCostEur}}</p>
+
+            <ion-col col-1>
+              <button ion-button small outline color="tertiary" id="tcpe" (click)="onHelp($event)"><ion-icon name="help"></ion-icon></button>
+            </ion-col> 
+
+            <ion-col col-3>
+              <p style="font-size : 1.3rem" align="right">${{TotalCostEur}}</p>
             </ion-col>
           </ion-row>
          </ion-item>
@@ -83,15 +80,87 @@
             <ion-col col-6>
               <p style="font-size : 1.3rem"><strong>{{"AMT"|translate}}:</strong></p>
             </ion-col>
-            <ion-col col-6>
-              <p style="font-size : 1.3rem" align="right">{{AmountReceived}}</p>
+
+            <ion-col col-1>
+              <button ion-button small outline color="tertiary" id="amt" (click)="onHelp($event)"><ion-icon name="help"></ion-icon></button>
+            </ion-col> 
+
+            <ion-col col-5>
+              <p style="font-size : 1.3rem" align="right">${{AmountReceived}}</p>
             </ion-col>
+          </ion-row>
+         </ion-item>
+
+         <ion-item>
+          <ion-row>
+            <ion-col col-6>
+              <p style="font-size : 1.3rem"><strong>{{"TRANSFERSPD"|translate}}:</strong></p>
+            </ion-col>
+
+            <ion-col col-1>
+              <button ion-button small outline color="tertiary" id="tsp" (click)="onHelp($event)"><ion-icon name="help"></ion-icon></button>
+            </ion-col> 
+
+            <ion-col col-3></ion-col>
+
+            <ion-col col-2>
+              <img src={{transferspeed}}>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <p style="font-size : 1.3rem" align="right">{{"TRANSFERSPDDEF"|translate}}</p>
+          </ion-row>
+         </ion-item>
+
+         <ion-item>
+          <ion-row>
+            <ion-col col-6>
+              <p style="font-size : 1.3rem"><strong>{{"NETWORKCOV"|translate}}:</strong></p>
+            </ion-col>
+
+            <ion-col col-1>
+              <button ion-button small outline color="tertiary" id="ncv" (click)="onHelp($event)"><ion-icon name="help"></ion-icon></button>
+            </ion-col> 
+
+            <ion-col col-3></ion-col>
+
+            <ion-col col-2>
+              <img src={{networkcov}}>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <p style="font-size : 1.3rem" align="right">{{"NETWORKCOVDEF"|translate}}</p>
+          </ion-row>
+         </ion-item>
+
+         <ion-item>
+          <ion-row>
+            
+            <ion-col col-6>
+              <p  style="font-size : 1.3rem"><strong>{{"PRODUCTAV"|translate}}</strong></p>
+            </ion-col> 
+
+            <ion-col col-1>
+              <button ion-button small outline color="tertiary" id="pav" (click)="onHelp($event)"><ion-icon name="help"></ion-icon></button>
+            </ion-col>
+            
+            <ion-col col-3> 
+              
+            </ion-col>
+
+            <ion-col col-2>
+              <img src={{productavicn}}>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <p style="font-size : 1.3rem" align="right">{{"BRANCH"|translate}}</p>
           </ion-row>
          </ion-item>
      </ion-list>      
     
     <ion-fab right bottom>
-        <button ion-fab color="tertiary"><ion-icon name="md-share"></ion-icon></button>
+        <button ion-fab color="tertiary"><ion-icon name="md-share" (click)="regularShare()"></ion-icon></button>
+        <!--
         <ion-fab-list side="top">
             <button ion-fab color="tertiary"><ion-icon name="logo-googleplus"></ion-icon></button>
             <button ion-fab color="tertiary"><ion-icon name="logo-twitter"></ion-icon></button>
@@ -99,6 +168,7 @@
         <ion-fab-list side="left">
             <button ion-fab color="tertiary"><ion-icon name="logo-vimeo"></ion-icon></button>
             <button ion-fab color="tertiary"><ion-icon name="logo-facebook"></ion-icon></button>
-        </ion-fab-list>        
+        </ion-fab-list>    
+        -->    
     </ion-fab>
 </ion-content>

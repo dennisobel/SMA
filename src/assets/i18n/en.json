@@ -31,6 +31,12 @@
   "XRM":"Exchange Rate Margin",
   "TOTALCOST":"Total Cost Percent",
   "AMT":"Amount Received",
+  "TRANSFERSPD":"Transfer Speed",
+  "NETWORKCOV":"Network Coverage",
+  "TRANSFERSPDDEF":"Less than one hour",
+  "NETWORKCOVDEF":"Nationwide",
+  "BRANCH":"Branch",
+
 
   "ABTP1":"The World Bank estimates that about 120 million people in Africa receive money from about 30 million relatives and friends who left their home country, for a total of USD 60 billion. However, when it comes to choosing which operator to use to send money home to Africa, too often migrants do not have the necessary data to make an informed choice.",
   "ABTP2":"Send Money Africa provides data on the cost of sending relatively small amounts of money from selected countries worldwide to a number of African countries, as well as within the African continent. The objective of the database is to increase transparency in the market and provide migrants with complete and reliable information on all the components of the transaction. Send Money Africa allows the users to compare the costs applied by several providers to send money from 16 major sending countries to 28 African receiving countries, for a total of 54 country corridors.",

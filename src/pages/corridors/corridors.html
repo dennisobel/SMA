@@ -3,6 +3,12 @@
       <button ion-button  color="dark" outline clear (click)="onBack()">
           <ion-icon name="arrow-back"></ion-icon>
       </button>
+      <ion-buttons end>
+        <button ion-button color="dark" [navPush]="settingsPage">
+          <ion-icon name="more"></ion-icon>
+        </button> 
+      </ion-buttons>
+      
     <ion-title style="font-size:1.3rem" >{{ 'CORRIDORS'|translate }}</ion-title>
   </ion-navbar>
 </ion-header>
@@ -51,7 +57,8 @@
     </div>
     
     <ion-fab right bottom>
-        <button ion-fab color="tertiary"><ion-icon name="md-share"></ion-icon></button>
+        <button ion-fab color="tertiary"  (click)="regularShare()"><ion-icon name="md-share"></ion-icon></button>
+        <!--
         <ion-fab-list side="top">
             <button ion-fab color="tertiary"><ion-icon name="logo-googleplus"></ion-icon></button>
             <button ion-fab color="tertiary"><ion-icon name="logo-twitter"></ion-icon></button>
@@ -59,7 +66,8 @@
         <ion-fab-list side="left">
             <button ion-fab color="tertiary"><ion-icon name="logo-vimeo"></ion-icon></button>
             <button ion-fab color="tertiary"><ion-icon name="logo-facebook"></ion-icon></button>
-        </ion-fab-list>        
+        </ion-fab-list> 
+        -->
     </ion-fab>
 </ion-content>
 
