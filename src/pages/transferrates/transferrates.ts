@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { ModalController, ToastController } from "ionic-angular";
 import { RatesPage } from "../rates/rates";
 import { HelpPage } from "../help/help";
+import { SettingsPage } from "../settings/settings";
 
 import dummy from "../../data/dummydata"
 
@@ -12,7 +13,9 @@ import dummy from "../../data/dummydata"
 })
 
 export class TransferratesPage implements OnInit{
-choice;
+    choice;
+    settingsPage:any;
+    items:any;
 
 dummyData: any
 receiving : any[] = [];
@@ -26,43 +29,12 @@ constructor(
     public modalCtrl: ModalController, 
     public toastCtrl:ToastController,
     public socialSharing:SocialSharing){
-
+    this.settingsPage = SettingsPage;  
 }
-    
 
-/*   
-onClick(dummy){
-alert()
-    var res;
-    var mod;
-    let alert = this.alertCtrl.create()
-    for(var i = 0; i < dummy.to.length; i++){
-        res = dummy.to[i].name
-        mod = dummy.to[i]
-        console.log(res);
-        
-        alert.setTitle("Send To:");
-
-        alert.addInput({
-            type: "radio",
-            label: res,
-            value: res
-        })
-        
-    }
+ionViewDidLoad(){
     
-    alert.addButton("Cancel");
-    alert.addButton({
-        text: "Ok",
-        handler: data=>{
-        let modal = this.modalCtrl.create(RatesPage, mod);
-        modal.present()
-        console.log(res + " clicked")
-        }
-    })
-    
-    alert.present() 
-    }*/
+}
     
 onSelect(dummy){
     
@@ -92,13 +64,13 @@ onChoose(r){
     for(var i = 0; i < this.choose.length; i++){
         if(this.choose[i].name == r){
             this.choice = this.choose[i]
-            console.log(this.choice)
+            //console.log(this.choice)
         }
     }
 }
     
 onClick(choice){
-    console.log(choice)
+    //console.log(choice)
 if(choice == undefined){
         const toast = this.toastCtrl.create({
             message: "Please Check Your From and To Selection!",
@@ -107,7 +79,7 @@ if(choice == undefined){
         });
 
         toast.onDidDismiss(()=>{
-            console.log("Toast Dismissed")    
+            //console.log("Toast Dismissed")    
         })
     
         toast.present();

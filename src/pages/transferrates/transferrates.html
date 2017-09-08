@@ -3,6 +3,11 @@
       <button ion-button menuToggle color="dark">
           <ion-icon name="menu"></ion-icon>
       </button>
+    <ion-buttons end>
+        <button ion-button color="dark" [navPush]="settingsPage">
+            <ion-icon name="menu"></ion-icon>
+        </button> 
+    </ion-buttons>
       <ion-title>{{ 'TRANSFERRATES'|translate }}</ion-title>
   </ion-navbar>   
 </ion-header>

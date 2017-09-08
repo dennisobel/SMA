@@ -3,6 +3,11 @@
         <button ion-button  color="dark" outline clear (click)="onBack()">
           <ion-icon name="arrow-back"></ion-icon>
       </button>
+      <ion-buttons end>
+          <button ion-button color="dark" [navPush]="settingsPage">
+              <ion-icon name="menu"></ion-icon>
+          </button> 
+      </ion-buttons>
     <ion-title>{{'HELP'|translate}}</ion-title>
   </ion-navbar>
 </ion-header>

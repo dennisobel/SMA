@@ -1,18 +1,13 @@
-<ion-header #head>
-    <ion-navbar  color="tertiary" hideBackButton="true">
-      <button ion-button  color="dark" outline clear (click)="onBack()">
-          <ion-icon name="arrow-back"></ion-icon>
-      </button>
-    <ion-title>{{ 'SETTINGS'|translate }}</ion-title>
-  </ion-navbar>
-</ion-header>
-<ion-content padding hide-header [header]="head">
-    <ion-card>
-      <ion-card-header style="font-size:1.5rem" color="dark">
-        {{ 'LANGUAGE'|translate }}
-      </ion-card-header>
-      
+<ion-content padding>
+
+    <button ion-button  color="tertiary" outline clear (click)="onClose()">
+        <ion-icon name="arrow-back"></ion-icon>
+    </button>
+    <ion-card>      
       <ion-list radio-group>
+          <ion-list-header>
+              {{ 'LANGUAGE'|translate }}
+          </ion-list-header>
           <ion-row>
               <ion-col>
                   <ion-item>
@@ -23,6 +18,7 @@
                       <ion-radio id="edit-transfer-from" 
                                  name="transfer" 
                                  value="english"  
+                                 checked
                                  class="form-radio"
                                  (click)="onEnglish()"></ion-radio>
                   </ion-item>   
@@ -40,52 +36,39 @@
                   </ion-item>
               </ion-col>
           </ion-row>
-      </ion-list>  
-    </ion-card>
+      </ion-list> 
     
-    <ion-card>
-      <ion-card-header style="font-size:1.5rem" color="tertiary">
-        {{ 'NOTIFICATION'|translate }}
-      </ion-card-header>
-      <ion-list radio-group >
-          <ion-row>
-              <ion-col>
-                  <ion-item>
-                      <ion-label color="tertiary"
-                                 class="option" 
-                                 for="edit-transfer-from">{{ 'ON'|translate }}:</ion-label>
-                      <ion-radio id="edit-transfer-from" 
-                                 name="transfer" 
-                                 value="on"                                  
-                                 class="form-radio"></ion-radio>
-                  </ion-item>   
-              </ion-col>
-              <ion-col>
-                  <ion-item>
-                      <ion-label color="tertiary"
-                                 class="option" 
-                                 for="edit-transfer-to">{{ 'OFF'|translate }}:</ion-label>
-                      <ion-radio id="edit-transfer-to" 
-                                 name="transfer" 
-                                 value="off" 
-                                 class="form-radio"></ion-radio>
-                  </ion-item>
-              </ion-col>
-          </ion-row>
-      </ion-list>   
+    <ion-list radio-group >
+        <ion-list-header>
+            {{ 'NOTIFICATION'|translate }}
+        </ion-list-header>
+        <ion-row>
+            <ion-col>
+                <ion-item>
+                    <ion-label color="tertiary"
+                               class="option" 
+                               for="edit-transfer-from">{{ 'ON'|translate }}:</ion-label>
+                    <ion-radio id="edit-transfer-from" 
+                               name="transfer" 
+                               value="on"                                  
+                               class="form-radio"></ion-radio>
+                </ion-item>   
+            </ion-col>
+            <ion-col>
+                <ion-item>
+                    <ion-label color="tertiary"
+                               class="option" 
+                               for="edit-transfer-to">{{ 'OFF'|translate }}:</ion-label>
+                    <ion-radio id="edit-transfer-to" 
+                               name="transfer" 
+                               value="off" 
+                               class="form-radio"></ion-radio>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+    </ion-list>      
     </ion-card>
-    
     <ion-fab right bottom>
-        <button ion-fab color="tertiary" (click)="regularShare()"><ion-icon name="md-share"></ion-icon></button>
-        <!--
-        <ion-fab-list side="top">
-            <button ion-fab color="tertiary"><ion-icon name="logo-googleplus"></ion-icon></button>
-            <button ion-fab color="tertiary"><ion-icon name="logo-twitter"></ion-icon></button>
-        </ion-fab-list>
-        <ion-fab-list side="left">
-            <button ion-fab color="tertiary"><ion-icon name="logo-vimeo"></ion-icon></button>
-            <button ion-fab color="tertiary"><ion-icon name="logo-facebook"></ion-icon></button>
-        </ion-fab-list>    
-        -->    
+        <button ion-fab color="tertiary" (click)="regularShare()"><ion-icon name="md-share"></ion-icon></button>        
     </ion-fab>
 </ion-content>

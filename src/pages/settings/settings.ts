@@ -1,10 +1,9 @@
 import { SocialSharing } from '@ionic-native/social-sharing';
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, ViewController } from 'ionic-angular';
 import { TransferratesPage } from "../transferrates/transferrates"
 
-@IonicPage()
 @Component({
   selector: 'page-settings',
   templateUrl: 'settings.html',
@@ -15,7 +14,8 @@ export class SettingsPage {
     public navCtrl: NavController, 
     public navParams: NavParams, 
     public translateService: TranslateService,
-    public socialSharing:SocialSharing){
+    public socialSharing:SocialSharing,
+    public viewCtrl:ViewController){
   }
 
   ionViewDidLoad() {
@@ -53,6 +53,10 @@ export class SettingsPage {
   regularShare(){
     this.socialSharing.share("Share page");
   }
+    
+onClose(remove = false){
+    this.viewCtrl.dismiss(remove)
+}
 
 
 }

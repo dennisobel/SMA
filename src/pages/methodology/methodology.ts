@@ -1,7 +1,7 @@
 import { SocialSharing } from '@ionic-native/social-sharing';
 import { Component, OnInit } from '@angular/core';
 import { NavController } from "ionic-angular";
-//import { TabsPage } from "../tabs/tabs";
+import { SettingsPage } from "../settings/settings";
 import { CorridorsPage } from "../corridors/corridors";
 import { AboutsmaPage } from "../aboutsma/aboutsma";
 import { TransferratesPage } from "../transferrates/transferrates";
@@ -12,6 +12,7 @@ import { TransferratesPage } from "../transferrates/transferrates";
 })
 export class MethodologyPage implements OnInit{
     corridorsPage;
+    settingsPage:any;
     aboutPage;
     root: any;
 
@@ -20,6 +21,7 @@ export class MethodologyPage implements OnInit{
     public socialSharing: SocialSharing){
       this.corridorsPage = CorridorsPage;
       this.aboutPage = AboutsmaPage;
+      this.settingsPage = SettingsPage;
   }
 
   // ionViewDidLoad(){

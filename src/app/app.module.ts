@@ -14,8 +14,6 @@ import { MethodologyPage } from '../pages/methodology/methodology';
 import { RatesPage } from '../pages/rates/rates';
 import { SettingsPage } from '../pages/settings/settings';
 import { TransferratesPage } from '../pages/transferrates/transferrates';
-import { MecorabPage } from '../pages/mecorab/mecorab';
-MecorabPage
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { HideHeaderDirective } from '../directives/hide-header/hide-header';
@@ -37,7 +35,6 @@ export function createTranslateLoader(http: Http) {
       RatesPage,
       SettingsPage,      
       TransferratesPage,
-      MecorabPage,
       HideHeaderDirective
   ],
   imports: [
@@ -50,7 +47,7 @@ export function createTranslateLoader(http: Http) {
       deps:[Http]
       }
     }),
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -63,8 +60,7 @@ export function createTranslateLoader(http: Http) {
       MethodologyPage,
       RatesPage,
       SettingsPage,
-      TransferratesPage,
-      MecorabPage
+      TransferratesPage
   ],
   providers: [
     StatusBar,
