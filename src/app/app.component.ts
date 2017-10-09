@@ -6,7 +6,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { AboutsmaPage } from '../pages/aboutsma/aboutsma';
 import { CorridorsPage } from '../pages/corridors/corridors';
 import { MethodologyPage } from '../pages/methodology/methodology';
-import { SettingsPage } from '../pages/settings/settings';
 import { TransferratesPage } from '../pages/transferrates/transferrates';
 import { HelpPage } from '../pages/help/help';
 
@@ -15,12 +14,8 @@ import { HelpPage } from '../pages/help/help';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  //rootPage: any = TabsPage;
   rootPage: any = TransferratesPage;
   @ViewChild(Nav) nav: Nav;
-
-    //rootPage: any = TransferratesPage;
-    //rootPage: any = TabsPage;
 
   pages: Array<{title: string, component: any}>;
 

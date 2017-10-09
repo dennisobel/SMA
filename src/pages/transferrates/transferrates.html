@@ -19,7 +19,6 @@
   <ion-toolbar>
      <ion-label align="center" color="tertiary" style="font-size:1.4rem" >{{ 'FINDANDCOMPARERATES'|translate }}...</ion-label>
   </ion-toolbar>
-
                 
                 <form 
                    class="sms-corridor-search-form" 
@@ -28,7 +27,46 @@
                    accept-charset="UTF-8"> 
 
                     <ion-label color="tertiary">{{ 'TRANSFERMONEY'|translate }}</ion-label>    
+
                     
+                  <ion-list radio-group>
+                    <ion-list-header>
+                        Toggle: From - To : or : To - From
+                    </ion-list-header>
+                    <ion-row>
+                        <ion-col>
+                            <ion-item>
+
+                                <ion-label color="tertiary"
+                                           class="option" 
+                                           for="edit-transfer-from">From-To:</ion-label>
+                                <ion-radio id="edit-transfer-from" 
+                                           name="transfer" 
+                                           value="english"  
+                                           checked
+                                           class="form-radio"
+                                           (click)="onFromTo()"></ion-radio>
+                            </ion-item>   
+                        </ion-col>
+                        <ion-col>
+                            <ion-item>
+                                <ion-label color="tertiary"
+                                           class="option" 
+                                           for="edit-transfer-to">To-From:</ion-label>
+                                <ion-radio id="edit-transfer-to" 
+                                           name="transfer" 
+                                           value="french" 
+                                           class="form-radio"
+                                           (click)="onToFrom()"></ion-radio>
+                            </ion-item>
+                        </ion-col>
+                    </ion-row>
+                   </ion-list> 
+
+                    <hr>
+
+                    <!--case from to-->
+                      <div id="fromTo">
                         <!--Sending Country-->
 
                         <div id="field_source_iso2-refresh">
@@ -76,29 +114,67 @@
                                 {{ 'SHOW'|translate }}
                             </button>
                         </div>
+                       </div> 
+
+
+                   
+
+                    <!--case to from-->
+                      <div id="toFrom" style="display: none;">  
+                        <!--Receiving Country-->
+                        <div id="field_destination_iso2-refresh">
+                          <div class="form-item form-type-select form-item-field-destination-iso2 form-disabled">
+                            <ion-item>
+                              <ion-label style="font-size: 1.4rem" color="tertiary">{{ 'RECEIVINGCOUNTRY'|translate }}</ion-label>
+                                <ion-select 
+                                class="corridor_search_destination form-select"  
+                                name="field_destination_iso2" id="destination"  
+                                style="font-size: 1.4rem" 
+                                color="tertiary">                                  
+                                  <div *ngFor="let data of dummyData">                                  
+                                    <ion-option 
+                                      *ngFor="let datato of data.to" 
+                                      (ionSelect)="onSelectTwo(datato)"
+                                      (click)="onClickTwo($event)">
+                                      {{datato.name}}
+                                    </ion-option>                                 
+                                  </div>
+                                </ion-select>
+                            </ion-item>
+                          </div>
+                        </div>
+
+                        <!--Sending Country-->
+
+                        <div id="field_source_iso2-refresh">
+                        <div class="form-item form-type-select form-item-field-source-iso2">
+                            <ion-item>
+                                <ion-label style="font-size: 1.4rem" color="tertiary">{{ 'SENDINGCOUNTRY'|translate }}</ion-label>
+                            <ion-select 
+                               class="corridor_search_source form-select" 
+                               id="edit-field-source-iso2" 
+                               name="field_source_iso2"
+                               style="font-size: 1.4rem" 
+                               color="tertiary" >                                                
+                                <ion-option *ngFor="let sending of sending">{{sending}}</ion-option>                                               
+                            </ion-select>
+                            </ion-item>
+                        </div>
+                        </div> 
+
+                        <div>
+                            <button ion-button color="tertiary" block outline (click)="onClickTwo(choiceTwo)" id="btnTwo">
+                                <ion-icon name="eyes"></ion-icon>
+                                {{ 'SHOW'|translate }}
+                            </button>
+                        </div>
+                      </div> 
                 </form>
             </div>
     </div>
 
     <ion-fab right bottom>
-        <button ion-fab color="tertiary" (click)="regularShare()"><ion-icon name="md-share"></ion-icon></button>
-        <!--
-        <ion-fab-list side="top">
-
-            <button
-            ion-fab color="tertiary"><ion-icon name="md-text"></ion-icon></button>            
-            <button 
-            ion-fab color="tertiary"><ion-icon name="logo-twitter"></ion-icon></button>
-        </ion-fab-list>
-        <ion-fab-list side="left">
-        
-            <button 
-            ion-fab color="tertiary"><ion-icon name="logo-whatsapp"></ion-icon></button>
-            
-            <button 
-            ion-fab color="tertiary"><ion-icon name="logo-facebook"></ion-icon></button>
-        </ion-fab-list>   
-        -->     
+        <button ion-fab color="tertiary" (click)="regularShare()"><ion-icon name="md-share"></ion-icon></button>   
     </ion-fab>
 </ion-content>
            

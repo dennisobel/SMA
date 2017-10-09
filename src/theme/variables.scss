@@ -45,9 +45,16 @@ $colors: (
 
 $alert-input-placeholder-color: tertiary;
 
-$alert-md-background-color:dark;
-$alert-md-button-background-color:light;
-$alert-md-button-background-color-activated:base;
+$alert-md-background-color:#ffffff;
+$alert-md-button-background-color:#795548;
+$alert-md-button-background-color-activated:#BCAAA4;
+
+//alert ios
+$alert-ios-background:	#ffffff;
+$alert-ios-button-background-color: #795548;
+$alert-ios-button-background-color-activated: #BCAAA4;
+
+//alert android
 
 
 

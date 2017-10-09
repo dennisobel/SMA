@@ -39,7 +39,7 @@
                                     *ngFor="let toGroup of detailsGroup.to"
                                     (click)="openRates(toGroup)">
                                     <ion-avatar item-start>
-                                        <img src="{{toGroup.flag}}">
+                                        <img [src]="toGroup.flag">
                                     </ion-avatar>
                                     <p style="font-size:1.3rem" color="secondary">{{ 'TO'|translate }}: {{toGroup.name}}</p>
                             </button> 

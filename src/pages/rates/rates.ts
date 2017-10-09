@@ -96,6 +96,6 @@ moreDetails(record){
 }
 
 regularShare(){
-  this.socialSharing.share("Share page");
+  this.socialSharing.share("http://www.sendmoneyafrica-auair.org");
 }
 }
