@@ -7,6 +7,12 @@ import { MethodologyPage } from "../methodology/methodology";
 import { SettingsPage } from "../settings/settings";
 import { AboutsmaPage } from "../aboutsma/aboutsma";
 
+//api stuff
+import { Http } from "@angular/http"
+import 'rxjs/add/operator/map'
+import { ApiProvider } from "../../providers/api/api"
+import { TransactionsSchema } from "../../schemas/transactions"
+
 import dummy from "../../data/dummydata"
 
 @Component({
@@ -17,11 +23,14 @@ export class CorridorsPage implements OnInit{
     settingsPage:any;
     methodologyPage;
     aboutPage;
+    transactions:TransactionsSchema[];
+    transaction:TransactionsSchema;
     
 constructor(
 	private modalCtrl: ModalController,
 	private navCtrl: NavController,
-  public socialSharing: SocialSharing){
+  public socialSharing: SocialSharing,
+  public apiProvider:ApiProvider){
       this.methodologyPage = MethodologyPage;
       this.aboutPage = AboutsmaPage;
       this.settingsPage = SettingsPage;
@@ -34,6 +43,15 @@ ngOnInit(){
 
   ionViewDidLeave(){
     //this.navCtrl.setRoot(TransferratesPage)
+  }
+
+  ionViewDidLoad(){
+     //get transactions
+    this.apiProvider.getTransactions()
+    .subscribe(transactions=>{
+        this.transactions = transactions.data;
+        console.log(transactions)
+    })
   }
 
     

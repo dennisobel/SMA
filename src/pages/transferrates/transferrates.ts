@@ -6,6 +6,12 @@ import { HelpPage } from "../help/help";
 import { SettingsPage } from "../settings/settings";
 import { Storage } from '@ionic/storage';
 
+//api stuff
+import { Http } from "@angular/http"
+import 'rxjs/add/operator/map'
+import { ApiProvider } from "../../providers/api/api"
+import { TransactionsSchema } from "../../schemas/transactions"
+
 import dummy from "../../data/dummydata"
 
 @Component({
@@ -19,15 +25,18 @@ export class TransferratesPage implements OnInit{
     settingsPage:any;
     items:any;
 
-dummyData: any
-receiving : any[] = [];
-choose: any[] = [];
-sending:any[] = [];
+    dummyData: any
+    receiving : any[] = [];
+    choose: any[] = [];
+    sending:any[] = [];
 
-froms:any[]=[]
-tos:any[]=[]
-names:any[]=[]
-dat:any;
+    froms:any[]=[]
+    tos:any[]=[]
+    names:any[]=[]
+    dat:any;
+
+    transactions:TransactionsSchema[];
+    transaction:TransactionsSchema;
     
 ngOnInit(){
     this.dummyData = dummy    
@@ -46,7 +55,9 @@ constructor(
     public modalCtrl: ModalController, 
     public toastCtrl:ToastController,
     public socialSharing:SocialSharing,
-    public storage: Storage){
+    public storage: Storage,
+    public apiProvider:ApiProvider,
+    public http:Http){
     this.settingsPage = SettingsPage; 
 
     this.storage.get("myStore").then((data)=>{
@@ -70,7 +81,12 @@ constructor(
 
 
 ionViewDidLoad(){
-    
+    //get transactions
+    this.apiProvider.getTransactions()
+    .subscribe(transactions=>{
+        this.transactions = transactions.data;
+        console.log(transactions)
+    })
 }
     
 onSelect(dummy){

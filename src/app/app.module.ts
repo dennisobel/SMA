@@ -19,6 +19,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { HideHeaderDirective } from '../directives/hide-header/hide-header';
 import { SocialSharing } from '@ionic-native/social-sharing';
+import { ApiProvider } from '../providers/api/api';
 
 export function createTranslateLoader(http: Http) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -68,7 +69,8 @@ export function createTranslateLoader(http: Http) {
     StatusBar,
     SplashScreen,
     SocialSharing,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ApiProvider
   ]
 })
 export class AppModule {}

@@ -1,0 +1,24 @@
+export class TransactionsSchema{
+	pk:any;
+	quarter:any;
+	timestamp:any;
+	country_from:any;
+	country_from_currency:any;
+	country_from_flag:any;
+	country_to:any;
+	country_to_currency:any;
+	country_to_flag:any;
+	amount:any;
+	firm:any;
+	product_availability:any;
+	fee:any;
+	ExchangeRateMargin:any;
+	TotalCostPercent:any;
+	TotalCostEur:any
+	AmountReceived:any;
+	product_availability_icon:any;
+	transfer_speed_icon:any;
+	network_coverage_icon:any;
+	transfer_speed_definition:any;
+	network_coverage_definition:any;
+}
