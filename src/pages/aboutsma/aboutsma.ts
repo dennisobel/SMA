@@ -25,7 +25,7 @@ constructor(
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AboutsmaPage');
+    // console.log('ionViewDidLoad AboutsmaPage');
   } 
 
     onBack(){

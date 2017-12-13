@@ -59,33 +59,33 @@ ionViewDidLoad(){
         this.from = this.dummyData[i].to; 
           
         for(var j = 0; j < this.from.length; j++){  
-          //console.log(this.from[j])
+          ////console.log(this.from[j])
           this.amount = this.from[j].amount
-          //console.log(this.amount)
+          ////console.log(this.amount)
           
           for(var k = 0; k < this.amount.length; k++){
-            //console.log(this.amount[k].record)
+            ////console.log(this.amount[k].record)
             this.amount2 = this.amount[k].record
             this.amount3 = this.from[j].name
-            console.log(this.amount3)
-            //console.log(this.amount2)
+            //console.log(this.amount3)
+            ////console.log(this.amount2)
             
             // if(this.amount[k].firm = this.firm){
-            //   console.log(this.dummyData[i].to)
+            //   //console.log(this.dummyData[i].to)
             // }
             
             for(var l = 0; l < this.amount2.length; l++){
-              //console.log(this.amount2[l].firm)              
+              ////console.log(this.amount2[l].firm)              
               if(this.amount2[l].firm = this.firm){
-                //console.log("finally")
-                //console.log(this.from[j].name)
-                //console.log(this.dummyData[i].to)
+                ////console.log("finally")
+                ////console.log(this.from[j].name)
+                ////console.log(this.dummyData[i].to)
                 this.amt = this.amount[k].amount
                 //this.to = this.from[j].name
-                console.log(this.amt)
+                //console.log(this.amt)
                 
               }else{
-                console.log("Jesus of Nazareth, King of the Jews, have mercy on my country Kenya")
+                //console.log("Jesus of Nazareth, King of the Jews, have mercy on my country Kenya")
               }
             }
             
@@ -93,7 +93,7 @@ ionViewDidLoad(){
           
           /*
           if(this.from[j].amount == this.name){
-            console.log("match")
+            //console.log("match")
             this.originctry = this.dummyData[i].from
           }
           */

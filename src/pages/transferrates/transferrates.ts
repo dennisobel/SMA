@@ -5,6 +5,7 @@ import { RatesPage } from "../rates/rates";
 import { HelpPage } from "../help/help";
 import { SettingsPage } from "../settings/settings";
 import { Storage } from '@ionic/storage';
+import _ from 'lodash'
 
 //api stuff
 import { Http } from "@angular/http"
@@ -37,20 +38,8 @@ export class TransferratesPage implements OnInit{
 
     transactions:TransactionsSchema[];
     transaction:TransactionsSchema;
+    transactions_test:TransactionsSchema[];
     
-ngOnInit(){
-    this.dummyData = dummy    
-    //console.log(this.dummyData)
-
-    for(var i=0; i<this.dummyData.length; i++){
-        //console.log(this.dummyData[i].to)
-        this.names.push(this.dummyData[i].to)        
-    }
-
-
-
-}
-
 constructor(
     public modalCtrl: ModalController, 
     public toastCtrl:ToastController,
@@ -79,14 +68,45 @@ constructor(
     })
 }
 
+ngOnInit(){
+    //this.dummyData = dummy    
+    //console.log(this.dummyData)
+
+    // for(var i=0; i<this.dummyData.length; i++){
+    //     //console.log(this.dummyData[i].to)
+    //     this.names.push(this.dummyData[i].to)        
+    // }
+
+
+
+}
+
 
 ionViewDidLoad(){
     //get transactions
     this.apiProvider.getTransactions()
     .subscribe(transactions=>{
-        this.transactions = transactions.data;
-        console.log(transactions)
+        this.transactions = transactions;
+         //console.log(this.transactions)        
     })
+
+    
+    this.apiProvider.getTransactionsTest()
+    .subscribe(transactions =>{
+        this.dummyData=transactions;
+        console.log(this.dummyData)
+
+        for(var i=0; i<this.dummyData.length; i++){
+            //console.log(this.dummyData[i].to)
+            this.names.push(this.dummyData[i].to)        
+        }
+    })
+
+
+   
+
+
+
 }
     
 onSelect(dummy){

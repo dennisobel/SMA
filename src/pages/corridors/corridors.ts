@@ -25,7 +25,9 @@ export class CorridorsPage implements OnInit{
     aboutPage;
     transactions:TransactionsSchema[];
     transaction:TransactionsSchema;
-    
+    transactions_test:TransactionsSchema[];
+    to:any;
+    from:any;
 constructor(
 	private modalCtrl: ModalController,
 	private navCtrl: NavController,
@@ -49,8 +51,17 @@ ngOnInit(){
      //get transactions
     this.apiProvider.getTransactions()
     .subscribe(transactions=>{
-        this.transactions = transactions.data;
-        console.log(transactions)
+        this.transactions = transactions;
+        this.to = transactions.to
+        this.from = transactions.from
+        // console.log(this.from)
+        // console.log(this.to)
+        // console.log(this.transactions)
+    })
+
+    this.apiProvider.getTransactionsTest()
+    .subscribe(transactions=>{
+      this.transactions_test=transactions
     })
   }
 

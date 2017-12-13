@@ -39,7 +39,7 @@ constructor(
     /*
     this.amount = this.navParams.get("amount")
     this.toggle = this.amount[0].amount    
-    console.log(this.toggle)
+    //console.log(this.toggle)
     */
     }
 
@@ -49,7 +49,7 @@ ionViewDidLoad() {
     this.flag = this.navParams.get("flag")    
     this.amount = this.navParams.get("amount")    
     //this.toggle = this.amount[0].amount 
-    console.log(this.curr)
+    //console.log(this.curr)
     
     this.dummyData = dummy
     for(var i = 0; i < this.dummyData.length; i++){      
@@ -57,7 +57,7 @@ ionViewDidLoad() {
 
         for(var j = 0; j < this.from.length; j++){     
           if(this.from[j].name == this.name){
-            //console.log("match")
+            ////console.log("match")
             this.originctry = this.dummyData[i].from
             
             
@@ -66,13 +66,13 @@ ionViewDidLoad() {
         }
     }
     this.amtone = this.amount[0].amount
-    console.log(this.amtone)
+    //console.log(this.amtone)
     this.amttwo = this.amount[1].amount
-    console.log(this.amttwo)
+    //console.log(this.amttwo)
     this.recordone=this.amount[0].record
-    console.log(this.recordone)
+    //console.log(this.recordone)
     this.recordtwo=this.amount[1].record
-    console.log(this.recordtwo)
+    //console.log(this.recordtwo)
 
     
 }
@@ -80,9 +80,9 @@ ionViewDidLoad() {
 
 onClick(amt){    
     this.record = amt.record
-    console.log(this.record)
+    //console.log(this.record)
     this.amnt = amt.amount
-    console.log(this.amnt)
+    //console.log(this.amnt)
 }
 */
     

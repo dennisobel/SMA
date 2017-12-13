@@ -19,7 +19,7 @@ export class SettingsPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SettingsPage');
+    //console.log('ionViewDidLoad SettingsPage');
   }
   
   onBack(){
@@ -30,24 +30,24 @@ export class SettingsPage {
   onChange(e){    
     if(e.checked == true){
       this.translateService.use('en');
-      console.log(this.translateService.use('en'))
-      console.log(e.checked)
+      //console.log(this.translateService.use('en'))
+      //console.log(e.checked)
     }else{
       this.translateService.use('es');
-      console.log(this.translateService.use('es'))
-      console.log(e.checked)
+      //console.log(this.translateService.use('es'))
+      //console.log(e.checked)
     }
   }
   */
 
   onEnglish(){
     this.translateService.use('en');
-    console.log(this.translateService.use('en'))
+    //console.log(this.translateService.use('en'))
   }
 
   onFrench(){
     this.translateService.use('fr');
-    console.log(this.translateService.use('fr'))
+    //console.log(this.translateService.use('fr'))
   }
 
   regularShare(){
