@@ -5,7 +5,7 @@
       </button>
       <ion-buttons end>
           <button ion-button color="dark" [navPush]="settingsPage">
-              <ion-icon name="menu"></ion-icon>
+              <ion-icon name="md-more"></ion-icon>
           </button> 
       </ion-buttons>
     <ion-title>{{'HELP'|translate}}</ion-title>
@@ -13,47 +13,10 @@
 </ion-header>
 
 <ion-content padding class="masters" hide-header [header]="head">
-    <div>
-    <ion-toolbar>
-    <ion-segment color="tertiary">
-      <ion-segment-button value="Methodology" [navPush]="methodologyPage">
-        {{'METHODOLOGY'|translate}}
-      </ion-segment-button>
-      <ion-segment-button value="AboutSMA" [navPush]="aboutsmaPage">
-        {{'ABOUTUS'|translate}}
-      </ion-segment-button>
-      <ion-segment-button value="AboutSMA" [navPush]="settingsPage">
-        {{'SETTINGS'|translate}}
-      </ion-segment-button>
-    </ion-segment>
-  </ion-toolbar>
-    </div>
 
-    <div>
-    <ion-toolbar>
-    <ion-segment color="tertiary">
-      <ion-segment-button value="terminologies" >
-        {{'TERMINOLOGY'|translate}}
-      </ion-segment-button>
-      <ion-segment-button value="faqs" >
-        {{'FAQ'|translate}}
-      </ion-segment-button>
-    </ion-segment>
-  </ion-toolbar>
-    </div>
+    <ion-list>
+      <button ion-item value="terminologies" [navPush]="terminologiesPage">{{'TERMINOLOGY'|translate}}</button>
+      <button ion-item value="terminologies" [navPush]="faqsPage">{{'FAQ'|translate}}</button>
+    </ion-list>
 
-
-    <ion-fab right bottom>
-        <button ion-fab color="tertiary" (click)="regularShare()"><ion-icon name="md-share"></ion-icon></button>
-        <!--
-        <ion-fab-list side="top">
-            <button ion-fab color="tertiary"><ion-icon name="logo-googleplus"></ion-icon></button>
-            <button ion-fab color="tertiary"><ion-icon name="logo-twitter"></ion-icon></button>
-        </ion-fab-list>
-        <ion-fab-list side="left">
-            <button ion-fab color="tertiary"><ion-icon name="logo-vimeo"></ion-icon></button>
-            <button ion-fab color="tertiary"><ion-icon name="logo-facebook"></ion-icon></button>
-        </ion-fab-list>  
-        -->      
-    </ion-fab>
 </ion-content>

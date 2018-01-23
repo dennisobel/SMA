@@ -1,9 +1,17 @@
+<ion-header #head>    
+<ion-navbar  color="tertiary" hideBackButton="true">
+      <button ion-button color="dark"  outline clear (click)="onClose()">
+          <ion-icon name="arrow-back"></ion-icon>
+      </button>
+      <ion-title>{{ 'SETTINGS'|translate }}</ion-title>
+  </ion-navbar>   
+</ion-header>
 <ion-content padding>
-
+<!-- 
     <button ion-button  color="tertiary" outline clear (click)="onClose()">
         <ion-icon name="arrow-back"></ion-icon>
-    </button>
-    <ion-card>      
+    </button> -->
+        
       <ion-list radio-group>
           <ion-list-header>
               {{ 'LANGUAGE'|translate }}
@@ -67,8 +75,6 @@
             </ion-col>
         </ion-row>
     </ion-list>      
-    </ion-card>
-    <ion-fab right bottom>
-        <button ion-fab color="tertiary" (click)="regularShare()"><ion-icon name="md-share"></ion-icon></button>        
-    </ion-fab>
+    
+
 </ion-content>

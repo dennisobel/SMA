@@ -1,0 +1,36 @@
+<ion-header #head>
+<ion-navbar  color="tertiary" hideBackButton="true">
+      <button ion-button  color="dark" outline clear (click)="onBack()">
+          <ion-icon name="arrow-back"></ion-icon>
+      </button>
+    <ion-buttons end>
+        <button ion-button color="dark" [navPush]="settingsPage">
+            <ion-icon name="md-more"></ion-icon>
+        </button> 
+    </ion-buttons>
+      <ion-title>{{"TERMINOLOGY"|translate}} </ion-title>               
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+      <ul type="disc">
+          <li class="MsoNormal">
+              <p>
+                Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
+              </p>        
+          </li>
+          <li class="MsoNormal">
+              <p>
+                Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
+              </p>        
+          </li>
+                      <li class="MsoNormal">
+              <p>
+                Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
+              </p>        
+          </li>
+      </ul>  
+
+</ion-content>

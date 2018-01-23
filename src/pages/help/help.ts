@@ -5,6 +5,8 @@ import { SettingsPage } from "../settings/settings"
 import { AboutsmaPage } from "../aboutsma/aboutsma"
 import { MethodologyPage } from "../methodology/methodology"
 import { TransferratesPage } from "../transferrates/transferrates"
+import { FaqsPage } from "../faqs/faqs"
+import { TerminologiesPage } from "../terminologies/terminologies"
 
 @Component({
   selector: 'page-help',
@@ -13,7 +15,9 @@ import { TransferratesPage } from "../transferrates/transferrates"
 export class HelpPage {
 aboutsmaPage;
 settingsPage
-methodologyPage;    
+methodologyPage;   
+terminologiesPage;
+faqsPage; 
 
 constructor(
 	public navCtrl: NavController, 
@@ -23,6 +27,9 @@ constructor(
     this.aboutsmaPage = AboutsmaPage
     this.settingsPage = SettingsPage
     this.methodologyPage = MethodologyPage
+    this.faqsPage = FaqsPage
+    this.terminologiesPage = TerminologiesPage
+
 }
     
   onBack(){

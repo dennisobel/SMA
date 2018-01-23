@@ -5,7 +5,7 @@
       </button>
     <ion-buttons end>
         <button ion-button color="dark" [navPush]="settingsPage">
-            <ion-icon name="menu"></ion-icon>
+            <ion-icon name="md-more"></ion-icon>
         </button> 
     </ion-buttons>
       <ion-title>{{ 'TRANSFERRATES'|translate }}</ion-title>
@@ -16,9 +16,7 @@
     <div class="pane-content">
             <div id="corridor_search_refresh">
 
-  <ion-toolbar>
-     <ion-label align="center" color="tertiary" style="font-size:1.4rem" >{{ 'FINDANDCOMPARERATES'|translate }}...</ion-label>
-  </ion-toolbar>
+              <img src="assets/logo/smalogo.gif">
                 
                 <form 
                    class="sms-corridor-search-form" 
@@ -26,20 +24,17 @@
                    id="sms-corridor-search-form" 
                    accept-charset="UTF-8"> 
 
-                    <ion-label color="tertiary">{{ 'TRANSFERMONEY'|translate }}</ion-label>    
+                    
 
                     
                   <ion-list radio-group>
-                    <ion-list-header>
-                        Toggle: From - To : or : To - From
-                    </ion-list-header>
                     <ion-row>
                         <ion-col>
                             <ion-item>
 
                                 <ion-label color="tertiary"
                                            class="option" 
-                                           for="edit-transfer-from">From-To:</ion-label>
+                                           for="edit-transfer-from">From:</ion-label>
                                 <ion-radio id="edit-transfer-from" 
                                            name="transfer" 
                                            value="english"  
@@ -52,7 +47,7 @@
                             <ion-item>
                                 <ion-label color="tertiary"
                                            class="option" 
-                                           for="edit-transfer-to">To-From:</ion-label>
+                                           for="edit-transfer-to">To:</ion-label>
                                 <ion-radio id="edit-transfer-to" 
                                            name="transfer" 
                                            value="french" 

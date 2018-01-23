@@ -8,12 +8,12 @@ import { Storage } from '@ionic/storage';
 import _ from 'lodash'
 
 //api stuff
-import { Http } from "@angular/http"
-import 'rxjs/add/operator/map'
-import { ApiProvider } from "../../providers/api/api"
-import { TransactionsSchema } from "../../schemas/transactions"
+import { Http } from "@angular/http";
+import 'rxjs/add/operator/map';
+import { ApiProvider } from "../../providers/api/api";
+import { TransactionsSchema } from "../../schemas/transactions";
 
-import dummy from "../../data/dummydata"
+import dummy from "../../data/dummydata";
 
 @Component({
     selector: 'page-transferrates',
@@ -76,9 +76,6 @@ ngOnInit(){
     //     //console.log(this.dummyData[i].to)
     //     this.names.push(this.dummyData[i].to)        
     // }
-
-
-
 }
 
 
@@ -101,11 +98,6 @@ ionViewDidLoad(){
             this.names.push(this.dummyData[i].to)        
         }
     })
-
-
-   
-
-
 
 }
     

@@ -13,7 +13,9 @@ import { CorridorsPage } from '../pages/corridors/corridors';
 import { HelpPage } from '../pages/help/help';
 import { MethodologyPage } from '../pages/methodology/methodology';
 import { RatesPage } from '../pages/rates/rates';
+import { TerminologiesPage } from '../pages/terminologies/terminologies';
 import { SettingsPage } from '../pages/settings/settings';
+import { FaqsPage } from '../pages/faqs/faqs';
 import { TransferratesPage } from '../pages/transferrates/transferrates';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -35,7 +37,9 @@ export function createTranslateLoader(http: Http) {
       HelpPage,
       MethodologyPage,
       RatesPage,
-      SettingsPage,      
+      SettingsPage,  
+      FaqsPage,
+      TerminologiesPage,    
       TransferratesPage,
       HideHeaderDirective
   ],
@@ -63,6 +67,8 @@ export function createTranslateLoader(http: Http) {
       MethodologyPage,
       RatesPage,
       SettingsPage,
+      FaqsPage,
+      TerminologiesPage,
       TransferratesPage
   ],
   providers: [
