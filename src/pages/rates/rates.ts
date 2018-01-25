@@ -23,6 +23,9 @@ flag: string;
 amount: any[]=[]
 curr:any
 
+record_to_assign_to_first_rate_record:any[] = []
+record_to_assign_to_second_rate_record:any[] = []
+
 
 //modify later
 toggle:any = "one"
@@ -50,6 +53,32 @@ ionViewDidLoad() {
     this.amount = this.navParams.get("amount")    
     //this.toggle = this.amount[0].amount 
     //console.log(this.curr)
+    console.log(this.amount.length)
+
+    // if(this.amount[1].record == null){
+    //     console.log("undefined")
+    // }  
+
+    try{
+        console.log(this.amount[1].record)
+    }catch(err){
+        console.log(err)
+        let _record = {
+            AmountReceived:'',
+            ExchangeRateMargin:'',
+            TotalCostEur:'',
+            TotalCostPercent:'',
+            fee:'',
+            firm:'',
+            networkcover:'',
+            networkcovdef:'',
+            product_availability:'',
+            productavicn:'',
+            transferspeed:'',
+            transferspeeddef:''
+        }
+        this.amount[1].record.push(_record)
+    }
     
     this.dummyData = dummy
     for(var i = 0; i < this.dummyData.length; i++){      
@@ -65,9 +94,12 @@ ionViewDidLoad() {
           
         }
     }
+
+
     this.amtone = this.amount[0].amount
     //console.log(this.amtone)
-    this.amttwo = this.amount[1].amount
+    //this.amttwo = this.amount[1].amount
+    this.amttwo = 0
     //console.log(this.amttwo)
     this.recordone=this.amount[0].record
     //console.log(this.recordone)

@@ -11,20 +11,23 @@ export class ApiProvider {
 
   getTransactions(){
   	//return this.http.get("http://sma.au-air.org/api/sma.json")
-    return this.http.get("http://localhost:8000/transactions/")
+    return this.http.get("http://sma.au-air.org/transactions/")
   	.map(res=>res.json());
   }
 
 
   getTransactionsTest(){
   	//return this.http.get("https://api.myjson.com/bins/1hf2gf")
-    return this.http.get("http://localhost:8000/transactions/")
+    return this.http.get("http://sma.au-air.org/transactions/")
     //return this.http.get("https://api.myjson.com/bins/jsahr")
-  	.map(res=>res.json());
+  	.map((res)=>res.json())
+
+
   }
 
   getapi(){
-    return this.http.get("http://localhost:8000/transactions/")
+    
+    return this.http.get("http://sma.au-air.org/transactions/")
     .map(res=>{
         console.log(res.json())
     })

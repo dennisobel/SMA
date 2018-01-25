@@ -5,6 +5,7 @@ import { RatesPage } from "../rates/rates";
 import { HelpPage } from "../help/help";
 import { SettingsPage } from "../settings/settings";
 import { Storage } from '@ionic/storage';
+import { Network } from '@ionic-native/network';
 import _ from 'lodash'
 
 //api stuff
@@ -46,6 +47,7 @@ constructor(
     public socialSharing:SocialSharing,
     public storage: Storage,
     public apiProvider:ApiProvider,
+    private network: Network,
     public http:Http){
     this.settingsPage = SettingsPage; 
 
@@ -80,6 +82,19 @@ ngOnInit(){
 
 
 ionViewDidLoad(){
+    let connectSubscription = this.network.onConnect().subscribe(() => {
+      console.log('network connected!');
+      // We just got a connection but we need to wait briefly
+       // before we determine the connection type. Might need to wait.
+      // prior to doing any api requests as well.
+      setTimeout(() => {
+        if (this.network.type === 'wifi') {
+          console.log('we got a wifi connection, woohoo!');
+        }
+      }, 3000);
+    });   
+    connectSubscription.unsubscribe();
+    //console.log(this.dummyData)
     //get transactions
     this.apiProvider.getTransactions()
     .subscribe(transactions=>{
@@ -90,14 +105,29 @@ ionViewDidLoad(){
     
     this.apiProvider.getTransactionsTest()
     .subscribe(transactions =>{
+        //console.log(transactions)
         this.dummyData=transactions;
-        console.log(this.dummyData)
 
-        for(var i=0; i<this.dummyData.length; i++){
-            //console.log(this.dummyData[i].to)
-            this.names.push(this.dummyData[i].to)        
+        if(this.dummyData == undefined){
+            console.log("undefined")
+            const toast = this.toastCtrl.create({
+                message: "Problem with your connection. Retrying!",
+                duration:3000,
+                position: "middle"
+            });   
+            toast.present();
+        }else{
+            console.log("present")
+            console.log(this.dummyData)
+
+            for(var i=0; i<this.dummyData.length; i++){
+                //console.log(this.dummyData[i].to)
+                this.names.push(this.dummyData[i].to)        
+            }            
         }
     })
+
+
 
 }
     
@@ -134,41 +164,78 @@ onChoose(r){
 }
     
 onClick(choice){
-    if(choice == undefined){
+    console.log(choice.amount.length)
+    if(choice.amount.length < 2){
         const toast = this.toastCtrl.create({
-            message: "Please Check Your From and To Selection!",
+            message: "Problem with your data, sorry for the inconvenience. Notifying support team!",
             duration:3000,
-            position: "bottom"
-        });
-
-        toast.onDidDismiss(()=>{
-            //console.log("Toast Dismissed")    
-        })
-    
+            position: "middle"
+        });   
         toast.present();
-    }else{
-        const modal = this.modalCtrl.create(RatesPage, choice)
-        modal.present()    
+    }else if(choice.amount.length >= 2){
+        if(choice == undefined){
+            const toast = this.toastCtrl.create({
+                message: "Please Check Your From and To Selection!",
+                duration:3000,
+                position: "bottom"
+            });
+
+            toast.onDidDismiss(()=>{
+                //console.log("Toast Dismissed")    
+            })
+        
+            toast.present();
+        }else{
+            const modal = this.modalCtrl.create(RatesPage, choice)
+            modal.present()    
+        }
     }
+
 }
 
 onClickTwo(choiceTwo){
-    if(choiceTwo == undefined){
+    if(choiceTwo.amount.length < 2){
         const toast = this.toastCtrl.create({
-            message: "Please Check Your From and To Selection!",
+            message: "Problem with your data, sorry for the inconvenience. Notifying support team!",
             duration:3000,
-            position: "bottom"
-        });
-
-        toast.onDidDismiss(()=>{
-            //console.log("Toast Dismissed")    
-        })
-    
+            position: "middle"
+        });   
         toast.present();
-    }else{
-        const modal = this.modalCtrl.create(RatesPage, choiceTwo)
-        modal.present() 
-    }
+    }else if(choiceTwo.amount.length >= 2){
+        if(choiceTwo == undefined){
+            const toast = this.toastCtrl.create({
+                message: "Please Check Your From and To Selection!",
+                duration:3000,
+                position: "bottom"
+            });
+
+            toast.onDidDismiss(()=>{
+                //console.log("Toast Dismissed")    
+            })
+        
+            toast.present();
+        }else{
+            const modal = this.modalCtrl.create(RatesPage, choiceTwo)
+            modal.present()    
+        }
+    }    
+    // console.log(choiceTwo)
+    // if(choiceTwo == undefined){
+    //     const toast = this.toastCtrl.create({
+    //         message: "Please Check Your From and To Selection!",
+    //         duration:3000,
+    //         position: "bottom"
+    //     });
+
+    //     toast.onDidDismiss(()=>{
+    //         //console.log("Toast Dismissed")    
+    //     })
+    
+    //     toast.present();
+    // }else{
+    //     const modal = this.modalCtrl.create(RatesPage, choiceTwo)
+    //     modal.present() 
+    // }
 }
 
 

@@ -1,5 +1,6 @@
 import { IonicStorageModule } from '@ionic/storage';
 import { HttpModule, Http } from '@angular/http';
+import { Network } from '@ionic-native/network';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { BrowserModule } from '@angular/platform-browser';
@@ -72,6 +73,7 @@ export function createTranslateLoader(http: Http) {
       TransferratesPage
   ],
   providers: [
+    Network,
     StatusBar,
     SplashScreen,
     SocialSharing,
