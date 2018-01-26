@@ -1,5 +1,6 @@
 import { IonicStorageModule } from '@ionic/storage';
 import { HttpModule, Http } from '@angular/http';
+import { CommonModule } from '@angular/common';
 import { Network } from '@ionic-native/network';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -46,6 +47,7 @@ export function createTranslateLoader(http: Http) {
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     HttpModule,
     TranslateModule.forRoot({
       loader:{

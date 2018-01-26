@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { ViewController, NavParams, ModalController } from 'ionic-angular';
 import { ListPage } from "../list/list"
 //import { CorridorsPage } from "../corridors/corridors"
-import dummy from "../../data/dummydata";
+//import dummy from "../../data/dummydata";
 
 @Component({
   selector: 'page-rates',
@@ -28,11 +28,13 @@ record_to_assign_to_second_rate_record:any[] = []
 
 
 //modify later
-toggle:any = "one"
-amtone:any
-amttwo:any
+toggle:string 
+amtone:string
+amttwo:string
 recordone:any
 recordtwo:any
+
+
 
 constructor(
     private modalCtrl: ModalController, 
@@ -53,70 +55,41 @@ ionViewDidLoad() {
     this.amount = this.navParams.get("amount")    
     //this.toggle = this.amount[0].amount 
     //console.log(this.curr)
-    console.log(this.amount.length)
-
-    // if(this.amount[1].record == null){
-    //     console.log("undefined")
-    // }  
-
-    try{
-        console.log(this.amount[1].record)
-    }catch(err){
-        console.log(err)
-        let _record = {
-            AmountReceived:'',
-            ExchangeRateMargin:'',
-            TotalCostEur:'',
-            TotalCostPercent:'',
-            fee:'',
-            firm:'',
-            networkcover:'',
-            networkcovdef:'',
-            product_availability:'',
-            productavicn:'',
-            transferspeed:'',
-            transferspeeddef:''
-        }
-        this.amount[1].record.push(_record)
-    }
-    
-    this.dummyData = dummy
-    for(var i = 0; i < this.dummyData.length; i++){      
-        this.from = this.dummyData[i].to;     
-
-        for(var j = 0; j < this.from.length; j++){     
-          if(this.from[j].name == this.name){
-            ////console.log("match")
-            this.originctry = this.dummyData[i].from
-            
-            
-          }
-          
-        }
-    }
-
-
+    console.log(this.amount[0].amount)
+    this.toggle = this.amount[0].amount
     this.amtone = this.amount[0].amount
-    //console.log(this.amtone)
-    //this.amttwo = this.amount[1].amount
-    this.amttwo = 0
-    //console.log(this.amttwo)
-    this.recordone=this.amount[0].record
-    //console.log(this.recordone)
-    this.recordtwo=this.amount[1].record
+
+    
+    //this.dummyData = dummy
+    // console.log(this.dummyData)
+    // for(var i = 0; i < this.dummyData.length; i++){      
+    //     this.from = this.dummyData[i].to;     
+
+    //     for(var j = 0; j < this.from.length; j++){     
+    //       if(this.from[j].name == this.name){
+    //         ////console.log("match")
+    //         this.originctry = this.dummyData[i].from
+            
+            
+    //       }
+          
+    //     }
+    // }
+
+
+    // this.amtone = this.amount[0].amount
+    // //console.log(this.amtone)
+    // //this.amttwo = this.amount[1].amount
+    // this.amttwo = 0
+    // //console.log(this.amttwo)
+    // this.recordone=this.amount[0].record
+    // //console.log(this.recordone)
+    // this.recordtwo=this.amount[1].record
     //console.log(this.recordtwo)
 
     
 }
-/*
 
-onClick(amt){    
-    this.record = amt.record
-    //console.log(this.record)
-    this.amnt = amt.amount
-    //console.log(this.amnt)
-}
-*/
     
 onClose(remove = false){
     this.viewCtrl.dismiss(remove)

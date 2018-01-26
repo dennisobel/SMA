@@ -1,7 +1,7 @@
 import { SocialSharing } from '@ionic-native/social-sharing';
 import { Component } from '@angular/core';
 import { NavController, NavParams, ViewController, AlertController } from 'ionic-angular';
-import dummy from "../../data/dummydata";
+//import dummy from "../../data/dummydata";
 
 @Component({
   selector: 'page-list',
@@ -54,7 +54,8 @@ ionViewDidLoad(){
     this.transferspeeddef = this.navParams.get("transferspeeddef")
     this.networkcovdef = this.navParams.get("networkcovdef")
        
-    this.dummyData = dummy
+    //this.dummyData = dummy
+    /*
     for(var i = 0; i < this.dummyData.length; i++){      
         this.from = this.dummyData[i].to; 
           
@@ -97,10 +98,11 @@ ionViewDidLoad(){
             this.originctry = this.dummyData[i].from
           }
           */
-          
+          /*
         }
         
     }
+    */
     
 }
 

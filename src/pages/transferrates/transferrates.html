@@ -102,7 +102,6 @@
                             </ion-item>
                         </div>
                         </div>
-
                         <div>
                             <button ion-button color="tertiary" block outline (click)="onClick(choice)" id="btn">
                                 <ion-icon name="eyes"></ion-icon>
@@ -110,9 +109,6 @@
                             </button>
                         </div>
                        </div> 
-
-
-                   
 
                     <!--case to from-->
                       <div id="toFrom" style="display: none;">  
@@ -126,7 +122,7 @@
                                 name="field_destination_iso2" id="destination"  
                                 style="font-size: 1.4rem" 
                                 color="tertiary">                                  
-                                  <div *ngFor="let data of dummyData">                                  
+                                  <div *ngFor="let data of items">                                  
                                     <ion-option 
                                       *ngFor="let datato of data.to" 
                                       (ionSelect)="onSelectTwo(datato)"

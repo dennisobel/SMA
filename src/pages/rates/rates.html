@@ -1,5 +1,5 @@
 
-<ion-header >
+<ion-header>
     <ion-navbar  color="tertiary">
       <button ion-button  color="dark" outline clear (click)="onClose()">
           <ion-icon name="arrow-back"></ion-icon>
@@ -9,253 +9,30 @@
     <ion-title>
        <ion-label style="font-size: 1.1rem" color="ternary">{{originctry}} {{"TO"|translate}} {{name}}</ion-label>
     </ion-title>
-    <ion-toolbar no-border-top>
-
-        <ion-segment color="tertiary" [(ngModel)]="toggle" >
-            <ion-segment-button 
-            value="one"
-            >
-                <ion-icon></ion-icon>${{amtone}}
-            </ion-segment-button>
-
-            <ion-segment-button 
-            value="two"
-            >
-                <ion-icon></ion-icon>${{amttwo}}
-            </ion-segment-button>
-        </ion-segment>
-    </ion-toolbar>
 </ion-header>
 
 <ion-content padding class="card-backgound-page grid-basic-page" align="center" > 
-    <div [ngSwitch]="toggle" >
-        <div>
-        <ion-list *ngSwitchCase="'one'">
-        
-            <button ion-item *ngFor="let record of recordone" (click)="moreDetails(record)">
-            <p color="tertiary" style="font-size: 1.2rem">{{record.firm}}</p> 
-            <ion-row>
-                <ion-col col-5><ion-badge outline color="tertiary" style="font-size: 1.2rem">{{"RATE"|translate}}:{{record.ExchangeRateMargin}}</ion-badge></ion-col>
-                <ion-col col-7><ion-badge fill color="tertiary" style="font-size: 1.2rem">{{"RECEIVED"|translate}}:{{record.AmountReceived}}</ion-badge></ion-col>
-            </ion-row>   
-            </button>
-        </ion-list>
+    <div id="segment" *ngFor="let amount of amount">
+        <ion-segment [(ngModel)]="toggle" color="tertiary">
+            <ion-segment-button value="{{amount.amount}}" [(ngModel)]="amount.amount" ngDefaultControl>${{amount.amount}}</ion-segment-button>
+        </ion-segment>    
+        <div [ngSwitch]="amount.amount">
+            <div>
+                <ion-list *ngSwitchCase="amount.amount">
+                    <button ion-item *ngFor="let record of amount.record" (click)="moreDetails(record)">
+                        <p color="tertiary" style="font-size: 1.2rem">{{record.firm}}</p> 
+                        <ion-row>
+                            <ion-col col-5><ion-badge outline color="tertiary" style="font-size: 1.2rem">{{"RATE"|translate}}:{{record.ExchangeRateMargin}}</ion-badge></ion-col>
+                            <ion-col col-7><ion-badge fill color="tertiary" style="font-size: 1.2rem">{{"RECEIVED"|translate}}:{{record.AmountReceived}}</ion-badge></ion-col>
+                        </ion-row>                          
+                    </button>
+                </ion-list>
+            </div>
         </div>
     </div>
 
-    <div [ngSwitch]="toggle" >
-        <div>
-        <ion-list *ngSwitchCase="'two'">
-        
-            <button ion-item *ngFor="let record of recordtwo" (click)="moreDetails(record)">
-            <p color="tertiary" style="font-size: 1.2rem">{{record.firm}}</p> 
-            <ion-row>
-                <ion-col col-5><ion-badge outline color="tertiary" style="font-size: 1.2rem">{{"RATE"|translate}}:{{record.ExchangeRateMargin}}</ion-badge></ion-col>
-                <ion-col col-7><ion-badge fill color="tertiary" style="font-size: 1.2rem">{{"RECEIVED"|translate}}:{{record.AmountReceived}}</ion-badge></ion-col>
-            </ion-row>   
-            </button>
-        </ion-list>
-        </div>
-    </div>
-
-
-    <!--
-    <ion-card>
-        <!--<img src={{flag}} alt={{name}}>
-
-        <ion-card-content>
-            <ion-card-title >
-                <ion-row>
-                    <ion-col col-6 *ngFor="let amt of amount">
-                        <ion-buttons>
-                            <button ion-button outline block color="tertiary" (click)="onClick(amt)">
-                                <ion-icon name="logo-usd"></ion-icon>{{amt.amount}}
-                            </button>
-                        </ion-buttons>
-                    </ion-col>
-                </ion-row> 
-            </ion-card-title>
-        </ion-card-content>
-    </ion-card>
-    -->
-
-    
-
-
-
-    
-<!--
-    
-    <ion-toolbar >
-        <ion-segment color="tertiary" [(ngModel)]="toggle">
-            <ion-segment-button 
-             (click)="onClick(amt)"
-            *ngFor="let amt of amount"
-            value="this.amount[0].amount"        >
-                <ion-icon></ion-icon>${{amt.amount}}
-            </ion-segment-button>
-        </ion-segment>
-    </ion-toolbar>
-    
-
-    <!--
-    <div>
-    <ion-list  color="tertiary" block outline  class="app-font-25" *ngSwitchCase="this.amount[0].amount">
-        <ion-badge color="tertiary">${{amnt}}</ion-badge>
-     
-        <button ion-item *ngFor="let record of record" (click)="moreDetails(record)" >    
-            <p color="tertiary" style="font-size: 1.2rem">{{record.firm}}</p>  
-            <ion-row>
-                <ion-col col-5><ion-badge outline color="tertiary" style="font-size: 1.2rem">Rate:{{record.ExchangeRateMargin}}</ion-badge></ion-col>
-                <ion-col col-7><ion-badge fill color="tertiary" style="font-size: 1.2rem">Received:{{record.AmountReceived}}</ion-badge></ion-col>
-            </ion-row>            
-        </button>
-    </ion-list>
-    </div>
-    -->
-<!--
-    
-    <div [ngSwitch]="toggle">
-    <ion-list  color="tertiary" block outline  class="app-font-25"  *ngSwitchCase="this.amount[0].amount">
-        <ion-badge color="tertiary">${{amnt}}</ion-badge>
-     
-        <button ion-item *ngFor="let record of record" (click)="moreDetails(record)" >    
-            <p color="tertiary" style="font-size: 1.2rem">{{record.firm}}</p>  
-            <ion-row>
-                <ion-col col-5><ion-badge outline color="tertiary" style="font-size: 1.2rem">Rate:{{record.ExchangeRateMargin}}</ion-badge></ion-col>
-                <ion-col col-7><ion-badge fill color="tertiary" style="font-size: 1.2rem">Received:{{record.AmountReceived}}</ion-badge></ion-col>
-            </ion-row>            
-        </button>
-    </ion-list>
-    </div>
-    
-    
-    <!-- *ngIf="amnt" */ 
-
-    <div *ngSwitchCase="'one'">
-    <ion-list  color="tertiary" block outline  class="app-font-25" >
-        <ion-badge color="tertiary">${{amnt}}</ion-badge>
-     
-        <button ion-item *ngFor="let record of record" (click)="moreDetails(record)" >    
-            <p color="tertiary" style="font-size: 1.2rem">{{record.firm}}</p>  
-            <ion-row>
-                <ion-col col-5><ion-badge outline color="tertiary" style="font-size: 1.2rem">Rate:{{record.ExchangeRateMargin}}</ion-badge></ion-col>
-                <ion-col col-7><ion-badge fill color="tertiary" style="font-size: 1.2rem">Received:{{record.AmountReceived}}</ion-badge></ion-col>
-            </ion-row>            
-        </button>
-    </ion-list>
-    </div>
-
-    <div *ngSwitchCase="'two'">
-    <ion-list  color="tertiary" block outline  class="app-font-25" >
-        <ion-badge color="tertiary">${{amnt}}</ion-badge>
-     
-        <button ion-item *ngFor="let record of record" (click)="moreDetails(record)" >    
-            <p color="tertiary" style="font-size: 1.2rem">{{record.firm}}</p>  
-            <ion-row>
-                <ion-col col-5><ion-badge outline color="tertiary" style="font-size: 1.2rem">Rate:{{record.ExchangeRateMargin}}</ion-badge></ion-col>
-                <ion-col col-7><ion-badge fill color="tertiary" style="font-size: 1.2rem">Received:{{record.AmountReceived}}</ion-badge></ion-col>
-            </ion-row>            
-        </button>
-    </ion-list>
-    </div>
-    -->
-
     <ion-fab right bottom>
-        <button ion-fab color="tertiary"><ion-icon name="md-share" (click)="regularShare()"></ion-icon></button>
-        <!--
-        <ion-fab-list side="top">
-            <button ion-fab color="tertiary"><ion-icon name="logo-googleplus"></ion-icon></button>
-            <button ion-fab color="tertiary"><ion-icon name="logo-twitter"></ion-icon></button>
-        </ion-fab-list>
-        <ion-fab-list side="left">
-            <button ion-fab color="tertiary"><ion-icon name="logo-vimeo"></ion-icon></button>
-            <button ion-fab color="tertiary"><ion-icon name="logo-facebook"></ion-icon></button>
-        </ion-fab-list>    
-        -->    
+        <button ion-fab color="tertiary"><ion-icon name="md-share" (click)="regularShare()"></ion-icon></button>  
     </ion-fab>
 </ion-content>
 
-
-
-
-
-<!--
-
-
-<ion-header>
-    <ion-navbar  color="tertiary">
-      <button ion-button  color="dark" outline clear (click)="onClose()">
-          <ion-icon name="arrow-back"></ion-icon>
-      </button>
-      <ion-title>Result</ion-title>
-  </ion-navbar>
-  <ion-toolbar>
-    <ion-title>
-       <ion-label align="left" style="font-size: 1.2rem" color="ternary">{{originctry}} To {{name}}</ion-label>
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content padding class="card-backgound-page grid-basic-page" align="center"> 
-
-    <!--
-    <ion-card>
-        <!--<img src={{flag}} alt={{name}}>
-        <ion-card-content>
-            <ion-card-title >
-                <ion-row>
-                    <ion-col col-6 *ngFor="let amt of amount">
-                        <ion-buttons>
-                            <button ion-button outline block color="tertiary" (click)="onClick(amt)">
-                                <ion-icon name="logo-usd"></ion-icon>{{amt.amount}}
-                            </button>
-                        </ion-buttons>
-                    </ion-col>
-                </ion-row> 
-            </ion-card-title>
-        </ion-card-content>
-    </ion-card>
-    -->
-
-    <!--
-    <ion-toolbar >
-        <ion-segment color="tertiary">
-            <ion-segment-button 
-             (click)="onClick(amt)"
-            *ngFor="let amt of amount"
-            [ngSwitch]="toggle"
-            value="this.toggle">
-                <ion-icon></ion-icon>{{curr}} {{amt.amount}}
-            </ion-segment-button>
-        </ion-segment>
-    </ion-toolbar>    
-
-        
-    <ion-list  color="tertiary" block outline *ngIf="amnt" class="app-font-25">
-        <ion-badge color="tertiary">{{curr}} {{amnt}}</ion-badge>
-     
-        <button ion-item *ngFor="let record of record" (click)="moreDetails(record)">    
-            <p color="tertiary" style="font-size: 1.3rem">{{record.firm}}</p>  
-            <ion-row>
-                <ion-col col-5><ion-badge outline color="tertiary" style="font-size: 1.3rem">{{record.ExchangeRateMargin}}</ion-badge></ion-col>
-                <ion-col col-7><ion-badge fill color="tertiary" style="font-size: 1.3rem">{{curr}} {{record.AmountReceived}}</ion-badge></ion-col>            
-            </ion-row>            
-        </button>
-    </ion-list>
-    
-
-
-    <ion-fab right bottom>
-        <button ion-fab color="tertiary"><ion-icon name="md-share"></ion-icon></button>
-        <ion-fab-list side="top">
-            <button ion-fab color="tertiary"><ion-icon name="logo-googleplus"></ion-icon></button>
-            <button ion-fab color="tertiary"><ion-icon name="logo-twitter"></ion-icon></button>
-        </ion-fab-list>
-        <ion-fab-list side="left">
-            <button ion-fab color="tertiary"><ion-icon name="logo-vimeo"></ion-icon></button>
-            <button ion-fab color="tertiary"><ion-icon name="logo-facebook"></ion-icon></button>
-        </ion-fab-list>        
-    </ion-fab>
-</ion-content>
--->
