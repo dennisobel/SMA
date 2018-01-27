@@ -1,6 +1,5 @@
 import { Directive, Input, ElementRef, Renderer } from '@angular/core';
 
-
 @Directive({
   selector: '[hide-header]', // Attribute selector
   host: {
@@ -13,9 +12,7 @@ export class HideHeaderDirective {
 headerHeight;
 scrollContent;
 
-  constructor(public element:ElementRef, public renderer: Renderer) {
-    console.log('Hello HideHeaderDirective Directive');
-  }
+  constructor(public element:ElementRef, public renderer: Renderer){}
 
   ngOnInit(){
   	this.headerHeight = this.header.clientHeight;

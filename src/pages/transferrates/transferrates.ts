@@ -5,16 +5,11 @@ import { RatesPage } from "../rates/rates";
 import { HelpPage } from "../help/help";
 import { SettingsPage } from "../settings/settings";
 import { Storage } from '@ionic/storage';
-//import { Network } from '@ionic-native/network';
-
-
-//api stuff
-import { Http } from "@angular/http";
 import 'rxjs/add/operator/map';
 import { ApiProvider } from "../../providers/api/api";
 import { TransactionsSchema } from "../../schemas/transactions";
+import { Platform } from 'ionic-angular';
 
-//import dummy from "../../data/dummydata";
 
 @Component({
     selector: 'page-transferrates',
@@ -22,24 +17,15 @@ import { TransactionsSchema } from "../../schemas/transactions";
 })
 
 export class TransferratesPage implements OnInit{
-    choice;
-    choiceTwo;
-    settingsPage:any;
+    choice:any;
+    choiceTwo:any;
     items:any;
-
-    dummyData: any
+    apiData: any
     receiving : any[] = [];
-    choose: any[] = [];
-    sending:any[] = [];
-
-    froms:any[]=[]
-    tos:any[]=[]
-    names:any[]=[]
-    dat:any;
-
+    sending:any[] = [];    
+    chosenSendingCountry: any[] = [];    
     transactions:TransactionsSchema[];
-    transaction:TransactionsSchema;
-    transactions_test:TransactionsSchema[];
+    settingsPage:any;
     
     constructor(
         public modalCtrl: ModalController, 
@@ -47,39 +33,18 @@ export class TransferratesPage implements OnInit{
         public socialSharing:SocialSharing,
         public storage: Storage,
         public apiProvider:ApiProvider,
-        //private network: Network,
-        public http:Http){
+        public plt: Platform
+    )
+    {
         this.settingsPage = SettingsPage; 
-
-
-
-        // this.storage.get("myStore").then((data)=>{
-        //     this.items = data
-
-        //     if(data != null){
-        //         //data.push(this.dummyData);
-        //         data = this.dummyData
-        //         this.storage.set("myStore", data)
-        //         console.log(data)     
-        //     }else{
-        //         let _data=[];
-        //         _data.push(this.dummyData)
-        //         this.storage.set("myStore", _data)
-        //         //console.log("my data " + data)     
-        //     }   
-            
-        // })
     }
 
     ngOnInit(){        
-        this.apiProvider.getTransactionsTest()
+        this.apiProvider.getTransactions()
         .subscribe(transactions =>{
-            console.log(transactions)
+            this.apiData=transactions;
 
-            this.dummyData=transactions;
-
-            if(this.dummyData == undefined){
-                console.log("undefined")
+            if(this.apiData == undefined){
                 const toast = this.toastCtrl.create({
                     message: "Problem with your connection. Retrying!",
                     duration:3000,
@@ -87,38 +52,13 @@ export class TransferratesPage implements OnInit{
                 });   
                 toast.present();
             }else{
-                console.log("present")
-                this.saveToLocal(transactions)
-
-                //save to local storage
-                // this.storage.get("myStore").then((data)=>{
-                //     this.items = data
-                //        console.log(data)  
-                //     if(data != null){
-                //         //data.push(this.dummyData);
-                //         data = transactions
-                //         this.storage.set("myStore", data)
-                //         console.log(data)     
-                //     }else{
-                //         let _data=[];
-                //         _data.push(transactions)
-                //         this.storage.set("myStore", _data)
-                //         console.log("my data " + data)
-                //     }   
-                    
-                // }) 
-
-
-// for(var i=0; i<this.dummyData.length; i++){
-//     //console.log(this.dummyData[i].to)
-//     this.names.push(this.dummyData[i].to)        
-// }                          
+                this.plt.ready().then((readySource)=>{
+                    console.log(readySource)
+                })
+                this.saveToLocal(transactions)                         
             }
         })        
     }
-
- 
-
 
     ionViewDidLoad(){    
         this.getFromLocal()
@@ -127,31 +67,29 @@ export class TransferratesPage implements OnInit{
     saveToLocal(data){
         this.storage.set("mystore",data)
         .then((successData)=>{
-            console.log(successData)
         })
     }
 
     getFromLocal(){
         this.storage.get("mystore")
         .then((successData)=>{
-            console.log(successData)
             this.items = successData
         })
         return this.items 
     }
         
-    onSelect(dummy){
+    onSelect(data){
         this.receiving.pop()
         var res: any[] = [];
-        var mod;
+        var sendingCountrydata;
         
-        for(var i = 0; i < dummy.to.length; i++){
-            res.push(dummy.to[i].name)
-            mod = dummy.to       
+        for(var i = 0; i < data.to.length; i++){
+            res.push(data.to[i].name)
+            sendingCountrydata = data.to     
         }
 
         this.receiving.push(res)  
-        this.choose = mod
+        this.chosenSendingCountry = sendingCountrydata
     }
 
     onSelectTwo(datato){
@@ -164,16 +102,15 @@ export class TransferratesPage implements OnInit{
         }        
     }
         
-    onChoose(r){ 
-        for(var i = 0; i < this.choose.length; i++){
-            if(this.choose[i].name == r){
-                this.choice = this.choose[i]
+    onChoose(receiving){ 
+        for(var i = 0; i < this.chosenSendingCountry.length; i++){
+            if(this.chosenSendingCountry[i].name == receiving){
+                this.choice = this.chosenSendingCountry[i]
             }
         }
     }
         
     onClick(choice){
-        console.log(choice)
         if(choice == undefined){
             const toast = this.toastCtrl.create({
                 message: "Please Check Your From and To Selection!",
@@ -182,7 +119,7 @@ export class TransferratesPage implements OnInit{
             });
 
             toast.onDidDismiss(()=>{
-                //console.log("Toast Dismissed")    
+                  
             })
         
             toast.present();
@@ -193,7 +130,6 @@ export class TransferratesPage implements OnInit{
     }
 
     onClickTwo(choiceTwo){ 
-        console.log(choiceTwo)
         if(choiceTwo == undefined){
             const toast = this.toastCtrl.create({
                 message: "Please Check Your From and To Selection!",
@@ -202,7 +138,7 @@ export class TransferratesPage implements OnInit{
             });
 
             toast.onDidDismiss(()=>{
-                //console.log("Toast Dismissed")    
+                
             })
         
             toast.present();

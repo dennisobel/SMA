@@ -15,14 +15,12 @@ export class CorridorsPage{
     settingsPage:any;
     methodologyPage;
     aboutPage;
-    transactions_test:any;
-    to:any;
-    from:any;
+    transactions:any;
 
     constructor(
-    private modalCtrl: ModalController,
-    private navCtrl: NavController,
-    public storage: Storage,
+      private modalCtrl: ModalController,
+      private navCtrl: NavController,
+      public storage: Storage,
     ){
       this.methodologyPage = MethodologyPage;
       this.aboutPage = AboutsmaPage;
@@ -36,10 +34,9 @@ export class CorridorsPage{
     getFromLocal(){
       this.storage.get("mystore")
       .then((successData)=>{
-          console.log(successData)
-          this.transactions_test = successData
+          this.transactions = successData
       })
-      return this.transactions_test 
+      return this.transactions 
     }
 
     openRates(toGroup){

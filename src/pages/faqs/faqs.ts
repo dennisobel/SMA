@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 import { TransferratesPage } from "../transferrates/transferrates"
 import { SettingsPage } from "../settings/settings"
 
@@ -9,17 +9,13 @@ import { SettingsPage } from "../settings/settings"
   templateUrl: 'faqs.html',
 })
 export class FaqsPage {
-  settingsPage;
+  settingsPage:any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController) {
     this.settingsPage = SettingsPage
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad FaqsPage');
-  }
-
-    onBack(){
+  onBack(){
     this.navCtrl.setRoot(TransferratesPage)
   }
 

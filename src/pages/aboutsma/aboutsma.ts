@@ -1,4 +1,3 @@
-import { SocialSharing } from '@ionic-native/social-sharing';
 import { Component } from '@angular/core';
 import { CorridorsPage } from '../corridors/corridors'
 import { MethodologyPage } from '../methodology/methodology'
@@ -17,22 +16,14 @@ methodologyPage;
 aboutsmaPage;
 settingsPage:any;
 constructor(
-  public navCtrl:NavController,
-  public socialSharing:SocialSharing){
+  public navCtrl:NavController){
       this.corridorsPage = CorridorsPage
       this.methodologyPage = MethodologyPage
       this.settingsPage = SettingsPage;
   }
 
-  ionViewDidLoad() {
-    // console.log('ionViewDidLoad AboutsmaPage');
-  } 
 
-    onBack(){
+  onBack(){
     this.navCtrl.setRoot(TransferratesPage)
-  }
-
-  regularShare(){
-    this.socialSharing.share("http://www.sendmoneyafrica-auair.org");
   }
 }

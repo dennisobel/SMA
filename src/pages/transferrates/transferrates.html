@@ -1,5 +1,5 @@
 <ion-header #head>    
-<ion-navbar  color="tertiary" >
+<ion-navbar  color="tertiary">
       <button ion-button menuToggle color="dark">
           <ion-icon name="menu"></ion-icon>
       </button>
@@ -23,10 +23,6 @@
                    autocomplete="off"                                    
                    id="sms-corridor-search-form" 
                    accept-charset="UTF-8"> 
-
-                    
-
-                    
                   <ion-list radio-group>
                     <ion-row>
                         <ion-col>
@@ -75,10 +71,10 @@
                                style="font-size: 1.4rem" 
                                color="tertiary" >                                                
                                 <ion-option 
-                                *ngFor="let dummy of dummyData"
+                                *ngFor="let data of items"
                                 okText="Okay" cancelText="Dismiss"
-                                (ionSelect)="onSelect(dummy)"                                                                             
-                                >{{dummy.from}}
+                                (ionSelect)="onSelect(data)"                                                                             
+                                >{{data.from}}
                                 </ion-option>                                               
                             </ion-select>
                             </ion-item>
@@ -97,7 +93,7 @@
                                 style="font-size: 1.4rem" 
                                 color="tertiary"                                                           
                                 >
-                                    <ion-option *ngFor="let r of receiving[0]" (ionSelect)="onChoose(r)" [value]="r">{{r}}</ion-option>
+                                  <ion-option *ngFor="let receiving of receiving[0]" (ionSelect)="onChoose(receiving)" [value]="receiving">{{receiving}}</ion-option>
                                 </ion-select>
                             </ion-item>
                         </div>
@@ -165,7 +161,7 @@
     </div>
 
     <ion-fab right bottom>
-        <button ion-fab color="tertiary" (click)="regularShare()"><ion-icon name="md-share"></ion-icon></button>   
+        <button ion-fab color="dark" (click)="regularShare()"><ion-icon name="md-share"></ion-icon></button>   
     </ion-fab>
 </ion-content>
            

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 import { TransferratesPage } from "../transferrates/transferrates"
 
 @Component({
@@ -8,14 +8,10 @@ import { TransferratesPage } from "../transferrates/transferrates"
 })
 export class TerminologiesPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  constructor(public navCtrl: NavController){}
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad TerminologiesPage');
-  }
 
-      onBack(){
+  onBack(){
     this.navCtrl.setRoot(TransferratesPage)
   }
 
