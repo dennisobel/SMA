@@ -8,7 +8,7 @@ import { Storage } from '@ionic/storage';
 import 'rxjs/add/operator/map';
 import { ApiProvider } from "../../providers/api/api";
 import { TransactionsSchema } from "../../schemas/transactions";
-import { Platform } from 'ionic-angular';
+
 
 
 @Component({
@@ -32,8 +32,7 @@ export class TransferratesPage implements OnInit{
         public toastCtrl:ToastController,
         public socialSharing:SocialSharing,
         public storage: Storage,
-        public apiProvider:ApiProvider,
-        public plt: Platform
+        public apiProvider:ApiProvider
     )
     {
         this.settingsPage = SettingsPage; 
@@ -52,9 +51,6 @@ export class TransferratesPage implements OnInit{
                 });   
                 toast.present();
             }else{
-                this.plt.ready().then((readySource)=>{
-                    console.log(readySource)
-                })
                 this.saveToLocal(transactions)                         
             }
         })        
